@@ -9,10 +9,10 @@ import (
 	_ "github.com/mattes/migrate/source/file"
 )
 
-func migrateDB(db *sql.DB) {
+func migrateDB(db *sql.DB) (*migrate.Migrate, error) {
 	driver, err := postgres.WithInstance(db, &postgres.Config{})
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 	m, err := migrate.NewWithDatabaseInstance(
 		"file://./migrations",
@@ -20,14 +20,14 @@ func migrateDB(db *sql.DB) {
 		driver,
 	)
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 	switch err := m.Up(); err {
 	case migrate.ErrNoChange:
 		log.Println("Database is up to date, nothing to migrate")
 	case nil:
 	default:
-		log.Fatal(err)
+		return nil, err
 	}
-	defer m.Close()
+	return m, nil
 }
