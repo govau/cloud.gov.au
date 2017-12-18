@@ -1,0 +1,7 @@
+language: go
+notifications:
+  email: false
+go:
+  - 1.9.x
+  - tip
+script: go test -race ./...
