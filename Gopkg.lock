@@ -26,6 +26,12 @@
   revision = "83612a56d3dd153a94a629cd64925371c9adad78"
 
 [[projects]]
+  name = "github.com/mattes/migrate"
+  packages = [".","database","database/postgres","source","source/file"]
+  revision = "035c07716cd373d88456ec4d701402df52584cb4"
+  version = "v3.0.1"
+
+[[projects]]
   name = "github.com/pkg/errors"
   packages = ["."]
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
@@ -70,6 +76,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "ff4138cdb72d2a6850d0a4b53f9245e8f895a35f703ee82039fc98b987c5f520"
+  inputs-digest = "37244fc19866fc68baa5e4a98a90bbe03a1a5242db97e8d0a5e2b139e824f5c8"
   solver-name = "gps-cdcl"
   solver-version = 1
