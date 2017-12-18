@@ -25,6 +25,7 @@ func migrateDB(db *sql.DB) {
 	switch err := m.Up(); err {
 	case migrate.ErrNoChange:
 		log.Println("Database is up to date, nothing to migrate")
+	case nil:
 	default:
 		log.Fatal(err)
 	}
