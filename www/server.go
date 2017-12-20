@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// BasicAuthCreds can be used to restrict access to Server.
 type BasicAuthCreds struct {
 	Username string
 	Password string
