@@ -16,7 +16,7 @@ type BasicAuthCreds struct {
 
 type Server struct {
 	Creds           BasicAuthCreds
-	NotFoundFile    string
+	NotFoundPath    string
 	NotFoundContent []byte
 	UIDir           string
 	*CachingPrometheus
@@ -49,11 +49,11 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	switch r.URL.Path {
-	// Since there is actually a real file named "notFound.html" in the UI dir
-	// (assuming that's the value of s.NotFoundFile), we need to intercept this
+	// Since there is actually a real file named "404.html" in the UI dir
+	// (assuming that's the value of s.NotFoundPath), we need to intercept this
 	// and make it a real 404 because we don't want users to see this path as
 	// existing.
-	case fmt.Sprintf("/%s", s.NotFoundFile):
+	case fmt.Sprintf("/%s", s.NotFoundPath):
 		s.NotFound(w, r)
 		return
 	default:

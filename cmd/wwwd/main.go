@@ -4,10 +4,12 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"net/url"
 	"os"
+	"path/filepath"
 	"time"
 
 	"github.com/NYTimes/gziphandler"
@@ -36,6 +38,7 @@ const (
 	defaultPrometheusQueryLifetime = 360 * time.Second
 	defaultPollFrequency           = 10 * time.Second
 	defaultUIDir                   = "./build"
+	defaultNotFoundFile            = "404.html"
 )
 
 func loop(
@@ -84,6 +87,7 @@ func main() {
 	prometheusQueryLifetime := defaultPrometheusQueryLifetime
 	pollFrequency := defaultPollFrequency
 	uiDir := defaultUIDir
+	notFoundFile := defaultNotFoundFile
 
 	db, err := sql.Open("postgres", postgresConnStr)
 	if err != nil {
@@ -169,13 +173,18 @@ func main() {
 		cfms,
 	)
 
+	notFoundContent, err := ioutil.ReadFile(filepath.Join(uiDir, notFoundFile))
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	s := &www.Server{
 		Creds: www.BasicAuthCreds{
 			Username: username,
 			Password: password,
 		},
-		NotFoundFile:      "notFound.html",
-		NotFoundContent:   []byte(`Not found.`),
+		NotFoundPath:      notFoundFile,
+		NotFoundContent:   notFoundContent,
 		UIDir:             uiDir,
 		CachingPrometheus: cachingPrometheus,
 		PrometheusQueries: prometheusQueries,
