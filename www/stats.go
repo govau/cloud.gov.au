@@ -27,6 +27,7 @@ func (s *Server) getPrometheusStat(w http.ResponseWriter, r *http.Request, id, q
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	default:
 		w.Write([]byte(fmt.Sprintf("not sure of the type %T\n", v)))
 	}
@@ -55,4 +56,5 @@ func (s *Server) GetStat(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 }
