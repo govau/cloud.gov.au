@@ -10,6 +10,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/NYTimes/gziphandler"
 	"github.com/govau/cloud.gov.au/www"
 	_ "github.com/lib/pq"
 	prometheusclient "github.com/prometheus/client_golang/api"
@@ -183,5 +184,5 @@ func main() {
 
 	listen := fmt.Sprintf(":%s", port)
 	log.Printf("HTTP listening on %q...", listen)
-	log.Println("HTTP ListenAndServe:", http.ListenAndServe(listen, s))
+	log.Println("HTTP ListenAndServe:", http.ListenAndServe(listen, gziphandler.GzipHandler(s)))
 }

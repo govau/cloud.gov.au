@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  name = "github.com/NYTimes/gziphandler"
+  packages = ["."]
+  revision = "d6f46609c7629af3a02d791a4666866eed3cbd3e"
+  version = "v1.0.0"
+
+[[projects]]
   branch = "master"
   name = "github.com/cloudfoundry-community/go-cfclient"
   packages = ["."]
@@ -76,6 +82,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "37244fc19866fc68baa5e4a98a90bbe03a1a5242db97e8d0a5e2b139e824f5c8"
+  inputs-digest = "a7f0b3f88df6423a06b341eb4bb9b2f67f0c3c59bcfce6cb6862e64259b14576"
   solver-name = "gps-cdcl"
   solver-version = 1
