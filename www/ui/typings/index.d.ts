@@ -1,4 +1,4 @@
-declare module "react-snapshot";
+declare module "loadable-components";
 declare module "grid-styled";
 declare module "@nivo/line";
 declare module "@nivo/pie";

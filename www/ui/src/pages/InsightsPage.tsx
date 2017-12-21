@@ -1,4 +1,5 @@
 import * as React from "react";
+import Helmet from "react-helmet";
 import styled from "../styled-components";
 import { Flex, Box } from "grid-styled";
 
@@ -81,6 +82,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
 
     return (
       <Wrapper>
+        <Helmet title="Insights" />
         {isFetching && (
           <Flex wrap={true}>
             <Box width={[1]} p={3}>

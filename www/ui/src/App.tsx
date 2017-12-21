@@ -1,16 +1,16 @@
 import * as React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Helmet from "react-helmet";
 import styled, { ThemeProvider, css } from "./styled-components";
 
 import { theme } from "./theme";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import InsightsPage from "./pages/InsightsPage";
-import NotFoundPage from "./pages/NotFoundPage";
+import * as Routes from "./Routes";
 import DefaultLayout from "./components/DefaultLayout";
 import Disclaimer from "./components/Disclaimer";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
+const title = "cloud.gov.au";
 
 const Wrapper = styled.div`
   ${({ theme }) =>
@@ -27,17 +27,18 @@ const App: React.StatelessComponent<Props> = () => (
   <Router>
     <ThemeProvider theme={theme}>
       <Wrapper>
+        <Helmet titleTemplate={`%s - ${title}`} />
         <Disclaimer />
         <Header />
         <Main>
           <Switch>
-            <Route exact path="/" component={() => <HomePage />} />
+            <Route exact path="/" component={() => <Routes.HomePage />} />
             <Route
               exact
               path="/about/"
               component={() => (
                 <DefaultLayout>
-                  <AboutPage />
+                  <Routes.AboutPage />
                 </DefaultLayout>
               )}
             />
@@ -46,7 +47,7 @@ const App: React.StatelessComponent<Props> = () => (
               path="/insights/"
               component={() => (
                 <DefaultLayout>
-                  <InsightsPage />
+                  <Routes.InsightsPage />
                 </DefaultLayout>
               )}
             />
@@ -54,7 +55,7 @@ const App: React.StatelessComponent<Props> = () => (
               path="*"
               component={() => (
                 <DefaultLayout>
-                  <NotFoundPage />
+                  <Routes.NotFoundPage />
                 </DefaultLayout>
               )}
             />

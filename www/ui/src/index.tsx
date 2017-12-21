@@ -1,7 +1,12 @@
 import "whatwg-fetch";
 import * as React from "react";
-import { render } from "react-snapshot";
+import { hydrate, render } from "react-dom";
 import App from "./App";
 import "./index.css";
 
-render(<App />, document.getElementById("root") as HTMLElement);
+const el = document.getElementById("root") as HTMLElement;
+if (el.hasChildNodes()) {
+  hydrate(<App />, el);
+} else {
+  render(<App />, el);
+}
