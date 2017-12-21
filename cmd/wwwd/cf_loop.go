@@ -24,16 +24,22 @@ func init() {
 	}
 }
 
-func collectDeployments(c *cfv2.Client) (model.Vector, error) {
+// collectDeployments returns a vector of samples for the total number of
+// app deployments per day, for the provided number of days starting back from
+// now.
+// TODO(jonathaningram): this function hits the CF API pretty hard because we
+// cannot just get the total events from the first response. Really need to see
+// if the CF API can be modified to accept the query parameters / filters we
+// need. The problem is exacerbated as days is set to a higher value.
+func collectDeployments(c *cfv2.Client, days int) (model.Vector, error) {
 	const timeLayout = "2006-01-02 15:04:05Z07:00"
 	now := time.Now()
 	today := time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, sydneyLocation)
 
 	var v model.Vector
-	const days = 14
 
-	for d := time.Duration(0); d < days; d++ {
-		lower := today.Add(d * -24 * time.Hour)
+	for d := 0; d < days; d++ {
+		lower := today.Add(time.Duration(d) * -24 * time.Hour)
 		upper := lower.Add(24 * time.Hour)
 
 		q := []string{
@@ -73,6 +79,8 @@ func cfEventsLoop(
 	newClient func(context.Context) (*cfv2.Client, error),
 	metrics *www.CFMetrics,
 ) {
+	const days = 30
+
 	for {
 		select {
 		case <-time.After(pollFrequency):
@@ -81,7 +89,7 @@ func cfEventsLoop(
 				log.Println(err)
 				break
 			}
-			v, err := collectDeployments(cfc)
+			v, err := collectDeployments(cfc, days)
 			if err != nil {
 				log.Println(err)
 				break
