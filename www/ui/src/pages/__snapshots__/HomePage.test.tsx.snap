@@ -73,7 +73,7 @@ Array [
                      
                     <a
                         className="sc-ifAKCX gtIiBE"
-                        href="https://www.dta.gov.au/what-we-do/platforms/cloud/what-we-do/platforms/marketplace/"
+                        href="https://www.dta.gov.au/what-we-do/platforms/marketplace/"
                     >
                         Digital Marketplace
                     </a>
@@ -81,9 +81,17 @@ Array [
                      
                     <a
                         className="sc-ifAKCX gtIiBE"
-                        href="https://www.dta.gov.au/what-we-do/platforms/cloud/what-we-do/platforms/performance/"
+                        href="https://www.dta.gov.au/what-we-do/platforms/performance/"
                     >
                         Performance Dashboard
+                    </a>
+                    , the
+                     
+                    <a
+                        className="sc-ifAKCX gtIiBE"
+                        href="https://smart-cities.dashboard.gov.au/"
+                    >
+                        National Cities Performance Framework Dashboard
                     </a>
                     , and the australia.gov.au
                      
