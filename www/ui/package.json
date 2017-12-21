@@ -33,8 +33,7 @@
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "build-2-TODO": "react-snap",
+    "build": "react-scripts-ts build && react-snap",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   }

@@ -61,7 +61,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
         }));
       }
     } catch (e) {
-      throw e;
+      console.error(e);
     } finally {
       this.setState(() => ({ isFetching: false }));
     }
