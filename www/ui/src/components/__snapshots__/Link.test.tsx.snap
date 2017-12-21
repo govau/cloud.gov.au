@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<a
+  className="sc-bwzfXH fZcoTc"
+  href="/"
+  onClick={[Function]}
+>
+  Home
+</a>
+`;

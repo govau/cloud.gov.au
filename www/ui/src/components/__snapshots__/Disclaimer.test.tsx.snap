@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className="sc-htoDjs jAzNNJ"
+>
+  <div
+    className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+    is={null}
+  >
+    <div
+      className="sc-htpNat jtWIOA sc-bdVaJa ikjdog"
+      is={null}
+    >
+      <div
+        className="sc-bdVaJa fOpQaR"
+        is={null}
+      >
+        <a
+          className="sc-ifAKCX dwTEKz"
+          href="/"
+        >
+          <img
+            alt=""
+            className="sc-EHOje gxqRhi"
+            src={
+              Object {
+                "0": "s",
+                "1": "t",
+                "2": "a",
+                "3": "r",
+                "4": ".",
+                "5": "s",
+                "6": "v",
+                "7": "g",
+                "default": "star.svg",
+              }
+            }
+          />
+          <span
+            className="sc-bZQynM hNQVjf"
+          >
+            GOV.AU
+          </span>
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa irQXag"
+        is={null}
+      >
+        <span
+          className="sc-gzVnrw ieUjli"
+        >
+          Official Australian Government website
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<header
+  className="sc-gqjmRU iHXAiL"
+>
+  <div
+    className="sc-EHOje yHDKW sc-bdVaJa bNqJOV"
+    is={null}
+  >
+    <div
+      className="sc-htpNat eplpHs sc-bdVaJa NcCKj"
+      is={null}
+    >
+      <div
+        className="sc-bdVaJa dnoIVq"
+        is={null}
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt=""
+            className="sc-dnqmqq hIdKhY"
+            src={
+              Object {
+                "0": "c",
+                "1": "o",
+                "2": "a",
+                "3": ".",
+                "4": "s",
+                "5": "v",
+                "6": "g",
+                "default": "coa.svg",
+              }
+            }
+          />
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa iHZvIS"
+        is={null}
+      >
+        <a
+          className="sc-iwsKbI jQhHGA sc-ifAKCX gtIiBE"
+          href="/"
+          onClick={[Function]}
+        >
+          <h2
+            className="sc-gZMcBi fXVRK"
+          >
+            cloud.gov.au
+          </h2>
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa iAMiok"
+        is={null}
+      >
+        <ul
+          className="sc-bZQynM kzNUFp"
+        >
+          <li
+            className="sc-gzVnrw kQmsyL"
+          >
+            <a
+              className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
+              href="/insights/"
+              onClick={[Function]}
+            >
+              Insights
+            </a>
+          </li>
+          <li
+            className="sc-gzVnrw kQmsyL"
+          >
+            <a
+              className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
+              href="/about/"
+              onClick={[Function]}
+            >
+              About
+            </a>
+          </li>
+          <li
+            className="sc-gzVnrw kQmsyL"
+          >
+            <a
+              className="sc-htoDjs bZzhDu sc-bxivhb hSFDLv"
+              href="https://docs.cloud.gov.au/"
+            >
+              Docs
+            </a>
+          </li>
+          <li
+            className="sc-gzVnrw kQmsyL"
+          >
+            <a
+              className="sc-htoDjs bZzhDu sc-bxivhb hSFDLv"
+              href="https://support.cloud.gov.au/"
+            >
+              Support
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+`;

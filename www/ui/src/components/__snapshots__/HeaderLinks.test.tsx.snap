@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<ul
+  className="sc-htpNat fXmrlj"
+>
+  <li
+    className="sc-bxivhb hpzhqV"
+  >
+    <a
+      className="sc-ifAKCX cFlEyZ sc-bwzfXH fZcoTc"
+      href="/insights/"
+      onClick={[Function]}
+    >
+      Insights
+    </a>
+  </li>
+  <li
+    className="sc-bxivhb hpzhqV"
+  >
+    <a
+      className="sc-ifAKCX cFlEyZ sc-bwzfXH fZcoTc"
+      href="/about/"
+      onClick={[Function]}
+    >
+      About
+    </a>
+  </li>
+  <li
+    className="sc-bxivhb hpzhqV"
+  >
+    <a
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      href="https://docs.cloud.gov.au/"
+    >
+      Docs
+    </a>
+  </li>
+  <li
+    className="sc-bxivhb hpzhqV"
+  >
+    <a
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      href="https://support.cloud.gov.au/"
+    >
+      Support
+    </a>
+  </li>
+</ul>
+`;

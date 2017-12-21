@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+Array [
+  <div
+    className="sc-htoDjs dFvRPE"
+>
+    <div
+        className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+        is={null}
+    >
+        <div
+            className="sc-htpNat jtWIOA sc-bdVaJa eSFxna"
+            is={null}
+        >
+            <div
+                className="sc-bdVaJa iHZvIS"
+                is={null}
+            >
+                <h1
+                    className="sc-bZQynM bwMZIe"
+                >
+                    Cloud
+                </h1>
+                <p
+                    className="sc-gzVnrw lgDsWe"
+                >
+                    A platform to make delivering and operating digital services easier.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>,
+  <div
+    className="sc-dnqmqq jNPqvJ"
+>
+    <div
+        className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+        is={null}
+    >
+        <div
+            className="sc-htpNat jtWIOA sc-bdVaJa iHZvIS"
+            is={null}
+        >
+            <div
+                className="sc-bdVaJa jFKWis"
+                is={null}
+            >
+                <p
+                    className="sc-iwsKbI eEZkcX"
+                >
+                    <a
+                        className="sc-EHOje lgqqjh"
+                        href="/"
+                        onClick={[Function]}
+                    >
+                        <strong>
+                            cloud.gov.au
+                        </strong>
+                    </a>
+                     
+                    is a faster, safer, standard way to change web apps without impacting users. It makes it easier for government to release, monitor and grow user-facing digital services, freeing up teams to focus on writing code that meets user needs.
+                </p>
+                <p
+                    className="sc-iwsKbI eEZkcX"
+                >
+                    As of December 2017, cloud.gov.au has 26 apps in production, and 81 apps in development across our programs of work.
+                </p>
+                <p
+                    className="sc-iwsKbI eEZkcX"
+                >
+                    DTA services running on cloud.gov.au include the
+                     
+                    <a
+                        className="sc-ifAKCX gtIiBE"
+                        href="https://www.dta.gov.au/what-we-do/platforms/cloud/what-we-do/platforms/marketplace/"
+                    >
+                        Digital Marketplace
+                    </a>
+                    , the
+                     
+                    <a
+                        className="sc-ifAKCX gtIiBE"
+                        href="https://www.dta.gov.au/what-we-do/platforms/cloud/what-we-do/platforms/performance/"
+                    >
+                        Performance Dashboard
+                    </a>
+                    , and the australia.gov.au
+                     
+                    <a
+                        className="sc-ifAKCX gtIiBE"
+                        href="https://media.australia.gov.au"
+                    >
+                        Media Release Service
+                    </a>
+                    .
+                </p>
+                <p
+                    className="sc-iwsKbI eEZkcX"
+                >
+                    We
+                     
+                    <a
+                        className="sc-ifAKCX gtIiBE"
+                        href="http://status.cloud.gov.au"
+                    >
+                        publish real time performance statistics
+                    </a>
+                     
+                    of both the cloud.gov.au platform itself, and the apps running on cloud.gov.au.
+                </p>
+                <p
+                    className="sc-iwsKbI eEZkcX"
+                >
+                    If you are interested in building new digital services on cloud.gov.au, please
+                     
+                    <a
+                        className="sc-ifAKCX gtIiBE"
+                        href="mailto:support@cloud.gov.au"
+                    >
+                        get in contact with us
+                    </a>
+                    .
+                </p>
+            </div>
+        </div>
+    </div>
+</div>,
+]
+`;

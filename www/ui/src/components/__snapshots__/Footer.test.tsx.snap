@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<footer
+  className="sc-iwsKbI XbfZB"
+>
+  <div
+    className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+    is={null}
+  >
+    <div
+      className="sc-htpNat fzUmoZ sc-bdVaJa NcCKj"
+      is={null}
+    >
+      <div
+        className="sc-bdVaJa dbOKEe"
+        is={null}
+      >
+        <div
+          className="sc-htpNat fzUmoZ sc-bdVaJa kQtcea"
+          is={null}
+        >
+          <div
+            className="sc-bdVaJa iHZvIS"
+            is={null}
+          >
+            <img
+              alt=""
+              className="sc-bZQynM HqUwQ"
+              src={
+                Object {
+                  "0": "c",
+                  "1": "o",
+                  "2": "a",
+                  "3": ".",
+                  "4": "s",
+                  "5": "v",
+                  "6": "g",
+                  "default": "coa.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="sc-htoDjs bWdAUX sc-bdVaJa jGvYNb"
+            is={null}
+          />
+          <div
+            className="sc-bdVaJa jGvYNb"
+            is={null}
+          />
+          <div
+            className="sc-bdVaJa iHZvIS"
+            is={null}
+          >
+            <a
+              href="https://www.dta.gov.au/"
+            >
+              <img
+                alt="DTA"
+                className="sc-gzVnrw cJnkpP"
+                src={
+                  Object {
+                    "0": "d",
+                    "1": "t",
+                    "2": "a",
+                    "3": ".",
+                    "4": "s",
+                    "5": "v",
+                    "6": "g",
+                    "default": "dta.svg",
+                  }
+                }
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa clWLZM"
+        is={null}
+      >
+        <p>
+          <a
+            className="sc-ifAKCX gtIiBE"
+            href="http://status.cloud.gov.au/"
+          >
+            Status
+          </a>
+        </p>
+        <p>
+          <a
+            className="sc-ifAKCX gtIiBE"
+            href="https://github.com/govau/cloud.gov.au"
+          >
+            cloud.gov.au on GitHub
+          </a>
+        </p>
+        <p>
+          Have a question about cloud.gov.au? Contact DTA:
+           
+          <a
+            className="sc-ifAKCX gtIiBE"
+            href="mailto:support@cloud.gov.au"
+          >
+            support@cloud.gov.au
+          </a>
+        </p>
+        <p
+          className="sc-dnqmqq eyiWaz"
+        >
+          © Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+`;

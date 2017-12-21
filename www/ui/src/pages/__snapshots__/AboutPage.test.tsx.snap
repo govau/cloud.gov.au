@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+Array [
+  <h2>
+    About cloud.gov.au
+</h2>,
+  <p>
+    This page is a placeholder.
+</p>,
+]
+`;
