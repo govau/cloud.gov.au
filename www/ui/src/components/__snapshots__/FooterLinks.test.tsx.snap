@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<ul
+  className="sc-htpNat fXmrlj"
+>
+  <li
+    className="sc-bxivhb jfOjzk"
+  >
+    <a
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      href="https://console.system.b.cld.gov.au/"
+    >
+      Production console
+    </a>
+  </li>
+  <li
+    className="sc-bxivhb jfOjzk"
+  >
+    <a
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      href="https://console.system.y.cld.gov.au/"
+    >
+      Staging console
+    </a>
+  </li>
+  <li
+    className="sc-bxivhb jfOjzk"
+  >
+    <a
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      href="http://status.cloud.gov.au/"
+    >
+      Status
+    </a>
+  </li>
+</ul>
+`;

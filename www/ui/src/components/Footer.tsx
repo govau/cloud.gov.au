@@ -6,6 +6,7 @@ import * as coaLogo from "./coa.svg";
 import * as dtaLogo from "./dta.svg";
 import Container from "./Container";
 import Link from "./Link";
+import FooterLinks from "./FooterLinks";
 
 const COALogo = styled.img`
   height: 5rem;
@@ -71,9 +72,7 @@ const Footer: React.StatelessComponent<Props> = () => (
           </Flex>
         </Box>
         <Box w={[1, 1 / 2, 2 / 3]}>
-          <p>
-            <Link href="http://status.cloud.gov.au/">Status</Link>
-          </p>
+          <FooterLinks />
           <p>
             <Link href="https://github.com/govau/cloud.gov.au">
               cloud.gov.au on GitHub

@@ -2,7 +2,7 @@
 
 exports[`renders without crashing 1`] = `
 <footer
-  className="sc-iwsKbI XbfZB"
+  className="sc-VigVT hNAtVD"
 >
   <div
     className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
@@ -26,7 +26,7 @@ exports[`renders without crashing 1`] = `
           >
             <img
               alt=""
-              className="sc-bZQynM HqUwQ"
+              className="sc-dnqmqq hIdKhY"
               src={
                 Object {
                   "0": "c",
@@ -42,7 +42,7 @@ exports[`renders without crashing 1`] = `
             />
           </div>
           <div
-            className="sc-htoDjs bWdAUX sc-bdVaJa jGvYNb"
+            className="sc-gZMcBi gCvVAK sc-bdVaJa jGvYNb"
             is={null}
           />
           <div
@@ -58,7 +58,7 @@ exports[`renders without crashing 1`] = `
             >
               <img
                 alt="DTA"
-                className="sc-gzVnrw cJnkpP"
+                className="sc-iwsKbI jkdlte"
                 src={
                   Object {
                     "0": "d",
@@ -80,14 +80,40 @@ exports[`renders without crashing 1`] = `
         className="sc-bdVaJa clWLZM"
         is={null}
       >
-        <p>
-          <a
-            className="sc-ifAKCX gtIiBE"
-            href="http://status.cloud.gov.au/"
+        <ul
+          className="sc-bZQynM kzNUFp"
+        >
+          <li
+            className="sc-gzVnrw fvmwWS"
           >
-            Status
-          </a>
-        </p>
+            <a
+              className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
+              href="https://console.system.b.cld.gov.au/"
+            >
+              Production console
+            </a>
+          </li>
+          <li
+            className="sc-gzVnrw fvmwWS"
+          >
+            <a
+              className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
+              href="https://console.system.y.cld.gov.au/"
+            >
+              Staging console
+            </a>
+          </li>
+          <li
+            className="sc-gzVnrw fvmwWS"
+          >
+            <a
+              className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
+              href="http://status.cloud.gov.au/"
+            >
+              Status
+            </a>
+          </li>
+        </ul>
         <p>
           <a
             className="sc-ifAKCX gtIiBE"
@@ -107,7 +133,7 @@ exports[`renders without crashing 1`] = `
           </a>
         </p>
         <p
-          className="sc-dnqmqq eyiWaz"
+          className="sc-gqjmRU iYKpkR"
         >
           © Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.
         </p>
