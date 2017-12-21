@@ -41,11 +41,14 @@ const HomePage: React.StatelessComponent<Props> = () => (
             </P>
             <P>
               DTA services running on cloud.gov.au include the{" "}
-              <Link href="https://www.dta.gov.au/what-we-do/platforms/cloud/what-we-do/platforms/marketplace/">
+              <Link href="https://www.dta.gov.au/what-we-do/platforms/marketplace/">
                 Digital Marketplace
               </Link>, the{" "}
-              <Link href="https://www.dta.gov.au/what-we-do/platforms/cloud/what-we-do/platforms/performance/">
+              <Link href="https://www.dta.gov.au/what-we-do/platforms/performance/">
                 Performance Dashboard
+              </Link>, the{" "}
+              <Link href="https://smart-cities.dashboard.gov.au/">
+                National Cities Performance Framework Dashboard
               </Link>, and the australia.gov.au{" "}
               <Link href="https://media.australia.gov.au">
                 Media Release Service
