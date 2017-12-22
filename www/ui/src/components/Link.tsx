@@ -26,7 +26,7 @@ const styles = ({ theme }: { theme: Theme }) =>
     &:hover {
       color: ${theme.linkHoverColor};
       background-color: ${theme.linkHoverBgColor};
-      border-bottom-color: transparent;
+      border-bottom-color: ${theme.linkHoverBgColor};
     }
   `;
 
