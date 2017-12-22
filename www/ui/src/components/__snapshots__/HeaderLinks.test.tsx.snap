@@ -5,7 +5,18 @@ exports[`renders without crashing 1`] = `
   className="sc-htpNat fXmrlj"
 >
   <li
-    className="sc-bxivhb hpzhqV"
+    className="sc-bxivhb YoBBL"
+    display={
+      Array [
+        "block",
+        "inline-block",
+      ]
+    }
+    m={
+      Array [
+        1,
+      ]
+    }
   >
     <a
       className="sc-ifAKCX cFlEyZ sc-bwzfXH fZcoTc"
@@ -16,7 +27,18 @@ exports[`renders without crashing 1`] = `
     </a>
   </li>
   <li
-    className="sc-bxivhb hpzhqV"
+    className="sc-bxivhb YoBBL"
+    display={
+      Array [
+        "block",
+        "inline-block",
+      ]
+    }
+    m={
+      Array [
+        1,
+      ]
+    }
   >
     <a
       className="sc-ifAKCX cFlEyZ sc-bwzfXH fZcoTc"
@@ -27,7 +49,18 @@ exports[`renders without crashing 1`] = `
     </a>
   </li>
   <li
-    className="sc-bxivhb hpzhqV"
+    className="sc-bxivhb YoBBL"
+    display={
+      Array [
+        "block",
+        "inline-block",
+      ]
+    }
+    m={
+      Array [
+        1,
+      ]
+    }
   >
     <a
       className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
@@ -37,7 +70,18 @@ exports[`renders without crashing 1`] = `
     </a>
   </li>
   <li
-    className="sc-bxivhb hpzhqV"
+    className="sc-bxivhb YoBBL"
+    display={
+      Array [
+        "block",
+        "inline-block",
+      ]
+    }
+    m={
+      Array [
+        1,
+      ]
+    }
   >
     <a
       className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"

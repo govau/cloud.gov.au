@@ -54,14 +54,25 @@ exports[`renders without crashing 1`] = `
         </a>
       </div>
       <div
-        className="sc-bdVaJa iAMiok"
+        className="sc-bdVaJa fvqBgo"
         is={null}
       >
         <ul
           className="sc-bZQynM kzNUFp"
         >
           <li
-            className="sc-gzVnrw kQmsyL"
+            className="sc-gzVnrw gSTdTM"
+            display={
+              Array [
+                "block",
+                "inline-block",
+              ]
+            }
+            m={
+              Array [
+                1,
+              ]
+            }
           >
             <a
               className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
@@ -72,7 +83,18 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="sc-gzVnrw kQmsyL"
+            className="sc-gzVnrw gSTdTM"
+            display={
+              Array [
+                "block",
+                "inline-block",
+              ]
+            }
+            m={
+              Array [
+                1,
+              ]
+            }
           >
             <a
               className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
@@ -83,7 +105,18 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="sc-gzVnrw kQmsyL"
+            className="sc-gzVnrw gSTdTM"
+            display={
+              Array [
+                "block",
+                "inline-block",
+              ]
+            }
+            m={
+              Array [
+                1,
+              ]
+            }
           >
             <a
               className="sc-htoDjs bZzhDu sc-bxivhb hSFDLv"
@@ -93,7 +126,18 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="sc-gzVnrw kQmsyL"
+            className="sc-gzVnrw gSTdTM"
+            display={
+              Array [
+                "block",
+                "inline-block",
+              ]
+            }
+            m={
+              Array [
+                1,
+              ]
+            }
           >
             <a
               className="sc-htoDjs bZzhDu sc-bxivhb hSFDLv"

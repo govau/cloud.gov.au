@@ -1,7 +1,12 @@
 import * as React from "react";
 import styled from "../styled-components";
+import { space, responsiveStyle } from "styled-system";
 
 import BaseLink, { LinkProps, RouterLinkProps } from "./Link";
+
+const mediaDisplay = responsiveStyle({
+  cssProperty: "display"
+});
 
 const Ul = styled.ul`
   margin: 0;
@@ -9,10 +14,25 @@ const Ul = styled.ul`
   list-style: none;
 `;
 
-const Li = styled.li`
-  display: inline-block;
-  margin: 1rem;
+interface LiProps {
+  display: string[];
+  m: number[];
+}
+
+const UnstyledLi: React.StatelessComponent<
+  LiProps & React.HTMLProps<HTMLLIElement>
+> = ({ children, ...rest }) => <li {...rest}>{children}</li>;
+
+const StyledLi = styled(UnstyledLi)`
+  ${mediaDisplay};
+  ${space};
 `;
+
+const Li: React.StatelessComponent<{}> = ({ children }) => (
+  <StyledLi display={["block", "inline-block"]} m={[1]}>
+    {children}
+  </StyledLi>
+);
 
 const UnstyledLink: React.StatelessComponent<
   Partial<LinkProps & RouterLinkProps>

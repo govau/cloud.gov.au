@@ -45,7 +45,7 @@ const Header: React.StatelessComponent<Props> = () => (
             <Brand>cloud.gov.au</Brand>
           </BrandLink>
         </Box>
-        <Box mt={[2, 0]} ml={[0, "auto"]}>
+        <Box w={[1, "auto"]} mt={[2, 0]} ml={[0, "auto"]}>
           <HeaderLinks />
         </Box>
       </Flex>
