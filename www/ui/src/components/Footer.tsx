@@ -8,6 +8,9 @@ import Container from "./Container";
 import Link from "./Link";
 import FooterLinks from "./FooterLinks";
 
+const subject = "Enquiry about cloud.gov.au";
+const body = "\n\n---\nSource: cloud.gov.au footer";
+
 const COALogo = styled.img`
   height: 5rem;
 `;
@@ -80,7 +83,13 @@ const Footer: React.StatelessComponent<Props> = () => (
           </p>
           <p>
             Have a question about cloud.gov.au? Contact DTA:{" "}
-            <Link href="mailto:support@cloud.gov.au">support@cloud.gov.au</Link>
+            <Link
+              href={`mailto:support@cloud.gov.au?subject=${encodeURIComponent(
+                subject
+              )}&body=${encodeURIComponent(body)}`}
+            >
+              support@cloud.gov.au
+            </Link>
           </p>
           <Copyright>
             © Commonwealth of Australia. With the exception of the Commonwealth

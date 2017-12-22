@@ -127,7 +127,7 @@ exports[`renders without crashing 1`] = `
            
           <a
             className="sc-ifAKCX cLeGDS"
-            href="mailto:support@cloud.gov.au"
+            href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20footer"
           >
             support@cloud.gov.au
           </a>

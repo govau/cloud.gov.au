@@ -6,6 +6,9 @@ import Container from "../components/Container";
 import Link from "../components/Link";
 import Header from "../components/HomePage/Header";
 
+const subject = "Enquiry about cloud.gov.au";
+const body = "\n\n---\nSource: cloud.gov.au home page";
+
 const Content = styled.div`
   ${({ theme }) =>
     css`
@@ -67,7 +70,11 @@ const HomePage: React.StatelessComponent<Props> = () => (
             <P>
               If you are interested in building new digital services on
               cloud.gov.au, please{" "}
-              <Link href="mailto:support@cloud.gov.au">
+              <Link
+                href={`mailto:support@cloud.gov.au?subject=${encodeURIComponent(
+                  subject
+                )}&body=${encodeURIComponent(body)}`}
+              >
                 get in contact with us
               </Link>.
             </P>
