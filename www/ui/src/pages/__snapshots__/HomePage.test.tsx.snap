@@ -50,7 +50,7 @@ Array [
                     className="sc-iwsKbI eEZkcX"
                 >
                     <a
-                        className="sc-EHOje lgqqjh"
+                        className="sc-EHOje dByega"
                         href="/"
                         onClick={[Function]}
                     >
@@ -72,7 +72,7 @@ Array [
                     DTA services running on cloud.gov.au include the
                      
                     <a
-                        className="sc-ifAKCX gtIiBE"
+                        className="sc-ifAKCX cLeGDS"
                         href="https://www.dta.gov.au/what-we-do/platforms/marketplace/"
                     >
                         Digital Marketplace
@@ -80,7 +80,7 @@ Array [
                     , the
                      
                     <a
-                        className="sc-ifAKCX gtIiBE"
+                        className="sc-ifAKCX cLeGDS"
                         href="https://www.dta.gov.au/what-we-do/platforms/performance/"
                     >
                         Performance Dashboard
@@ -88,7 +88,7 @@ Array [
                     , the
                      
                     <a
-                        className="sc-ifAKCX gtIiBE"
+                        className="sc-ifAKCX cLeGDS"
                         href="https://smart-cities.dashboard.gov.au/"
                     >
                         National Cities Performance Framework Dashboard
@@ -96,7 +96,7 @@ Array [
                     , and the australia.gov.au
                      
                     <a
-                        className="sc-ifAKCX gtIiBE"
+                        className="sc-ifAKCX cLeGDS"
                         href="https://media.australia.gov.au"
                     >
                         Media Release Service
@@ -109,7 +109,7 @@ Array [
                     We
                      
                     <a
-                        className="sc-ifAKCX gtIiBE"
+                        className="sc-ifAKCX cLeGDS"
                         href="http://status.cloud.gov.au"
                     >
                         publish real time performance statistics
@@ -123,7 +123,7 @@ Array [
                     If you are interested in building new digital services on cloud.gov.au, please
                      
                     <a
-                        className="sc-ifAKCX gtIiBE"
+                        className="sc-ifAKCX cLeGDS"
                         href="mailto:support@cloud.gov.au"
                     >
                         get in contact with us

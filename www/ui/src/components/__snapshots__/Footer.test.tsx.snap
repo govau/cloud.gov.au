@@ -87,7 +87,7 @@ exports[`renders without crashing 1`] = `
             className="sc-gzVnrw fvmwWS"
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
+              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
               href="https://console.system.b.cld.gov.au/"
             >
               Production console
@@ -97,7 +97,7 @@ exports[`renders without crashing 1`] = `
             className="sc-gzVnrw fvmwWS"
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
+              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
               href="https://console.system.y.cld.gov.au/"
             >
               Staging console
@@ -107,7 +107,7 @@ exports[`renders without crashing 1`] = `
             className="sc-gzVnrw fvmwWS"
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX gtIiBE"
+              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
               href="http://status.cloud.gov.au/"
             >
               Status
@@ -116,7 +116,7 @@ exports[`renders without crashing 1`] = `
         </ul>
         <p>
           <a
-            className="sc-ifAKCX gtIiBE"
+            className="sc-ifAKCX cLeGDS"
             href="https://github.com/govau/cloud.gov.au"
           >
             cloud.gov.au on GitHub
@@ -126,7 +126,7 @@ exports[`renders without crashing 1`] = `
           Have a question about cloud.gov.au? Contact DTA:
            
           <a
-            className="sc-ifAKCX gtIiBE"
+            className="sc-ifAKCX cLeGDS"
             href="mailto:support@cloud.gov.au"
           >
             support@cloud.gov.au

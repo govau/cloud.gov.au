@@ -2,7 +2,7 @@
 
 exports[`renders without crashing 1`] = `
 <a
-  className="sc-bwzfXH fZcoTc"
+  className="sc-bwzfXH gRAcqg"
   href="/"
   onClick={[Function]}
 >

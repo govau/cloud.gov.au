@@ -19,7 +19,7 @@ exports[`renders without crashing 1`] = `
     }
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bwzfXH fZcoTc"
+      className="sc-ifAKCX cFlEyZ sc-bwzfXH gRAcqg"
       href="/insights/"
       onClick={[Function]}
     >
@@ -41,7 +41,7 @@ exports[`renders without crashing 1`] = `
     }
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bwzfXH fZcoTc"
+      className="sc-ifAKCX cFlEyZ sc-bwzfXH gRAcqg"
       href="/about/"
       onClick={[Function]}
     >
@@ -63,7 +63,7 @@ exports[`renders without crashing 1`] = `
     }
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa jQkSgQ"
       href="https://docs.cloud.gov.au/"
     >
       Docs
@@ -84,7 +84,7 @@ exports[`renders without crashing 1`] = `
     }
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa jQkSgQ"
       href="https://support.cloud.gov.au/"
     >
       Support

@@ -8,7 +8,7 @@ exports[`renders without crashing 1`] = `
     className="sc-bxivhb jfOjzk"
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa jQkSgQ"
       href="https://console.system.b.cld.gov.au/"
     >
       Production console
@@ -18,7 +18,7 @@ exports[`renders without crashing 1`] = `
     className="sc-bxivhb jfOjzk"
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa jQkSgQ"
       href="https://console.system.y.cld.gov.au/"
     >
       Staging console
@@ -28,7 +28,7 @@ exports[`renders without crashing 1`] = `
     className="sc-bxivhb jfOjzk"
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa hpgUMH"
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa jQkSgQ"
       href="http://status.cloud.gov.au/"
     >
       Status
