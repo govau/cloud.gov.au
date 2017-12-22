@@ -3,7 +3,6 @@ export default interface Theme {
   linkColor: string;
   linkUnderlineColor: string;
   linkHoverColor: string;
-  linkInvertedHoverColor: string;
   linkHoverBgColor: string;
   bgColor: string;
   contentBgColor: string;
@@ -26,7 +25,6 @@ export const theme: Theme = {
   linkColor: "inherit",
   linkUnderlineColor: "#00c3ef",
   linkHoverColor: "#313131",
-  linkInvertedHoverColor: "#313131",
   linkHoverBgColor: "#5bcbe3",
   bgColor: "#313131",
   contentBgColor: "#ffffff",
