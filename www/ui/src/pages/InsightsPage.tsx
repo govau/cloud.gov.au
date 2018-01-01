@@ -8,12 +8,15 @@ import TotalApps from "../components/TotalApps";
 import DeploymentsChart from "../components/DeploymentsChart";
 import BuildpacksChart from "../components/BuildpacksChart";
 
+const defaultErrorMessage = "An error occurred.";
+
 const Wrapper = styled.div`
   text-align: center;
 `;
 
 interface State {
   isFetching: boolean;
+  error: any;
   total_non_system_cf_apps_staging: Vector;
   total_non_system_cf_apps_prev_week_staging: Vector;
   total_non_system_cf_apps_production: Vector;
@@ -32,7 +35,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
   }
 
   async load() {
-    this.setState(() => ({ isFetching: true }));
+    this.setState(() => ({ isFetching: true, error: null }));
 
     const metrics = [
       "total_non_system_cf_apps_staging",
@@ -62,6 +65,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
       }
     } catch (e) {
       console.error(e);
+      this.setState(() => ({ error: e.message || defaultErrorMessage }));
     } finally {
       this.setState(() => ({ isFetching: false }));
     }
@@ -70,6 +74,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
   render() {
     const {
       isFetching,
+      error,
       total_non_system_cf_apps_staging,
       total_non_system_cf_apps_prev_week_staging,
       total_non_system_cf_apps_production,
@@ -80,16 +85,41 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
       total_deployments_production
     } = this.state;
 
-    return (
-      <Wrapper>
-        <Helmet title="Insights" />
-        {isFetching && (
+    const helmet = <Helmet title="Insights" />;
+
+    if (isFetching) {
+      return (
+        <Wrapper>
+          {helmet}
           <Flex wrap={true}>
             <Box width={[1]} p={3}>
               <div>Loading...</div>
             </Box>
           </Flex>
-        )}
+        </Wrapper>
+      );
+    }
+
+    if (error) {
+      return (
+        <React.Fragment>
+          {helmet}
+          <h2>Could not load insights</h2>
+          {error === defaultErrorMessage ? (
+            <p>That's all we know.</p>
+          ) : (
+            <React.Fragment>
+              <p>What we know:</p>
+              <pre>{JSON.stringify(error)}</pre>
+            </React.Fragment>
+          )}
+        </React.Fragment>
+      );
+    }
+
+    return (
+      <Wrapper>
+        {helmet}
         {total_non_system_cf_apps_staging &&
         total_non_system_cf_apps_prev_week_staging ? (
           <TotalApps
@@ -145,7 +175,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
             </Box>
           </Flex>
         ) : null}
-        {!isFetching && !"TODO" ? (
+        {!"TODO" ? (
           <Flex wrap>
             <Box width={[1, 1 / 2]} p={3}>
               <h2>Domains</h2>
