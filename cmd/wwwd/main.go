@@ -36,7 +36,7 @@ const (
 
 	defaultPort                    = "8080"
 	defaultPrometheusQueryLifetime = 360 * time.Second
-	defaultPollFrequency           = 10 * time.Second
+	defaultPollFrequency           = 360 * time.Second
 	defaultUIDir                   = "./build"
 	defaultNotFoundFile            = "404.html"
 )
