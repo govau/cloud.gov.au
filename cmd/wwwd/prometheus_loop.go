@@ -14,17 +14,21 @@ func prometheusLoop(
 	prom *www.CachingPrometheus,
 	qs map[string]string,
 ) {
+	work := func() {
+		for _, q := range qs {
+			go func(q string) {
+				_, err := prom.Query(ctx, q, time.Now())
+				if err != nil {
+					log.Println(err)
+				}
+			}(q)
+		}
+	}
+	work()
 	for {
 		select {
 		case <-time.After(pollFrequency):
-			for _, q := range qs {
-				go func(q string) {
-					_, err := prom.Query(ctx, q, time.Now())
-					if err != nil {
-						log.Println(err)
-					}
-				}(q)
-			}
+			work()
 		}
 	}
 }

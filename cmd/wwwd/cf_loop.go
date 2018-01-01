@@ -81,20 +81,24 @@ func cfEventsLoop(
 ) {
 	const days = 30
 
+	work := func() {
+		cfc, err := newClient(ctx)
+		if err != nil {
+			log.Println(err)
+			return
+		}
+		v, err := collectDeployments(cfc, days)
+		if err != nil {
+			log.Println(err)
+			return
+		}
+		metrics.Deployments = v
+	}
+	work()
 	for {
 		select {
 		case <-time.After(pollFrequency):
-			cfc, err := newClient(ctx)
-			if err != nil {
-				log.Println(err)
-				break
-			}
-			v, err := collectDeployments(cfc, days)
-			if err != nil {
-				log.Println(err)
-				break
-			}
-			metrics.Deployments = v
+			work()
 		}
 	}
 }

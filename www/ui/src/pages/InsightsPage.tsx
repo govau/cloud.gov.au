@@ -100,6 +100,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
       );
     }
 
+    // TODO(jonathaningram): this gets server rendered, need to fix.
     if (error) {
       return (
         <React.Fragment>
