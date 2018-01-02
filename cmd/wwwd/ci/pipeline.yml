@@ -1,0 +1,69 @@
+---
+jobs:
+
+- name: www-d
+  serial: true
+  plan:
+  - do:
+    - aggregate:
+      - get: src
+        trigger: true
+    - task: build
+      file: cmd/wwwd/ci/build.yml
+      output_mapping: {build: d-build}
+    - put: d-cf
+      params:
+        manifest: d-build/manifest.yml
+        path: d-build
+        current_app_name: www
+        show_app_log: true
+    on_success:
+      put: slack
+      params:
+        text: |
+          :white_check_mark: $BUILD_JOB_NAME SUCCESS
+          <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+    on_failure:
+      put: slack
+      params:
+        text: |
+          :x: $BUILD_JOB_NAME FAILED
+          <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+
+image_resource:
+  type: docker-image
+  source:
+    repository: govau/cga-cf-bosh-cli
+    tag: latest
+
+resources:
+- name: src
+  type: git
+  source:
+    uri: https://github.com/govau/cloud.gov.au
+    branch: master
+
+- name: d-cf
+  type: govau-cf
+  source:
+    api: https://api.system.d.cld.gov.au
+    username: ci-system-www
+    password: ((d-password))
+    organization: system
+    space: www
+
+- name: slack
+  type: slack-notification
+  source:
+    url: ((slack-webhook-url))
+
+resource_types:
+- name: slack-notification
+  type: docker-image
+  source:
+    repository: cfcommunity/slack-notification-resource
+- name: govau-cf
+  type: docker-image
+  source:
+    repository: govau/cf-resource
+    tag: tail
