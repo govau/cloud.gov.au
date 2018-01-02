@@ -15,9 +15,13 @@ const UnstyledBrandLink: React.StatelessComponent<
   Partial<LinkProps & RouterLinkProps>
 > = ({ children, ...rest }) => <BaseLink {...rest}>{children}</BaseLink>;
 
-const BrandLink = styled(UnstyledBrandLink)``;
+const BrandLink = styled(UnstyledBrandLink)`
+  display: block;
+  border-bottom: 0;
+`;
 
 const Brand = styled.h2`
+  margin: 0;
   font-weight: 500;
 `;
 
@@ -34,7 +38,7 @@ interface Props {}
 const Header: React.StatelessComponent<Props> = () => (
   <StyledHeader>
     <Container>
-      <Flex wrap={true} pt={3} pb={3} align={["normal", "center"]}>
+      <Flex wrap={true} pt={3} pb={3} align="center">
         <Box pr={3}>
           <a href="/">
             <COALogo src={coaLogo} alt="" />
