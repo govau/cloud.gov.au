@@ -1,0 +1,13 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source: {repository: alpine}
+inputs:
+- name: src
+- name: build-server
+- name: build-ui
+outputs:
+- name: build
+run:
+  path: src/cmd/wwwd/ci/combine-outputs.sh

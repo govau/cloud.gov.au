@@ -27,7 +27,9 @@ const App: React.StatelessComponent<Props> = () => (
   <Router>
     <ThemeProvider theme={theme}>
       <Wrapper>
-        <Helmet titleTemplate={`%s - ${title}`} />
+        <Helmet titleTemplate={`%s - ${title}`}>
+          <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
         <Disclaimer />
         <Header />
         <Main>

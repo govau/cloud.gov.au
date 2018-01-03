@@ -2,10 +2,10 @@
 
 exports[`renders without crashing 1`] = `
 <footer
-  className="sc-VigVT hNAtVD"
+  className="sc-iwsKbI XbfZB"
 >
   <div
-    className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+    className="sc-bdVaJa liJgVB sc-bdVaJa bNqJOV"
     is={null}
   >
     <div
@@ -26,7 +26,7 @@ exports[`renders without crashing 1`] = `
           >
             <img
               alt=""
-              className="sc-dnqmqq hIdKhY"
+              className="sc-bZQynM HqUwQ"
               src={
                 Object {
                   "0": "c",
@@ -42,7 +42,7 @@ exports[`renders without crashing 1`] = `
             />
           </div>
           <div
-            className="sc-gZMcBi gCvVAK sc-bdVaJa jGvYNb"
+            className="sc-htoDjs bWdAUX sc-bdVaJa jGvYNb"
             is={null}
           />
           <div
@@ -58,7 +58,7 @@ exports[`renders without crashing 1`] = `
             >
               <img
                 alt="DTA"
-                className="sc-iwsKbI jkdlte"
+                className="sc-gzVnrw cJnkpP"
                 src={
                   Object {
                     "0": "d",
@@ -81,33 +81,33 @@ exports[`renders without crashing 1`] = `
         is={null}
       >
         <ul
-          className="sc-bZQynM kzNUFp"
+          className="sc-bxivhb ddELEZ"
         >
           <li
-            className="sc-gzVnrw fvmwWS"
+            className="sc-ifAKCX jMGxLf"
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
+              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
               href="https://console.system.b.cld.gov.au/"
             >
               Production console
             </a>
           </li>
           <li
-            className="sc-gzVnrw fvmwWS"
+            className="sc-ifAKCX jMGxLf"
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
+              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
               href="https://console.system.y.cld.gov.au/"
             >
               Staging console
             </a>
           </li>
           <li
-            className="sc-gzVnrw fvmwWS"
+            className="sc-ifAKCX jMGxLf"
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
+              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
               href="http://status.cloud.gov.au/"
             >
               Status
@@ -116,7 +116,7 @@ exports[`renders without crashing 1`] = `
         </ul>
         <p>
           <a
-            className="sc-ifAKCX cLeGDS"
+            className="sc-bwzfXH gRAcqg"
             href="https://github.com/govau/cloud.gov.au"
           >
             cloud.gov.au on GitHub
@@ -126,14 +126,14 @@ exports[`renders without crashing 1`] = `
           Have a question about cloud.gov.au? Contact DTA:
            
           <a
-            className="sc-ifAKCX cLeGDS"
+            className="sc-bwzfXH gRAcqg"
             href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20footer"
           >
             support@cloud.gov.au
           </a>
         </p>
         <p
-          className="sc-gqjmRU iYKpkR"
+          className="sc-dnqmqq eyiWaz"
         >
           © Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.
         </p>

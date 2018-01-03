@@ -2,10 +2,10 @@
 
 exports[`renders without crashing 1`] = `
 <div
-  className="sc-htoDjs jAzNNJ"
+  className="sc-EHOje dljReB"
 >
   <div
-    className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+    className="sc-bdVaJa liJgVB sc-bdVaJa bNqJOV"
     is={null}
   >
     <div
@@ -17,12 +17,12 @@ exports[`renders without crashing 1`] = `
         is={null}
       >
         <a
-          className="sc-ifAKCX dwTEKz"
+          className="sc-bwzfXH dJuWjI"
           href="/"
         >
           <img
             alt=""
-            className="sc-EHOje gxqRhi"
+            className="sc-htpNat Jcmev"
             src={
               Object {
                 "0": "s",
@@ -38,7 +38,7 @@ exports[`renders without crashing 1`] = `
             }
           />
           <span
-            className="sc-bZQynM hNQVjf"
+            className="sc-bxivhb lcgGUB"
           >
             GOV.AU
           </span>
@@ -49,7 +49,7 @@ exports[`renders without crashing 1`] = `
         is={null}
       >
         <span
-          className="sc-gzVnrw ieUjli"
+          className="sc-ifAKCX lMBZR"
         >
           Official Australian Government website
         </span>

@@ -2,46 +2,160 @@
 jobs:
 
 - name: www-d
-  serial: true
   plan:
-  - do:
-    - aggregate:
-      - get: src
-        trigger: true
-    - task: build
-      file: src/cmd/wwwd/ci/build.yml
-      output_mapping: {build: d-build}
-    - put: d-cf
+  - get: src
+    trigger: true
+  - aggregate:
+    - task: build-server
+      file: src/cmd/wwwd/ci/build-server.yml
+      output_mapping: {build: build-server}
       params:
-        manifest: d-build/manifest.yml
-        path: d-build
-        current_app_name: www
-        show_app_log: true
-    on_success:
-      put: slack
-      params:
-        text: |
-          :white_check_mark: $BUILD_JOB_NAME SUCCESS
-          <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
-    on_failure:
-      put: slack
-      params:
-        text: |
-          :x: $BUILD_JOB_NAME FAILED
-          <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+        ENV_DOMAIN: d.cld.gov.au
+    - task: build-ui
+      file: src/cmd/wwwd/ci/build-ui.yml
+      output_mapping: {build: build-ui}
+  - task: combine-outputs
+    file: src/cmd/wwwd/ci/combine-outputs.yml
+    output_mapping: {build: d-build}
+  - put: d-cf
+    params:
+      manifest: d-build/manifest.yml
+      path: d-build
+      current_app_name: www
+      show_app_log: true
+  on_success:
+    put: slack
+    params:
+      text: |
+        :white_check_mark: $BUILD_JOB_NAME SUCCESS
+        <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+  on_failure:
+    put: slack
+    params:
+      text: |
+        :x: $BUILD_JOB_NAME FAILED
+        <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
 
-image_resource:
-  type: docker-image
-  source:
-    repository: govau/cga-cf-bosh-cli
-    tag: latest
+- name: www-g
+  plan:
+  - get: src
+    trigger: true
+  - aggregate:
+    - task: build-server
+      file: src/cmd/wwwd/ci/build-server.yml
+      output_mapping: {build: build-server}
+      params:
+        ENV_DOMAIN: g.cld.gov.au
+    - task: build-ui
+      file: src/cmd/wwwd/ci/build-ui.yml
+      output_mapping: {build: build-ui}
+  - task: combine-outputs
+    file: src/cmd/wwwd/ci/combine-outputs.yml
+    output_mapping: {build: g-build}
+  - put: g-cf
+    params:
+      manifest: g-build/manifest.yml
+      path: g-build
+      current_app_name: www
+      show_app_log: true
+  on_success:
+    put: slack
+    params:
+      text: |
+        :white_check_mark: $BUILD_JOB_NAME SUCCESS
+        <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+  on_failure:
+    put: slack
+    params:
+      text: |
+        :x: $BUILD_JOB_NAME FAILED
+        <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+
+- name: www-y
+  plan:
+  - get: src
+    passed: [www-d]
+  - aggregate:
+    - task: build-server
+      file: src/cmd/wwwd/ci/build-server.yml
+      output_mapping: {build: build-server}
+      params:
+        ENV_DOMAIN: y.cld.gov.au
+    - task: build-ui
+      file: src/cmd/wwwd/ci/build-ui.yml
+      output_mapping: {build: build-ui}
+  - task: combine-outputs
+    file: src/cmd/wwwd/ci/combine-outputs.yml
+    output_mapping: {build: y-build}
+  - put: y-cf
+    params:
+      manifest: y-build/manifest.yml
+      path: y-build
+      current_app_name: www
+      show_app_log: true
+  on_success:
+    put: slack
+    params:
+      text: |
+        :white_check_mark: $BUILD_JOB_NAME SUCCESS
+        <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+  on_failure:
+    put: slack
+    params:
+      text: |
+        :x: $BUILD_JOB_NAME FAILED
+        <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+
+- name: www-b
+  plan:
+  - get: src
+    passed: [www-y]
+  - aggregate:
+    - task: build-server
+      file: src/cmd/wwwd/ci/build-server.yml
+      output_mapping: {build: build-server}
+      params:
+        ENV_DOMAIN: b.cld.gov.au
+    - task: build-ui
+      file: src/cmd/wwwd/ci/build-ui.yml
+      output_mapping: {build: build-ui}
+  - task: combine-outputs
+    file: src/cmd/wwwd/ci/combine-outputs.yml
+    output_mapping: {build: b-build}
+  - put: b-cf
+    params:
+      manifest: b-build/manifest.yml
+      path: b-build
+      current_app_name: www
+      show_app_log: true
+  on_success:
+    put: slack
+    params:
+      text: |
+        :white_check_mark: $BUILD_JOB_NAME SUCCESS
+        <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+  on_failure:
+    put: slack
+    params:
+      text: |
+        :x: $BUILD_JOB_NAME FAILED
+        <$ATC_EXTERNAL_URL/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
 
 resources:
 - name: src
   type: git
   source:
     uri: https://github.com/govau/cloud.gov.au
-    branch: master
+    branch: ci
+
+- name: b-cf
+  type: govau-cf
+  source:
+    api: https://api.system.b.cld.gov.au
+    username: ci-system-cga-insights
+    password: ((b-password))
+    organization: system
+    space: cga-insights
 
 - name: d-cf
   type: govau-cf
@@ -49,6 +163,24 @@ resources:
     api: https://api.system.d.cld.gov.au
     username: ci-system-cga-insights
     password: ((d-password))
+    organization: system
+    space: cga-insights
+
+- name: g-cf
+  type: govau-cf
+  source:
+    api: https://api.system.g.cld.gov.au
+    username: ci-system-cga-insights
+    password: ((g-password))
+    organization: system
+    space: cga-insights
+
+- name: y-cf
+  type: govau-cf
+  source:
+    api: https://api.system.y.cld.gov.au
+    username: ci-system-cga-insights
+    password: ((y-password))
     organization: system
     space: cga-insights
 

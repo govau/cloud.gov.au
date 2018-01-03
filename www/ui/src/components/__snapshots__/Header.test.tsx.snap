@@ -2,14 +2,14 @@
 
 exports[`renders without crashing 1`] = `
 <header
-  className="sc-gqjmRU iHXAiL"
+  className="sc-dnqmqq bsHPaM"
 >
   <div
-    className="sc-EHOje yHDKW sc-bdVaJa bNqJOV"
+    className="sc-htpNat fRELtR sc-bdVaJa bNqJOV"
     is={null}
   >
     <div
-      className="sc-htpNat eplpHs sc-bdVaJa NcCKj"
+      className="sc-htpNat fzUmoZ sc-bdVaJa NcCKj"
       is={null}
     >
       <div
@@ -21,7 +21,7 @@ exports[`renders without crashing 1`] = `
         >
           <img
             alt=""
-            className="sc-dnqmqq hIdKhY"
+            className="sc-bZQynM HqUwQ"
             src={
               Object {
                 "0": "c",
@@ -42,12 +42,12 @@ exports[`renders without crashing 1`] = `
         is={null}
       >
         <a
-          className="sc-iwsKbI jQhHGA sc-ifAKCX cLeGDS"
+          className="sc-gzVnrw jGSAym sc-bwzfXH gRAcqg"
           href="/"
           onClick={[Function]}
         >
           <h2
-            className="sc-gZMcBi fXVRK"
+            className="sc-htoDjs kJdRRu"
           >
             cloud.gov.au
           </h2>
@@ -58,10 +58,10 @@ exports[`renders without crashing 1`] = `
         is={null}
       >
         <ul
-          className="sc-bZQynM kzNUFp"
+          className="sc-bxivhb ddELEZ"
         >
           <li
-            className="sc-gzVnrw gSTdTM"
+            className="sc-ifAKCX jSBBPx"
             display={
               Array [
                 "block",
@@ -75,7 +75,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
+              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
               href="/insights/"
               onClick={[Function]}
             >
@@ -83,7 +83,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="sc-gzVnrw gSTdTM"
+            className="sc-ifAKCX jSBBPx"
             display={
               Array [
                 "block",
@@ -97,7 +97,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
+              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
               href="/about/"
               onClick={[Function]}
             >
@@ -105,7 +105,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="sc-gzVnrw gSTdTM"
+            className="sc-ifAKCX jSBBPx"
             display={
               Array [
                 "block",
@@ -119,14 +119,14 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="sc-htoDjs bZzhDu sc-bxivhb dIIonV"
+              className="sc-EHOje jvzENE sc-bdVaJa jQkSgQ"
               href="https://docs.cloud.gov.au/"
             >
               Docs
             </a>
           </li>
           <li
-            className="sc-gzVnrw gSTdTM"
+            className="sc-ifAKCX jSBBPx"
             display={
               Array [
                 "block",
@@ -140,7 +140,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="sc-htoDjs bZzhDu sc-bxivhb dIIonV"
+              className="sc-EHOje jvzENE sc-bdVaJa jQkSgQ"
               href="https://support.cloud.gov.au/"
             >
               Support
