@@ -47,10 +47,10 @@ resources:
   type: govau-cf
   source:
     api: https://api.system.d.cld.gov.au
-    username: ci-system-www
+    username: ci-system-cga-insights
     password: ((d-password))
     organization: system
-    space: www
+    space: cga-insights
 
 - name: slack
   type: slack-notification
