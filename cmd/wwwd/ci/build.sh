@@ -25,7 +25,7 @@ go build -tags="cloudfoundry"
 
 export YARN_CACHE_FOLDER=${ROOT_PATH}/www/ui/.yarn_cache
 mkdir -p "${YARN_CACHE_FOLDER}"
-cd "${ROOT_PATH}/www/ui"
+cd "${ROOT_PATH}/src/www/ui"
 
 ## Deps
 yarn install
