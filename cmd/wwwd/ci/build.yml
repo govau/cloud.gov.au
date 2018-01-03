@@ -21,4 +21,4 @@ caches:
 - path: src/www/ui/node_modules
 
 run:
-  path: cmd/wwwd/ci/build.sh
+  path: src/cmd/wwwd/ci/build.sh
