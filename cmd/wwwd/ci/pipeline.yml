@@ -9,7 +9,7 @@ jobs:
       - get: src
         trigger: true
     - task: build
-      file: cmd/wwwd/ci/build.yml
+      file: src/cmd/wwwd/ci/build.yml
       output_mapping: {build: d-build}
     - put: d-cf
       params:
