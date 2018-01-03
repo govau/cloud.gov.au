@@ -4,10 +4,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "lib": [
-      "es6",
-      "dom"
-    ],
+    "lib": ["es6", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
     "noImplicitReturns": true,
@@ -32,7 +29,5 @@
     "jest",
     "src/setupTests.ts"
   ],
-  "files": [
-    "typings/index.d.ts"
-  ]
+  "files": ["typings/index.d.ts"]
 }

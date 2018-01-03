@@ -16,6 +16,7 @@
     "jest-styled-components": "^4.9.0",
     "loadable-components": "^0.4.0",
     "lodash-es": "^4.17.4",
+    "prettier": "^1.9.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
@@ -24,15 +25,22 @@
     "react-snap": "^1.4.0",
     "react-test-renderer": "^16.2.0",
     "source-map-explorer": "^1.5.0",
-    "styled-components": "2.3.0",
+    "styled-components": "2.4.0",
     "styled-system": "^1.1.1",
     "ts-jest": "22.0.0",
     "typescript": "^2.6.2",
     "whatwg-fetch": "^2.0.3"
   },
   "proxy": "http://localhost:8080",
+  "reactSnap": {
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "TODOpuppeteerExecutablePath": "google-chrome-unstable"
+  },
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
+    "format": "prettier --write \"**/*.{js,json,jsx,md,ts,tsx}\"",
+    "format-check":
+      "prettier --list-different \"**/*.{js,json,jsx,md,ts,tsx}\"",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build && react-snap",
     "test": "react-scripts-ts test --env=jsdom",

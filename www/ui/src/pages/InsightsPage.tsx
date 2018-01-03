@@ -85,7 +85,11 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
       total_deployments_production
     } = this.state;
 
-    const helmet = <Helmet title="Insights" />;
+    const helmet = (
+      <Helmet>
+        <title>Insights</title>
+      </Helmet>
+    );
 
     if (isFetching) {
       return (
