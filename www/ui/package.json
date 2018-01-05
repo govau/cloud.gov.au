@@ -36,6 +36,9 @@
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
     "TODOpuppeteerExecutablePath": "google-chrome-unstable"
   },
+  "resolutions": {
+    "ws": "3.3.2"
+  },
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
     "format": "prettier --write \"**/*.{js,json,jsx,md,ts,tsx}\"",
