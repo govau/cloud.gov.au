@@ -9,7 +9,9 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"os/signal"
 	"path/filepath"
+	"syscall"
 	"time"
 
 	"github.com/NYTimes/gziphandler"
@@ -89,33 +91,30 @@ func main() {
 	uiDir := defaultUIDir
 	notFoundFile := defaultNotFoundFile
 
+	if err := migrateDB(postgresConnStr); err != nil {
+		log.Fatalf("Could not migrate: %v", err)
+	}
 	db, err := sql.Open("postgres", postgresConnStr)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Could not open main database connection: %v", err)
 	}
 	defer db.Close()
-	log.Println("Pinging database...")
+	log.Println("Pinging main database connection...")
 	if err := db.Ping(); err != nil {
 		log.Fatalf("Could not ping database: %v", err)
 	}
-	// db2 is used so that the migrate code can close the connection after it's
-	// finished with it.
-	// See https://github.com/mattes/migrate/issues/297#issuecomment-339646656
-	db2, err := sql.Open("postgres", postgresConnStr)
-	if err != nil {
-		log.Fatal(err)
-	}
-	migrate, err := migrateDB(db2)
-	if err != nil {
-		log.Fatal(err)
-	}
-	err1, err2 := migrate.Close()
-	if err1 != nil {
-		log.Fatalf("Could not close migrate source: %v", err1)
-	}
-	if err2 != nil {
-		log.Fatalf("Could not close migrate database: %v", err2)
-	}
+
+	sigCh := make(chan os.Signal, 1)
+	signal.Notify(sigCh, os.Interrupt)
+	signal.Notify(sigCh, syscall.SIGTERM)
+	go func() {
+		sig := <-sigCh
+		log.Printf("Received %v, starting shutdown...", sig)
+		db.Close()
+		log.Println("Closed database connection")
+		log.Println("Shutdown complete")
+		os.Exit(0)
+	}()
 
 	prometheusEndpoint, err := url.Parse(prometheusEndpointStr)
 	if err != nil {
