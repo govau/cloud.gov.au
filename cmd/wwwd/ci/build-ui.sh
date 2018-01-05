@@ -31,6 +31,8 @@ yarn format-check
 
 CI=true yarn test
 
+. "./build-ui-env-vars-${ENV_DOMAIN}.sh"
+
 CI=true yarn build
 
 cp -R "${ROOT_PATH}/src/www/ui/build" "${ROOT_PATH}/build/build"

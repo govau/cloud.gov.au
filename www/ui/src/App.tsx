@@ -28,7 +28,9 @@ const App: React.StatelessComponent<Props> = () => (
     <ThemeProvider theme={theme}>
       <Wrapper>
         <Helmet titleTemplate={`%s - ${title}`}>
-          <meta name="robots" content="noindex, nofollow" />
+          {process.env.REACT_APP_META_ROBOTS && (
+            <meta name="robots" content={process.env.REACT_APP_META_ROBOTS} />
+          )}
         </Helmet>
         <Disclaimer />
         <Header />
