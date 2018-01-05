@@ -14,6 +14,8 @@ jobs:
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
+      params:
+        ENV_DOMAIN: d.cld.gov.au
   - task: combine-outputs
     file: src/cmd/wwwd/ci/combine-outputs.yml
     output_mapping: {build: d-build}
@@ -49,6 +51,8 @@ jobs:
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
+      params:
+        ENV_DOMAIN: g.cld.gov.au
   - task: combine-outputs
     file: src/cmd/wwwd/ci/combine-outputs.yml
     output_mapping: {build: g-build}
@@ -84,6 +88,8 @@ jobs:
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
+      params:
+        ENV_DOMAIN: y.cld.gov.au
   - task: combine-outputs
     file: src/cmd/wwwd/ci/combine-outputs.yml
     output_mapping: {build: y-build}
@@ -119,6 +125,8 @@ jobs:
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
+      params:
+        ENV_DOMAIN: b.cld.gov.au
   - task: combine-outputs
     file: src/cmd/wwwd/ci/combine-outputs.yml
     output_mapping: {build: b-build}
