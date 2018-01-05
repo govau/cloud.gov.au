@@ -3,10 +3,10 @@
 exports[`renders without crashing 1`] = `
 Array [
   <div
-    className="sc-EHOje gznelj"
+    className="sc-htoDjs dFvRPE"
 >
     <div
-        className="sc-bdVaJa liJgVB sc-bdVaJa bNqJOV"
+        className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
         is={null}
     >
         <div
@@ -18,12 +18,12 @@ Array [
                 is={null}
             >
                 <h1
-                    className="sc-bxivhb bicIO"
+                    className="sc-bZQynM bwMZIe"
                 >
                     Cloud
                 </h1>
                 <p
-                    className="sc-ifAKCX laWPCu"
+                    className="sc-gzVnrw lgDsWe"
                 >
                     A platform to make delivering and operating digital services easier.
                 </p>
@@ -32,10 +32,10 @@ Array [
     </div>
 </div>,
   <div
-    className="sc-bZQynM ezsPTa"
+    className="sc-dnqmqq jNPqvJ"
 >
     <div
-        className="sc-bdVaJa liJgVB sc-bdVaJa bNqJOV"
+        className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
         is={null}
     >
         <div
@@ -47,10 +47,10 @@ Array [
                 is={null}
             >
                 <p
-                    className="sc-gzVnrw Kvkhp"
+                    className="sc-iwsKbI eEZkcX"
                 >
                     <a
-                        className="sc-htpNat icVcey"
+                        className="sc-EHOje dByega"
                         href="/"
                         onClick={[Function]}
                     >
@@ -62,17 +62,17 @@ Array [
                     is a faster, safer, standard way to change web apps without impacting users. It makes it easier for government to release, monitor and grow user-facing digital services, freeing up teams to focus on writing code that meets user needs.
                 </p>
                 <p
-                    className="sc-gzVnrw Kvkhp"
+                    className="sc-iwsKbI eEZkcX"
                 >
                     As of December 2017, cloud.gov.au has 26 apps in production, and 81 apps in development across our programs of work.
                 </p>
                 <p
-                    className="sc-gzVnrw Kvkhp"
+                    className="sc-iwsKbI eEZkcX"
                 >
                     DTA services running on cloud.gov.au include the
                      
                     <a
-                        className="sc-bwzfXH gRAcqg"
+                        className="sc-ifAKCX cLeGDS"
                         href="https://www.dta.gov.au/what-we-do/platforms/marketplace/"
                     >
                         Digital Marketplace
@@ -80,7 +80,7 @@ Array [
                     , the
                      
                     <a
-                        className="sc-bwzfXH gRAcqg"
+                        className="sc-ifAKCX cLeGDS"
                         href="https://www.dta.gov.au/what-we-do/platforms/performance/"
                     >
                         Performance Dashboard
@@ -88,7 +88,7 @@ Array [
                     , the
                      
                     <a
-                        className="sc-bwzfXH gRAcqg"
+                        className="sc-ifAKCX cLeGDS"
                         href="https://smart-cities.dashboard.gov.au/"
                     >
                         National Cities Performance Framework Dashboard
@@ -96,7 +96,7 @@ Array [
                     , and the australia.gov.au
                      
                     <a
-                        className="sc-bwzfXH gRAcqg"
+                        className="sc-ifAKCX cLeGDS"
                         href="https://media.australia.gov.au"
                     >
                         Media Release Service
@@ -104,12 +104,12 @@ Array [
                     .
                 </p>
                 <p
-                    className="sc-gzVnrw Kvkhp"
+                    className="sc-iwsKbI eEZkcX"
                 >
                     We
                      
                     <a
-                        className="sc-bwzfXH gRAcqg"
+                        className="sc-ifAKCX cLeGDS"
                         href="http://status.cloud.gov.au"
                     >
                         publish real time performance statistics
@@ -118,12 +118,12 @@ Array [
                     of both the cloud.gov.au platform itself, and the apps running on cloud.gov.au.
                 </p>
                 <p
-                    className="sc-gzVnrw Kvkhp"
+                    className="sc-iwsKbI eEZkcX"
                 >
                     If you are interested in building new digital services on cloud.gov.au, please
                      
                     <a
-                        className="sc-bwzfXH gRAcqg"
+                        className="sc-ifAKCX cLeGDS"
                         href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20home%20page"
                     >
                         get in contact with us
