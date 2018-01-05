@@ -96,7 +96,7 @@ func main() {
 	defer db.Close()
 	log.Println("Pinging database...")
 	if err := db.Ping(); err != nil {
-		log.Fatal(err)
+		log.Fatalf("Could not ping database: %v", err)
 	}
 	// db2 is used so that the migrate code can close the connection after it's
 	// finished with it.
@@ -111,10 +111,10 @@ func main() {
 	}
 	err1, err2 := migrate.Close()
 	if err1 != nil {
-		log.Fatalf("could not close migrate source: %v", err1)
+		log.Fatalf("Could not close migrate source: %v", err1)
 	}
 	if err2 != nil {
-		log.Fatalf("could not close migrate database: %v", err2)
+		log.Fatalf("Could not close migrate database: %v", err2)
 	}
 
 	prometheusEndpoint, err := url.Parse(prometheusEndpointStr)
