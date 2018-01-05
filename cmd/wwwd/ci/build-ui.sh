@@ -31,7 +31,7 @@ yarn format-check
 
 CI=true yarn test
 
-. "./build-ui-env-vars-${ENV_DOMAIN}.sh"
+. "${ROOT_PATH}/src/cmd/wwwd/ci/build-ui-env-vars-${ENV_DOMAIN}.sh"
 
 CI=true yarn build
 
