@@ -98,11 +98,24 @@ func main() {
 	if err := db.Ping(); err != nil {
 		log.Fatal(err)
 	}
-	migrate, err := migrateDB(db)
+	// db2 is used so that the migrate code can close the connection after it's
+	// finished with it.
+	// See https://github.com/mattes/migrate/issues/297#issuecomment-339646656
+	db2, err := sql.Open("postgres", postgresConnStr)
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer migrate.Close()
+	migrate, err := migrateDB(db2)
+	if err != nil {
+		log.Fatal(err)
+	}
+	err1, err2 := migrate.Close()
+	if err1 != nil {
+		log.Fatalf("could not close migrate source: %v", err1)
+	}
+	if err2 != nil {
+		log.Fatalf("could not close migrate database: %v", err2)
+	}
 
 	prometheusEndpoint, err := url.Parse(prometheusEndpointStr)
 	if err != nil {
