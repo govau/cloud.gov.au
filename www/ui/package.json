@@ -33,8 +33,7 @@
   },
   "proxy": "http://localhost:8080",
   "reactSnap": {
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
-    "TODOpuppeteerExecutablePath": "google-chrome-unstable"
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
   },
   "resolutions": {
     "ws": "3.3.2"
