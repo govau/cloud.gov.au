@@ -7,7 +7,7 @@
     "@nivo/line": "^0.33.0",
     "@nivo/pie": "^0.33.0",
     "@types/jest": "22.0.1",
-    "@types/node": "8.5.2",
+    "@types/node": "8.5.7",
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
     "@types/react-helmet": "^5.0.3",
@@ -27,7 +27,7 @@
     "source-map-explorer": "^1.5.0",
     "styled-components": "2.4.0",
     "styled-system": "^1.1.1",
-    "ts-jest": "22.0.0",
+    "ts-jest": "22.0.1",
     "typescript": "^2.6.2",
     "whatwg-fetch": "^2.0.3"
   },
