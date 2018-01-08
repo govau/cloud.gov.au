@@ -48,9 +48,16 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
       "total_deployments_production"
     ];
     const ps = metrics.map(m => {
-      return fetch(`/api/get-stat/?id=${encodeURIComponent(m)}`, {
-        credentials: "same-origin"
-      }).then(resp => ({
+      return fetch(
+        `${process.env.REACT_APP_API_ENDPOINT ||
+          ""}/api/get-stat/?id=${encodeURIComponent(m)}`,
+        {
+          headers: {
+            Accept: "application/json"
+          },
+          credentials: "same-origin"
+        }
+      ).then(resp => ({
         m,
         resp
       }));
