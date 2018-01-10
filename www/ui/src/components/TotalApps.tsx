@@ -2,7 +2,7 @@ import * as React from "react";
 import styled, { css } from "../styled-components";
 import { Flex, Box } from "grid-styled";
 
-import { Vector, vectorToNumber } from "../vector";
+import { Vector, isValidVectorNumber, vectorToNumber } from "../vector";
 
 const Strong = styled.strong`
   font-weight: 500;
@@ -105,12 +105,17 @@ const TotalApps: React.StatelessComponent<Props> = ({
   total,
   totalPrevWeek
 }) => {
-  const delta = vectorToNumber(total) - vectorToNumber(totalPrevWeek);
+  const totalPrevWeekNum = vectorToNumber(totalPrevWeek);
+  const delta = vectorToNumber(total) - totalPrevWeekNum;
+
+  const NA = <span title="Data not available">N/A</span>;
 
   return (
     <StyledFlex wrap={true} mt={3} pt={3}>
       <StyledTotalBox>
-        <Value>{vectorToNumber(total)}</Value>
+        <Value>
+          {isValidVectorNumber(total) ? vectorToNumber(total) : "N/A"}
+        </Value>
         <Label>
           <PrimaryStrong>{label}</PrimaryStrong> apps
         </Label>
@@ -118,17 +123,29 @@ const TotalApps: React.StatelessComponent<Props> = ({
       <StyledBoxSeparator />
       <StyledTotalBox>
         <Value>
-          <StyledDeltaSign value={delta} />
-          {Math.abs(delta)}
+          {isValidVectorNumber(totalPrevWeek) ? (
+            <React.Fragment>
+              <StyledDeltaSign value={delta} />
+              {Math.abs(delta)}
+            </React.Fragment>
+          ) : (
+            NA
+          )}
         </Value>
         <Label>since last week</Label>
       </StyledTotalBox>
       <StyledBoxSeparator />
       <StyledTotalBox>
         <Value>
-          <StyledDeltaSign value={delta} />
-          {(Math.abs(delta) / vectorToNumber(totalPrevWeek) * 100).toFixed(0)}
-          <Sign>%</Sign>
+          {isValidVectorNumber(totalPrevWeek) ? (
+            <React.Fragment>
+              <StyledDeltaSign value={delta} />
+              {(Math.abs(delta) / totalPrevWeekNum * 100).toFixed(0)}
+              <Sign>%</Sign>
+            </React.Fragment>
+          ) : (
+            NA
+          )}
         </Value>
         <Label>since last week (%)</Label>
       </StyledTotalBox>

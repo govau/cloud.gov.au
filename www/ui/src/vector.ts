@@ -9,11 +9,22 @@ export interface Sample {
 
 export interface Vector extends Array<Sample> {}
 
-export const vectorToNumber = (vector: Vector): number => {
-  if (vector.length !== 1) {
+export const isValidVectorNumber = (v: Vector): boolean => {
+  if (v.length !== 1) {
+    return false;
+  }
+  const { value: values } = v[0];
+  if (values.length !== 2) {
+    return false;
+  }
+  return true;
+};
+
+export const vectorToNumber = (v: Vector): number => {
+  if (v.length !== 1) {
     return 0;
   }
-  const { value: values } = vector[0];
+  const { value: values } = v[0];
   if (values.length !== 2) {
     return 0;
   }
