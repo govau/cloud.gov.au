@@ -59,7 +59,7 @@ const App: React.StatelessComponent<Props> = () => (
               path="*"
               component={() => (
                 <DefaultLayout>
-                  <Routes.NotFoundPage />
+                  <Routes.MarkdownPage />
                 </DefaultLayout>
               )}
             />

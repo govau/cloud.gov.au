@@ -30,6 +30,11 @@ const HomePage: React.StatelessComponent<Props> = () => (
         <Flex wrap={true}>
           <Box w={1} pt={3} pb={3}>
             <P>
+              <Link to="/docs/">
+                <strong>Link to docs (TODO remove)</strong>
+              </Link>{" "}
+            </P>
+            <P>
               <Link to="/">
                 <strong>cloud.gov.au</strong>
               </Link>{" "}

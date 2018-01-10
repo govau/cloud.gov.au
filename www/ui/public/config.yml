@@ -1,0 +1,46 @@
+site_name: cloud.gov.au documentation
+site_url: https://docs.cloud.gov.au
+repo_url: https://github.com/AusDTO/cga_docs
+site_description: "Documentation for users of cloud.gov.au"
+theme: gov-au-theme
+theme_dir: 'theme_overrides'
+google_analytics: ['UA-61222473-5', 'auto']
+extra:
+  feedback_link:
+    - 'title': 'Lodge support ticket'
+      'url': 'mailto:support@cloud.gov.au'
+  search: true
+  footer_links:
+    - 'title': 'Status'
+      'url': 'http://status.cloud.gov.au/'
+      'external': 'true'
+markdown_extensions:
+  - toc:
+pages:
+  - Getting started:
+    - 'Welcome': index.md
+    - 'Join an existing project or start a new one': 'getting_started/request_access.md'
+    - 'Install command line tools': 'getting_started/install_cli.md'
+    - 'Login to CloudFoundry': 'getting_started/login.md'
+    - 'Get an app ready for launch': 'getting_started/orca.md'
+  - Deployment and configuration:
+    - 'Push an application': 'deployment_configuration/application_deployment.md'
+    - 'Delete an application': 'deployment_configuration/application_delete.md'
+    - 'Setup Continuous deployment': 'deployment_configuration/ci_cd.md'
+    - 'Setup CircleCI': 'deployment_configuration/setup_circle.md'
+    - 'Create manifest.yml': 'deployment_configuration/create_manifest.md'
+    - 'Environment variables': 'deployment_configuration/environment.md'
+    - 'Zero downtime deploys': 'deployment_configuration/zero_downtime_deploys.md'
+    - 'Deploying feature branches': 'deployment_configuration/deploying_feature_branches.md'
+    - 'User management': 'deployment_configuration/user_management.md'
+  - Services:
+    - 'Sending Emails': 'services/sending_emails.md'
+    - 'Log access': 'services/log_access.md'
+  - Support:
+    - 'Get help using cloud.gov.au': 'support/help.md'
+    - 'Reset CloudFoundry password': 'support/reset_password.md'
+    - 'Incident response': 'support/incident_response.md'
+    - 'Post Incident Reports': 'support/incident_reports.md'
+    - '_2016-08-12': 'support/incident_reports/2016-08-12.md'
+    - '_2016-06-05': 'support/incident_reports/2016-06-05.md'
+    - '_2016-02-11': 'support/incident_reports/2016-02-11.md'
