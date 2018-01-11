@@ -34,7 +34,6 @@
   },
   "proxy": "http://localhost:8080",
   "reactSnap": {
-    "waitFor": 5000,
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
   },
   "resolutions": {
