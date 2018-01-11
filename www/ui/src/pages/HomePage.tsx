@@ -39,8 +39,8 @@ const HomePage: React.StatelessComponent<Props> = () => (
               focus on writing code that meets user needs.
             </P>
             <P>
-              As of December 2017, cloud.gov.au has 26 apps in production, and
-              81 apps in development across our programs of work.
+              As of January 2018, cloud.gov.au has 27 apps in production, and 86
+              apps in development across our programs of work.
             </P>
             <P>
               DTA services running on cloud.gov.au include the{" "}
