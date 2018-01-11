@@ -34,10 +34,8 @@
   },
   "proxy": "http://localhost:8080",
   "reactSnap": {
-    "puppeteerArgs": [
-      "--no-sandbox",
-      "--disable-setuid-sandbox"
-    ]
+    "waitFor": 5000,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
   },
   "resolutions": {
     "ws": "3.3.2"
@@ -45,7 +43,8 @@
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
     "format": "prettier --write \"**/*.{js,json,jsx,md,ts,tsx}\"",
-    "format-check": "prettier --list-different \"**/*.{js,json,jsx,md,ts,tsx}\"",
+    "format-check":
+      "prettier --list-different \"**/*.{js,json,jsx,md,ts,tsx}\"",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build && react-snap",
     "test": "react-scripts-ts test --env=jsdom",
