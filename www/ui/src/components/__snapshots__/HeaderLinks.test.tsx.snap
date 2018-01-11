@@ -42,10 +42,10 @@ exports[`renders without crashing 1`] = `
   >
     <a
       className="sc-ifAKCX cFlEyZ sc-bwzfXH gRAcqg"
-      href="/about/"
+      href="/code/"
       onClick={[Function]}
     >
-      About
+      Code
     </a>
   </li>
   <li

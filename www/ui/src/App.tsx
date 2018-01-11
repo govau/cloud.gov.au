@@ -39,10 +39,10 @@ const App: React.StatelessComponent<Props> = () => (
             <Route exact path="/" component={() => <Routes.HomePage />} />
             <Route
               exact
-              path="/about/"
+              path="/code/"
               component={() => (
                 <DefaultLayout>
-                  <Routes.AboutPage />
+                  <Routes.CodePage />
                 </DefaultLayout>
               )}
             />

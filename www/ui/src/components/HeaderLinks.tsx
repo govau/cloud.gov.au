@@ -48,7 +48,7 @@ const HeaderLinks: React.StatelessComponent<Props> = () => (
       <Link to="/insights/">Insights</Link>
     </Li>
     <Li>
-      <Link to="/about/">About</Link>
+      <Link to="/code/">Code</Link>
     </Li>
     <Li>
       <Link href="https://docs.cloud.gov.au/">Docs</Link>

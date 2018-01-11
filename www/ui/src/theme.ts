@@ -18,6 +18,13 @@ export default interface Theme {
   footerLogoDividerColor: string;
   deltaSignPositiveColor: string;
   deltaSignNegativeColor: string;
+  code: {
+    language: {
+      defaultColor: string;
+      goColor: string;
+      jsColor: string;
+    };
+  };
 };
 
 export const theme: Theme = {
@@ -39,5 +46,12 @@ export const theme: Theme = {
   footerTextColor: "#bdbdbd",
   footerLogoDividerColor: "#616161",
   deltaSignPositiveColor: "#0cac78",
-  deltaSignNegativeColor: "#ff635c"
+  deltaSignNegativeColor: "#ff635c",
+  code: {
+    language: {
+      defaultColor: "#5bcbe3",
+      goColor: "#5bcbe3",
+      jsColor: "#5bcbe3"
+    }
+  }
 };
