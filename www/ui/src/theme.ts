@@ -18,6 +18,16 @@ export default interface Theme {
   footerLogoDividerColor: string;
   deltaSignPositiveColor: string;
   deltaSignNegativeColor: string;
+  console: {
+    promptColor: string;
+    caretColor: string;
+    labels: {
+      binaryColor: string;
+      cfAppColor: string;
+      okColor: string;
+      cfAppStartedColor: string;
+    };
+  };
   code: {
     language: {
       defaultColor: string;
@@ -47,6 +57,16 @@ export const theme: Theme = {
   footerLogoDividerColor: "#616161",
   deltaSignPositiveColor: "#0cac78",
   deltaSignNegativeColor: "#ff635c",
+  console: {
+    promptColor: "#cccccc",
+    caretColor: "#f69900",
+    labels: {
+      binaryColor: "#ff635c",
+      cfAppColor: "#00c3ef",
+      okColor: "#0cac78",
+      cfAppStartedColor: "#ffffff"
+    }
+  },
   code: {
     language: {
       defaultColor: "#5bcbe3",

@@ -5,8 +5,8 @@ import { Flex, Box } from "grid-styled";
 import Container from "../components/Container";
 import Link from "../components/Link";
 import Header from "../components/HomePage/Header";
+import CFPushConsole from "../components/HomePage/CFPushConsole";
 
-const subject = "Enquiry about cloud.gov.au";
 const body = "\n\n---\nSource: cloud.gov.au home page";
 
 const Content = styled.div`
@@ -20,64 +20,97 @@ const P = styled.p`
   font-size: 1.5rem;
 `;
 
-interface Props {}
+const Ribbon1 = styled.section`
+  background: #fafafa;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #eaeaea;
+`;
 
-const HomePage: React.StatelessComponent<Props> = () => (
+const FeatureHeading = styled.h2`
+  font-weight: 400;
+  font-size: 1.5rem;
+`;
+
+const FeatureList = styled.ul`
+  font-size: 1rem;
+  line-height: 1.5rem;
+`;
+
+const FeatureP = P.extend`
+  font-size: 1rem;
+  color: #666666;
+`;
+
+const HomePage: React.StatelessComponent = () => (
   <React.Fragment>
     <Header />
     <Content>
-      <Container>
-        <Flex wrap={true}>
-          <Box w={1} pt={3} pb={3}>
-            <P>
-              <Link to="/">
-                <strong>cloud.gov.au</strong>
-              </Link>{" "}
-              is a faster, safer, standard way to change web apps without
-              impacting users. It makes it easier for government to release,
-              monitor and grow user-facing digital services, freeing up teams to
-              focus on writing code that meets user needs.
-            </P>
-            <P>
-              As of January 2018, cloud.gov.au has 27 apps in production, and 86
-              apps in development across our programs of work.
-            </P>
-            <P>
-              DTA services running on cloud.gov.au include the{" "}
-              <Link href="https://www.dta.gov.au/what-we-do/platforms/marketplace/">
-                Digital Marketplace
-              </Link>, the{" "}
-              <Link href="https://www.dta.gov.au/what-we-do/platforms/performance/">
-                Performance Dashboard
-              </Link>, the{" "}
-              <Link href="https://smart-cities.dashboard.gov.au/">
-                National Cities Performance Framework Dashboard
-              </Link>, and the australia.gov.au{" "}
-              <Link href="https://media.australia.gov.au">
-                Media Release Service
-              </Link>.
-            </P>
-
-            <P>
-              We{" "}
-              <Link href="http://status.cloud.gov.au">
-                publish real time performance statistics
-              </Link>{" "}
-              of both the cloud.gov.au platform itself, and the apps running on
-              cloud.gov.au.
-            </P>
-
-            <P>
-              If you are interested in building new digital services on
-              cloud.gov.au, please{" "}
+      <Ribbon1>
+        <Container px={0}>
+          <Flex wrap={true} px={2} pt={[2, 4]} pb={4}>
+            <Box w={[1, 1 / 2]} pt={[1, 3]} pb={[1, 3]} pr={[0, 3]}>
+              <FeatureHeading>
+                Focus on your <strong>services</strong>, not your servers
+              </FeatureHeading>
+              <FeatureP>
+                Install{" "}
+                <Link href="https://docs.cloudfoundry.org/cf-cli/">
+                  Cloud Foundry CLI tools
+                </Link>{" "}
+                and deploy with ease
+              </FeatureP>
+              <FeatureList>
+                <li>Write your code in any programming language</li>
+                <li>Automatic HTTPS / certificates</li>
+                <li>Deploy instantly, deploy often</li>
+              </FeatureList>
+            </Box>
+            <Box w={[1, 1 / 2]} pt={[1, 3]} pb={[1, 3]} pl={[0, 3]}>
+              <CFPushConsole />
+            </Box>
+          </Flex>
+        </Container>
+      </Ribbon1>
+      <Container px={0}>
+        <Flex wrap={true} px={2} py={[2, 4]}>
+          <Box w={[1, 1 / 3]} pr={[0, 3]}>
+            <FeatureHeading>Automatically secure</FeatureHeading>
+            <FeatureP>
+              We provision and renew SSL certificates automatically.
+            </FeatureP>
+            <FeatureP>
+              Thanks to{" "}
+              <Link href="https://letsencrypt.org/">Let’s Encrypt</Link>, you
+              get security at zero cost, for as many domains as you want.
+            </FeatureP>
+          </Box>
+          <Box w={[1, 1 / 3]} px={[0, 3]}>
+            <FeatureHeading>Programming languages</FeatureHeading>
+            <FeatureP>
+              Supported languages and frameworks include Go, Java, .NET,
+              Node.js, PHP, Python, Ruby, static files and binaries.
+            </FeatureP>
+          </Box>
+          <Box w={[1, 1 / 3]} pl={[0, 3]}>
+            <FeatureHeading>Services</FeatureHeading>
+            <FeatureP>
+              Seamlessly connect your application to backend services.
+            </FeatureP>
+            <FeatureP>
+              Available services include Postgres, MySQL, Redis, RabbitMQ and
+              ElasticSearch.
+            </FeatureP>
+            <FeatureP>
               <Link
                 href={`mailto:support@cloud.gov.au?subject=${encodeURIComponent(
-                  subject
+                  "Enquiry about cloud.gov.au - interested in missing service"
                 )}&body=${encodeURIComponent(body)}`}
               >
-                get in contact with us
-              </Link>.
-            </P>
+                Get in contact with us
+              </Link>{" "}
+              if we’re missing a service you’re interested in.
+            </FeatureP>
           </Box>
         </Flex>
       </Container>

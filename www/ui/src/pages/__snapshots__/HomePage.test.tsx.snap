@@ -3,7 +3,7 @@
 exports[`renders without crashing 1`] = `
 Array [
   <div
-    className="sc-htoDjs dFvRPE"
+    className="sc-htoDjs jgEvST"
 >
     <div
         className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
@@ -32,103 +32,257 @@ Array [
     </div>
 </div>,
   <div
-    className="sc-dnqmqq jNPqvJ"
+    className="sc-eNQAEJ iGzHyR"
 >
-    <div
-        className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
-        is={null}
+    <section
+        className="sc-kEYyzF eDcRWs"
     >
         <div
-            className="sc-htpNat jtWIOA sc-bdVaJa iHZvIS"
+            className="sc-bxivhb dyGNMJ sc-bdVaJa dFRSdp"
             is={null}
         >
             <div
-                className="sc-bdVaJa jFKWis"
+                className="sc-htpNat jtWIOA sc-bdVaJa kJYhde"
                 is={null}
             >
-                <p
-                    className="sc-iwsKbI eEZkcX"
+                <div
+                    className="sc-bdVaJa fiVwab"
+                    is={null}
                 >
-                    <a
-                        className="sc-EHOje dByega"
-                        href="/"
-                        onClick={[Function]}
+                    <h2
+                        className="sc-kkGfuU gtPXEl"
                     >
+                        Focus on your 
                         <strong>
-                            cloud.gov.au
+                            services
                         </strong>
-                    </a>
-                     
-                    is a faster, safer, standard way to change web apps without impacting users. It makes it easier for government to release, monitor and grow user-facing digital services, freeing up teams to focus on writing code that meets user needs.
+                        , not your servers
+                    </h2>
+                    <p
+                        className="sc-hSdWYo dyhJmT"
+                    >
+                        Install
+                         
+                        <a
+                            className="sc-ifAKCX bzKuxF"
+                            href="https://docs.cloudfoundry.org/cf-cli/"
+                        >
+                            Cloud Foundry CLI tools
+                        </a>
+                         
+                        and deploy with ease
+                    </p>
+                    <ul
+                        className="sc-iAyFgw dMiDgO"
+                    >
+                        <li>
+                            Write your code in any programming language
+                        </li>
+                        <li>
+                            Automatic HTTPS / certificates
+                        </li>
+                        <li>
+                            Deploy instantly, deploy often
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    className="sc-bdVaJa fQvyiw"
+                    is={null}
+                >
+                    <div
+                        className="sc-iwsKbI cLHqHK"
+                    >
+                        <div
+                            className="sc-dnqmqq cYeNPO"
+                        >
+                            <div
+                                className="sc-gZMcBi kDKDKc"
+                            >
+                                <div
+                                    className="sc-htpNat gdzXwm sc-bdVaJa iHSytp"
+                                    is={null}
+                                >
+                                    <span
+                                        className="sc-VigVT fTBwzp"
+                                    />
+                                    <span
+                                        className="sc-jTzLTM hCHedz"
+                                    />
+                                    <span
+                                        className="sc-fjdhpX kmITCL"
+                                    />
+                                    <div
+                                        className="sc-jzJRlG eAPChS"
+                                    >
+                                        bash
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className="sc-cSHVUG bRUATF"
+                            >
+                                <div
+                                    className="sc-htpNat jtWIOA sc-bdVaJa jOTPPl"
+                                    is={null}
+                                >
+                                    <div
+                                        className="sc-bdVaJa iHZvIS"
+                                        is={null}
+                                    >
+                                        <pre
+                                            className="sc-kAzzGY eFTTTe"
+                                        >
+                                            ▲ 
+                                            <span
+                                                className="sc-ckVGcZ eBbooX"
+                                            >
+                                                ~/my-app $
+                                            </span>
+                                             ls
+                                            <br />
+                                            Procfile main.go manifest.yml 
+                                            <span
+                                                className="sc-kgoBCf juQDCD"
+                                            >
+                                                my-app
+                                            </span>
+                                            <br />
+                                            ▲ 
+                                            <span
+                                                className="sc-ckVGcZ eBbooX"
+                                            >
+                                                ~/my-app $
+                                            </span>
+                                             cf push
+                                            <br />
+                                            Uploading 
+                                            <span
+                                                className="sc-kGXeez lnXDyT"
+                                            >
+                                                my-app
+                                            </span>
+                                            ...
+                                            <br />
+                                            Uploading 2.1M, 3 files
+                                            <br />
+                                            Done uploading
+                                            <br />
+                                            <span
+                                                className="sc-kpOJdX cVxVAu"
+                                            >
+                                                OK
+                                            </span>
+                                            <br />
+                                            1 of 1 instances running
+                                            <br />
+                                            <span
+                                                className="sc-dxgOiQ bBquNN"
+                                            >
+                                                App started
+                                            </span>
+                                            <br />
+                                            ▲ 
+                                            <span
+                                                className="sc-ckVGcZ eBbooX"
+                                            >
+                                                ~/my-app
+                                            </span>
+                                             $ 
+                                            <span
+                                                className="sc-jKJlTe cSWoke"
+                                            />
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div
+        className="sc-bxivhb dyGNMJ sc-bdVaJa dFRSdp"
+        is={null}
+    >
+        <div
+            className="sc-htpNat jtWIOA sc-bdVaJa gyTSyk"
+            is={null}
+        >
+            <div
+                className="sc-bdVaJa hioaMl"
+                is={null}
+            >
+                <h2
+                    className="sc-kkGfuU gtPXEl"
+                >
+                    Automatically secure
+                </h2>
+                <p
+                    className="sc-hSdWYo dyhJmT"
+                >
+                    We provision and renew SSL certificates automatically.
                 </p>
                 <p
-                    className="sc-iwsKbI eEZkcX"
+                    className="sc-hSdWYo dyhJmT"
                 >
-                    As of January 2018, cloud.gov.au has 27 apps in production, and 86 apps in development across our programs of work.
+                    Thanks to
+                     
+                    <a
+                        className="sc-ifAKCX bzKuxF"
+                        href="https://letsencrypt.org/"
+                    >
+                        Let’s Encrypt
+                    </a>
+                    , you get security at zero cost, for as many domains as you want.
+                </p>
+            </div>
+            <div
+                className="sc-bdVaJa jungCr"
+                is={null}
+            >
+                <h2
+                    className="sc-kkGfuU gtPXEl"
+                >
+                    Programming languages
+                </h2>
+                <p
+                    className="sc-hSdWYo dyhJmT"
+                >
+                    Supported languages and frameworks include Go, Java, .NET, Node.js, PHP, Python, Ruby, static files and binaries.
+                </p>
+            </div>
+            <div
+                className="sc-bdVaJa gbvvmj"
+                is={null}
+            >
+                <h2
+                    className="sc-kkGfuU gtPXEl"
+                >
+                    Services
+                </h2>
+                <p
+                    className="sc-hSdWYo dyhJmT"
+                >
+                    Seamlessly connect your application to backend services.
                 </p>
                 <p
-                    className="sc-iwsKbI eEZkcX"
+                    className="sc-hSdWYo dyhJmT"
                 >
-                    DTA services running on cloud.gov.au include the
-                     
-                    <a
-                        className="sc-ifAKCX cLeGDS"
-                        href="https://www.dta.gov.au/what-we-do/platforms/marketplace/"
-                    >
-                        Digital Marketplace
-                    </a>
-                    , the
-                     
-                    <a
-                        className="sc-ifAKCX cLeGDS"
-                        href="https://www.dta.gov.au/what-we-do/platforms/performance/"
-                    >
-                        Performance Dashboard
-                    </a>
-                    , the
-                     
-                    <a
-                        className="sc-ifAKCX cLeGDS"
-                        href="https://smart-cities.dashboard.gov.au/"
-                    >
-                        National Cities Performance Framework Dashboard
-                    </a>
-                    , and the australia.gov.au
-                     
-                    <a
-                        className="sc-ifAKCX cLeGDS"
-                        href="https://media.australia.gov.au"
-                    >
-                        Media Release Service
-                    </a>
-                    .
+                    Available services include Postgres, MySQL, Redis, RabbitMQ and ElasticSearch.
                 </p>
                 <p
-                    className="sc-iwsKbI eEZkcX"
+                    className="sc-hSdWYo dyhJmT"
                 >
-                    We
-                     
                     <a
-                        className="sc-ifAKCX cLeGDS"
-                        href="http://status.cloud.gov.au"
+                        className="sc-ifAKCX bzKuxF"
+                        href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au%20-%20interested%20in%20missing%20service&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20home%20page"
                     >
-                        publish real time performance statistics
+                        Get in contact with us
                     </a>
                      
-                    of both the cloud.gov.au platform itself, and the apps running on cloud.gov.au.
-                </p>
-                <p
-                    className="sc-iwsKbI eEZkcX"
-                >
-                    If you are interested in building new digital services on cloud.gov.au, please
-                     
-                    <a
-                        className="sc-ifAKCX cLeGDS"
-                        href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20home%20page"
-                    >
-                        get in contact with us
-                    </a>
-                    .
+                    if we’re missing a service you’re interested in.
                 </p>
             </div>
         </div>
