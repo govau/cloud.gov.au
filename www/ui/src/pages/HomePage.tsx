@@ -91,6 +91,12 @@ const HomePage: React.StatelessComponent = () => (
               Supported languages and frameworks include Go, Java, .NET,
               Node.js, PHP, Python, Ruby, static files and binaries.
             </FeatureP>
+            <FeatureP>
+              Learn about{" "}
+              <Link href="https://docs.cloudfoundry.org/buildpacks/">
+                Cloud Foundry buildpacks
+              </Link>.
+            </FeatureP>
           </Box>
           <Box w={[1, 1 / 3]} pl={[0, 3]}>
             <FeatureHeading>Services</FeatureHeading>
@@ -109,7 +115,7 @@ const HomePage: React.StatelessComponent = () => (
               >
                 Get in contact with us
               </Link>{" "}
-              if we’re missing a service you’re interested in.
+              if we’re missing a service that you need.
             </FeatureP>
           </Box>
         </Flex>

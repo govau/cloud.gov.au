@@ -252,6 +252,19 @@ Array [
                 >
                     Supported languages and frameworks include Go, Java, .NET, Node.js, PHP, Python, Ruby, static files and binaries.
                 </p>
+                <p
+                    className="sc-hSdWYo dyhJmT"
+                >
+                    Learn about
+                     
+                    <a
+                        className="sc-ifAKCX bzKuxF"
+                        href="https://docs.cloudfoundry.org/buildpacks/"
+                    >
+                        Cloud Foundry buildpacks
+                    </a>
+                    .
+                </p>
             </div>
             <div
                 className="sc-bdVaJa gbvvmj"
@@ -282,7 +295,7 @@ Array [
                         Get in contact with us
                     </a>
                      
-                    if we’re missing a service you’re interested in.
+                    if we’re missing a service that you need.
                 </p>
             </div>
         </div>
