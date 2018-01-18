@@ -2,9 +2,9 @@
 
 exports[`renders without crashing 1`] = `
 Array [
-  <h2>
+  <h1>
     Page not found
-</h2>,
+</h1>,
   <p>
     That's all we know.
 </p>,

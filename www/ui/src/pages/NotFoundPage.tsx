@@ -8,7 +8,7 @@ const NotFoundPage: React.StatelessComponent<Props> = () => (
     <Helmet>
       <title>404 page not found</title>
     </Helmet>
-    <h2>Page not found</h2>
+    <h1>Page not found</h1>
     <p>That's all we know.</p>
   </React.Fragment>
 );
