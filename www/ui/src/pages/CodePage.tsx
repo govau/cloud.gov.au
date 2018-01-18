@@ -68,7 +68,7 @@ interface Repository {
   description: string;
   pushed_at: string;
   language: string;
-  license: License;
+  license?: License;
 }
 
 interface Response {
@@ -205,10 +205,14 @@ class CodePage extends React.Component<{}, Partial<State>> {
                       <Box w={[1, 1 / 2]}>{r.description}</Box>
                     </Flex>
                   ) : null}
-                  {(r.license.name && r.license.key !== licenseOther) ||
+                  {(r.license &&
+                    r.license.name &&
+                    r.license.key !== licenseOther) ||
                   r.pushed_at ? (
                     <Flex my={2}>
-                      {r.license.name && r.license.key !== licenseOther ? (
+                      {r.license &&
+                      r.license.name &&
+                      r.license.key !== licenseOther ? (
                         <Box mr={2}>
                           <Meta>{r.license.name}</Meta>
                         </Box>
