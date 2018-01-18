@@ -20,9 +20,10 @@ const BrandLink = styled(UnstyledBrandLink)`
   border-bottom: 0;
 `;
 
-const Brand = styled.h2`
+const Brand = styled.div`
   margin: 0;
   font-weight: 500;
+  font-size: 1.5rem;
 `;
 
 const StyledHeader = styled.header`

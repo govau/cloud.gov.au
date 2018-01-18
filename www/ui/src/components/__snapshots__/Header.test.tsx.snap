@@ -46,11 +46,11 @@ exports[`renders without crashing 1`] = `
           href="/"
           onClick={[Function]}
         >
-          <h2
-            className="sc-gZMcBi duMah"
+          <div
+            className="sc-gZMcBi ehVgaG"
           >
             cloud.gov.au
-          </h2>
+          </div>
         </a>
       </div>
       <div
