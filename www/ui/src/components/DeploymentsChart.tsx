@@ -22,8 +22,11 @@ const months = [
 
 const Wrapper = styled.div`
   height: 250px;
-  svg > g > g > g > g > g:not(:first-child):not(:last-child) {
+  svg > g > g > g:first-child > g > g:not(:first-child):not(:last-child) {
     display: none;
+  }
+  svg > g > g > g:first-child > g > g:first-child {
+    transform: translate(1rem);
   }
 `;
 
@@ -68,9 +71,9 @@ const DeploymentsChart: React.StatelessComponent<Props> = ({ label, data }) => {
         ]}
         margin={{
           top: 50,
-          right: 50,
+          right: 25,
           bottom: 50,
-          left: 50
+          left: 35
         }}
         colorBy={(s: Series) => s.color}
         enableDots={false}
