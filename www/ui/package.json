@@ -31,6 +31,7 @@
     "styled-system": "^1.1.1",
     "ts-jest": "22.0.1",
     "typescript": "^2.6.2",
+    "typescript-styled-plugin": "^0.4.0",
     "whatwg-fetch": "^2.0.3"
   },
   "proxy": "http://localhost:8080",
