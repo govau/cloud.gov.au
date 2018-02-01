@@ -29,5 +29,5 @@
     "jest",
     "src/setupTests.ts"
   ],
-  "files": ["typings/index.d.ts"]
+  "include": ["typings/index.d.ts", "src/**/*"]
 }
