@@ -82,6 +82,7 @@ func cfEventsLoop(
 	const days = 30
 
 	work := func() {
+		log.Println("Querying CF...")
 		cfc, err := newClient(ctx)
 		if err != nil {
 			log.Println(err)

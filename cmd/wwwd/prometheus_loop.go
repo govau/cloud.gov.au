@@ -17,6 +17,7 @@ func prometheusLoop(
 	work := func() {
 		for _, q := range qs {
 			go func(q string) {
+				log.Println("Querying prometheus...")
 				_, err := prom.Query(ctx, q, time.Now())
 				if err != nil {
 					log.Println(err)
