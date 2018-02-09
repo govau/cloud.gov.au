@@ -42,7 +42,10 @@ const Header: React.StatelessComponent<Props> = () => (
       <Flex wrap={true} pt={3} pb={3} align="center">
         <Box pr={3}>
           <a href="/">
-            <COALogo src={coaLogo} alt="" />
+            <COALogo
+              src={coaLogo}
+              alt="The Australian Government Coat of Arms"
+            />
           </a>
         </Box>
         <Box>
