@@ -3,10 +3,10 @@
 exports[`renders without crashing 1`] = `
 Array [
   <div
-    className="sc-gzVnrw dOZFlZ"
+    className="sc-EHOje ctJWKH"
 >
     <div
-        className="sc-htpNat fRELtR sc-bdVaJa bNqJOV"
+        className="sc-bdVaJa liJgVB sc-bdVaJa bNqJOV"
     >
         <div
             className="sc-bwzfXH fMBefM"
@@ -15,12 +15,12 @@ Array [
                 className="sc-bdVaJa iHZvIS"
             >
                 <h1
-                    className="sc-EHOje jSjDvs"
+                    className="sc-bxivhb bicIO"
                 >
                     Cloud
                 </h1>
                 <p
-                    className="sc-bZQynM loxuZY"
+                    className="sc-ifAKCX laWPCu"
                 >
                     A platform to make delivering and operating digital services easier.
                 </p>
@@ -29,13 +29,13 @@ Array [
     </div>
 </div>,
   <div
-    className="sc-jKJlTe ePSyWS"
+    className="sc-dxgOiQ fDxvmG"
 >
     <section
-        className="sc-hMqMXs gEsKQc"
+        className="sc-jKJlTe jVCsec"
     >
         <div
-            className="sc-htpNat fRELtR sc-bdVaJa dFRSdp"
+            className="sc-bdVaJa liJgVB sc-bdVaJa dFRSdp"
         >
             <div
                 className="sc-bwzfXH eOcfoE"
@@ -44,7 +44,7 @@ Array [
                     className="sc-bdVaJa fiVwab"
                 >
                     <h2
-                        className="sc-kEYyzF eDnxLe"
+                        className="sc-eNQAEJ gkHPMs"
                     >
                         Focus on your 
                         <strong>
@@ -53,12 +53,12 @@ Array [
                         , not your servers
                     </h2>
                     <p
-                        className="sc-iAyFgw jYgHJM"
+                        className="sc-kEYyzF ljeIUV"
                     >
                         Install
                          
                         <a
-                            className="sc-bxivhb iTNbqk"
+                            className="sc-bwzfXH fwmJDW"
                             href="https://docs.cloudfoundry.org/cf-cli/"
                         >
                             Cloud Foundry CLI tools
@@ -67,7 +67,7 @@ Array [
                         and deploy with ease
                     </p>
                     <ul
-                        className="sc-kkGfuU jCINPd"
+                        className="sc-hMqMXs hoIwZH"
                     >
                         <li>
                             Write your code in any programming language
@@ -84,35 +84,35 @@ Array [
                     className="sc-bdVaJa fQvyiw"
                 >
                     <div
-                        className="sc-dnqmqq fpJvTA"
+                        className="sc-gzVnrw ghIdPZ"
                     >
                         <div
-                            className="sc-htoDjs jLfqDW"
+                            className="sc-bZQynM eKKWGB"
                         >
                             <div
-                                className="sc-iwsKbI grDUJS"
+                                className="sc-htoDjs ljHMNN"
                             >
                                 <div
                                     className="sc-bwzfXH bjOFJw"
                                 >
                                     <span
-                                        className="sc-gqjmRU dCmKVg"
+                                        className="sc-iwsKbI fDQvpv"
                                     />
                                     <span
-                                        className="sc-VigVT hWOuSF"
+                                        className="sc-gZMcBi eXLhoD"
                                     />
                                     <span
-                                        className="sc-jTzLTM bxpvnY"
+                                        className="sc-gqjmRU gKPACg"
                                     />
                                     <div
-                                        className="sc-fjdhpX hOYHAA"
+                                        className="sc-VigVT joEwbI"
                                     >
                                         bash
                                     </div>
                                 </div>
                             </div>
                             <div
-                                className="sc-jzJRlG eDsCni"
+                                className="sc-jTzLTM eeVfWB"
                             >
                                 <div
                                     className="sc-bwzfXH iJfmZQ"
@@ -121,11 +121,11 @@ Array [
                                         className="sc-bdVaJa iHZvIS"
                                     >
                                         <pre
-                                            className="sc-cSHVUG dIZaDY"
+                                            className="sc-fjdhpX kPYWtN"
                                         >
                                             ▲ 
                                             <span
-                                                className="sc-dxgOiQ hQyKuY"
+                                                className="sc-kGXeez khRAvB"
                                             >
                                                 ~/my-app $
                                             </span>
@@ -133,14 +133,14 @@ Array [
                                             <br />
                                             Procfile main.go manifest.yml 
                                             <span
-                                                className="sc-chPdSV eklOAL"
+                                                className="sc-cSHVUG gqNsoZ"
                                             >
                                                 my-app
                                             </span>
                                             <br />
                                             ▲ 
                                             <span
-                                                className="sc-dxgOiQ hQyKuY"
+                                                className="sc-kGXeez khRAvB"
                                             >
                                                 ~/my-app $
                                             </span>
@@ -148,7 +148,7 @@ Array [
                                             <br />
                                             Uploading 
                                             <span
-                                                className="sc-kgoBCf gsPdRh"
+                                                className="sc-kAzzGY gIOMyo"
                                             >
                                                 my-app
                                             </span>
@@ -159,7 +159,7 @@ Array [
                                             Done uploading
                                             <br />
                                             <span
-                                                className="sc-kGXeez dhXipY"
+                                                className="sc-chPdSV kLVhRq"
                                             >
                                                 OK
                                             </span>
@@ -167,20 +167,20 @@ Array [
                                             1 of 1 instances running
                                             <br />
                                             <span
-                                                className="sc-kpOJdX fotzPP"
+                                                className="sc-kgoBCf gVAAxm"
                                             >
                                                 App started
                                             </span>
                                             <br />
                                             ▲ 
                                             <span
-                                                className="sc-dxgOiQ hQyKuY"
+                                                className="sc-kGXeez khRAvB"
                                             >
                                                 ~/my-app
                                             </span>
                                              $ 
                                             <span
-                                                className="sc-ckVGcZ ebkPRy"
+                                                className="sc-kpOJdX itIwrT"
                                             />
                                         </pre>
                                     </div>
@@ -193,7 +193,7 @@ Array [
         </div>
     </section>
     <div
-        className="sc-htpNat fRELtR sc-bdVaJa dFRSdp"
+        className="sc-bdVaJa liJgVB sc-bdVaJa dFRSdp"
     >
         <div
             className="sc-bwzfXH gPNtBz"
@@ -202,22 +202,22 @@ Array [
                 className="sc-bdVaJa hioaMl"
             >
                 <h2
-                    className="sc-kEYyzF eDnxLe"
+                    className="sc-eNQAEJ gkHPMs"
                 >
                     Automatically secure
                 </h2>
                 <p
-                    className="sc-iAyFgw jYgHJM"
+                    className="sc-kEYyzF ljeIUV"
                 >
                     We provision and renew SSL certificates automatically.
                 </p>
                 <p
-                    className="sc-iAyFgw jYgHJM"
+                    className="sc-kEYyzF ljeIUV"
                 >
                     Thanks to
                      
                     <a
-                        className="sc-bxivhb iTNbqk"
+                        className="sc-bwzfXH fwmJDW"
                         href="https://letsencrypt.org/"
                     >
                         Let’s Encrypt
@@ -229,22 +229,22 @@ Array [
                 className="sc-bdVaJa jungCr"
             >
                 <h2
-                    className="sc-kEYyzF eDnxLe"
+                    className="sc-eNQAEJ gkHPMs"
                 >
                     Programming languages
                 </h2>
                 <p
-                    className="sc-iAyFgw jYgHJM"
+                    className="sc-kEYyzF ljeIUV"
                 >
                     Supported languages and frameworks include Go, Java, .NET, Node.js, PHP, Python, Ruby, static files and binaries.
                 </p>
                 <p
-                    className="sc-iAyFgw jYgHJM"
+                    className="sc-kEYyzF ljeIUV"
                 >
                     Learn about
                      
                     <a
-                        className="sc-bxivhb iTNbqk"
+                        className="sc-bwzfXH fwmJDW"
                         href="https://docs.cloudfoundry.org/buildpacks/"
                     >
                         Cloud Foundry buildpacks
@@ -256,25 +256,25 @@ Array [
                 className="sc-bdVaJa gbvvmj"
             >
                 <h2
-                    className="sc-kEYyzF eDnxLe"
+                    className="sc-eNQAEJ gkHPMs"
                 >
                     Services
                 </h2>
                 <p
-                    className="sc-iAyFgw jYgHJM"
+                    className="sc-kEYyzF ljeIUV"
                 >
                     Seamlessly connect your application to backend services.
                 </p>
                 <p
-                    className="sc-iAyFgw jYgHJM"
+                    className="sc-kEYyzF ljeIUV"
                 >
                     Available services include Postgres, MySQL, Redis, RabbitMQ and ElasticSearch.
                 </p>
                 <p
-                    className="sc-iAyFgw jYgHJM"
+                    className="sc-kEYyzF ljeIUV"
                 >
                     <a
-                        className="sc-bxivhb iTNbqk"
+                        className="sc-bwzfXH fwmJDW"
                         href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au%20-%20interested%20in%20missing%20service&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20home%20page"
                     >
                         Get in contact with us

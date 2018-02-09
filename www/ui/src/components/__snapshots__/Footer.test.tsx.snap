@@ -2,10 +2,10 @@
 
 exports[`renders without crashing 1`] = `
 <footer
-  className="sc-gqjmRU iHXAiL"
+  className="sc-iwsKbI XbfZB"
 >
   <div
-    className="sc-htpNat fRELtR sc-bdVaJa jipgQh"
+    className="sc-bdVaJa liJgVB sc-bdVaJa jipgQh"
   >
     <div
       className="sc-bwzfXH iSSZbw"
@@ -21,7 +21,7 @@ exports[`renders without crashing 1`] = `
           >
             <img
               alt="The Australian Government Coat of Arms"
-              className="sc-htoDjs ioxCQL"
+              className="sc-bZQynM HqUwQ"
               src={
                 Object {
                   "0": "c",
@@ -37,7 +37,7 @@ exports[`renders without crashing 1`] = `
             />
           </div>
           <div
-            className="sc-iwsKbI ePxpEO sc-bdVaJa jGvYNb"
+            className="sc-htoDjs bWdAUX sc-bdVaJa jGvYNb"
           />
           <div
             className="sc-bdVaJa jGvYNb"
@@ -50,7 +50,7 @@ exports[`renders without crashing 1`] = `
             >
               <img
                 alt="DTA"
-                className="sc-dnqmqq hQVtur"
+                className="sc-gzVnrw cJnkpP"
                 src={
                   Object {
                     "0": "d",
@@ -72,33 +72,33 @@ exports[`renders without crashing 1`] = `
         className="sc-bdVaJa clWLZM"
       >
         <ul
-          className="sc-EHOje jkjZAm"
+          className="sc-bxivhb ddELEZ"
         >
           <li
-            className="sc-bZQynM bGWadS"
+            className="sc-ifAKCX jMGxLf"
           >
             <a
-              className="sc-gzVnrw ibZhkv sc-bxivhb dIIonV"
+              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
               href="https://console.system.b.cld.gov.au/"
             >
               Production console
             </a>
           </li>
           <li
-            className="sc-bZQynM bGWadS"
+            className="sc-ifAKCX jMGxLf"
           >
             <a
-              className="sc-gzVnrw ibZhkv sc-bxivhb dIIonV"
+              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
               href="https://console.system.y.cld.gov.au/"
             >
               Staging console
             </a>
           </li>
           <li
-            className="sc-bZQynM bGWadS"
+            className="sc-ifAKCX jMGxLf"
           >
             <a
-              className="sc-gzVnrw ibZhkv sc-bxivhb dIIonV"
+              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
               href="http://status.cloud.gov.au/"
             >
               Status
@@ -107,7 +107,7 @@ exports[`renders without crashing 1`] = `
         </ul>
         <p>
           <a
-            className="sc-bxivhb dIIonV"
+            className="sc-bwzfXH gRAcqg"
             href="https://github.com/govau/cloud.gov.au"
           >
             cloud.gov.au on GitHub
@@ -117,14 +117,14 @@ exports[`renders without crashing 1`] = `
           Have a question about cloud.gov.au? Contact DTA:
            
           <a
-            className="sc-bxivhb dIIonV"
+            className="sc-bwzfXH gRAcqg"
             href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20footer"
           >
             support@cloud.gov.au
           </a>
         </p>
         <p
-          className="sc-gZMcBi efVVeG"
+          className="sc-dnqmqq eyiWaz"
         >
           © Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.
         </p>
