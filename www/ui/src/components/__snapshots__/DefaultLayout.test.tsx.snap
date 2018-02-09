@@ -2,19 +2,16 @@
 
 exports[`renders without crashing 1`] = `
 <div
-  className="sc-ifAKCX iePrdK"
+  className="sc-bxivhb ephaqe"
 >
   <div
-    className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
-    is={null}
+    className="sc-htpNat fRELtR sc-bdVaJa jipgQh"
   >
     <div
-      className="sc-htpNat jtWIOA sc-bdVaJa iHZvIS"
-      is={null}
+      className="sc-bwzfXH hbZeap"
     >
       <div
-        className="sc-bdVaJa jFKWis"
-        is={null}
+        className="sc-bdVaJa gRPNsf"
       >
         content
       </div>

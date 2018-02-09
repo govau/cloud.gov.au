@@ -2,31 +2,26 @@
 
 exports[`renders without crashing 1`] = `
 <footer
-  className="sc-iwsKbI XbfZB"
+  className="sc-gqjmRU iHXAiL"
 >
   <div
-    className="sc-bdVaJa liJgVB sc-bdVaJa bNqJOV"
-    is={null}
+    className="sc-htpNat fRELtR sc-bdVaJa jipgQh"
   >
     <div
-      className="sc-htpNat fzUmoZ sc-bdVaJa NcCKj"
-      is={null}
+      className="sc-bwzfXH iSSZbw"
     >
       <div
         className="sc-bdVaJa dbOKEe"
-        is={null}
       >
         <div
-          className="sc-htpNat fzUmoZ sc-bdVaJa kQtcea"
-          is={null}
+          className="sc-bwzfXH nwPLB"
         >
           <div
             className="sc-bdVaJa iHZvIS"
-            is={null}
           >
             <img
               alt="The Australian Government Coat of Arms"
-              className="sc-bZQynM HqUwQ"
+              className="sc-htoDjs ioxCQL"
               src={
                 Object {
                   "0": "c",
@@ -42,23 +37,20 @@ exports[`renders without crashing 1`] = `
             />
           </div>
           <div
-            className="sc-htoDjs bWdAUX sc-bdVaJa jGvYNb"
-            is={null}
+            className="sc-iwsKbI ePxpEO sc-bdVaJa jGvYNb"
           />
           <div
             className="sc-bdVaJa jGvYNb"
-            is={null}
           />
           <div
             className="sc-bdVaJa iHZvIS"
-            is={null}
           >
             <a
               href="https://www.dta.gov.au/"
             >
               <img
                 alt="DTA"
-                className="sc-gzVnrw cJnkpP"
+                className="sc-dnqmqq hQVtur"
                 src={
                   Object {
                     "0": "d",
@@ -78,36 +70,35 @@ exports[`renders without crashing 1`] = `
       </div>
       <div
         className="sc-bdVaJa clWLZM"
-        is={null}
       >
         <ul
-          className="sc-bxivhb ddELEZ"
+          className="sc-EHOje jkjZAm"
         >
           <li
-            className="sc-ifAKCX jMGxLf"
+            className="sc-bZQynM bGWadS"
           >
             <a
-              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
+              className="sc-gzVnrw ibZhkv sc-bxivhb dIIonV"
               href="https://console.system.b.cld.gov.au/"
             >
               Production console
             </a>
           </li>
           <li
-            className="sc-ifAKCX jMGxLf"
+            className="sc-bZQynM bGWadS"
           >
             <a
-              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
+              className="sc-gzVnrw ibZhkv sc-bxivhb dIIonV"
               href="https://console.system.y.cld.gov.au/"
             >
               Staging console
             </a>
           </li>
           <li
-            className="sc-ifAKCX jMGxLf"
+            className="sc-bZQynM bGWadS"
           >
             <a
-              className="sc-EHOje jvzENE sc-bwzfXH gRAcqg"
+              className="sc-gzVnrw ibZhkv sc-bxivhb dIIonV"
               href="http://status.cloud.gov.au/"
             >
               Status
@@ -116,7 +107,7 @@ exports[`renders without crashing 1`] = `
         </ul>
         <p>
           <a
-            className="sc-bwzfXH gRAcqg"
+            className="sc-bxivhb dIIonV"
             href="https://github.com/govau/cloud.gov.au"
           >
             cloud.gov.au on GitHub
@@ -126,14 +117,14 @@ exports[`renders without crashing 1`] = `
           Have a question about cloud.gov.au? Contact DTA:
            
           <a
-            className="sc-bwzfXH gRAcqg"
+            className="sc-bxivhb dIIonV"
             href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20footer"
           >
             support@cloud.gov.au
           </a>
         </p>
         <p
-          className="sc-dnqmqq eyiWaz"
+          className="sc-gZMcBi efVVeG"
         >
           © Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.
         </p>

@@ -3,27 +3,24 @@
 exports[`renders without crashing 1`] = `
 Array [
   <div
-    className="sc-htoDjs jgEvST"
+    className="sc-gzVnrw dOZFlZ"
 >
     <div
-        className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
-        is={null}
+        className="sc-htpNat fRELtR sc-bdVaJa bNqJOV"
     >
         <div
-            className="sc-htpNat jtWIOA sc-bdVaJa eSFxna"
-            is={null}
+            className="sc-bwzfXH fMBefM"
         >
             <div
                 className="sc-bdVaJa iHZvIS"
-                is={null}
             >
                 <h1
-                    className="sc-bZQynM bwMZIe"
+                    className="sc-EHOje jSjDvs"
                 >
                     Cloud
                 </h1>
                 <p
-                    className="sc-gzVnrw lgDsWe"
+                    className="sc-bZQynM loxuZY"
                 >
                     A platform to make delivering and operating digital services easier.
                 </p>
@@ -32,25 +29,22 @@ Array [
     </div>
 </div>,
   <div
-    className="sc-eNQAEJ iGzHyR"
+    className="sc-jKJlTe ePSyWS"
 >
     <section
-        className="sc-kEYyzF eDcRWs"
+        className="sc-hMqMXs gEsKQc"
     >
         <div
-            className="sc-bxivhb dyGNMJ sc-bdVaJa dFRSdp"
-            is={null}
+            className="sc-htpNat fRELtR sc-bdVaJa dFRSdp"
         >
             <div
-                className="sc-htpNat jtWIOA sc-bdVaJa kJYhde"
-                is={null}
+                className="sc-bwzfXH eOcfoE"
             >
                 <div
                     className="sc-bdVaJa fiVwab"
-                    is={null}
                 >
                     <h2
-                        className="sc-kkGfuU gtPXEl"
+                        className="sc-kEYyzF eDnxLe"
                     >
                         Focus on your 
                         <strong>
@@ -59,12 +53,12 @@ Array [
                         , not your servers
                     </h2>
                     <p
-                        className="sc-hSdWYo dyhJmT"
+                        className="sc-iAyFgw jYgHJM"
                     >
                         Install
                          
                         <a
-                            className="sc-ifAKCX bzKuxF"
+                            className="sc-bxivhb iTNbqk"
                             href="https://docs.cloudfoundry.org/cf-cli/"
                         >
                             Cloud Foundry CLI tools
@@ -73,7 +67,7 @@ Array [
                         and deploy with ease
                     </p>
                     <ul
-                        className="sc-iAyFgw dMiDgO"
+                        className="sc-kkGfuU jCINPd"
                     >
                         <li>
                             Write your code in any programming language
@@ -88,54 +82,50 @@ Array [
                 </div>
                 <div
                     className="sc-bdVaJa fQvyiw"
-                    is={null}
                 >
                     <div
-                        className="sc-iwsKbI cLHqHK"
+                        className="sc-dnqmqq fpJvTA"
                     >
                         <div
-                            className="sc-dnqmqq cYeNPO"
+                            className="sc-htoDjs jLfqDW"
                         >
                             <div
-                                className="sc-gZMcBi kDKDKc"
+                                className="sc-iwsKbI grDUJS"
                             >
                                 <div
-                                    className="sc-htpNat gdzXwm sc-bdVaJa iHSytp"
-                                    is={null}
+                                    className="sc-bwzfXH bjOFJw"
                                 >
                                     <span
-                                        className="sc-VigVT fTBwzp"
+                                        className="sc-gqjmRU dCmKVg"
                                     />
                                     <span
-                                        className="sc-jTzLTM hCHedz"
+                                        className="sc-VigVT hWOuSF"
                                     />
                                     <span
-                                        className="sc-fjdhpX kmITCL"
+                                        className="sc-jTzLTM bxpvnY"
                                     />
                                     <div
-                                        className="sc-jzJRlG eAPChS"
+                                        className="sc-fjdhpX hOYHAA"
                                     >
                                         bash
                                     </div>
                                 </div>
                             </div>
                             <div
-                                className="sc-cSHVUG bRUATF"
+                                className="sc-jzJRlG eDsCni"
                             >
                                 <div
-                                    className="sc-htpNat jtWIOA sc-bdVaJa jOTPPl"
-                                    is={null}
+                                    className="sc-bwzfXH iJfmZQ"
                                 >
                                     <div
                                         className="sc-bdVaJa iHZvIS"
-                                        is={null}
                                     >
                                         <pre
-                                            className="sc-kAzzGY eFTTTe"
+                                            className="sc-cSHVUG dIZaDY"
                                         >
                                             ▲ 
                                             <span
-                                                className="sc-ckVGcZ eBbooX"
+                                                className="sc-dxgOiQ hQyKuY"
                                             >
                                                 ~/my-app $
                                             </span>
@@ -143,14 +133,14 @@ Array [
                                             <br />
                                             Procfile main.go manifest.yml 
                                             <span
-                                                className="sc-kgoBCf juQDCD"
+                                                className="sc-chPdSV eklOAL"
                                             >
                                                 my-app
                                             </span>
                                             <br />
                                             ▲ 
                                             <span
-                                                className="sc-ckVGcZ eBbooX"
+                                                className="sc-dxgOiQ hQyKuY"
                                             >
                                                 ~/my-app $
                                             </span>
@@ -158,7 +148,7 @@ Array [
                                             <br />
                                             Uploading 
                                             <span
-                                                className="sc-kGXeez lnXDyT"
+                                                className="sc-kgoBCf gsPdRh"
                                             >
                                                 my-app
                                             </span>
@@ -169,7 +159,7 @@ Array [
                                             Done uploading
                                             <br />
                                             <span
-                                                className="sc-kpOJdX cVxVAu"
+                                                className="sc-kGXeez dhXipY"
                                             >
                                                 OK
                                             </span>
@@ -177,20 +167,20 @@ Array [
                                             1 of 1 instances running
                                             <br />
                                             <span
-                                                className="sc-dxgOiQ bBquNN"
+                                                className="sc-kpOJdX fotzPP"
                                             >
                                                 App started
                                             </span>
                                             <br />
                                             ▲ 
                                             <span
-                                                className="sc-ckVGcZ eBbooX"
+                                                className="sc-dxgOiQ hQyKuY"
                                             >
                                                 ~/my-app
                                             </span>
                                              $ 
                                             <span
-                                                className="sc-jKJlTe cSWoke"
+                                                className="sc-ckVGcZ ebkPRy"
                                             />
                                         </pre>
                                     </div>
@@ -203,34 +193,31 @@ Array [
         </div>
     </section>
     <div
-        className="sc-bxivhb dyGNMJ sc-bdVaJa dFRSdp"
-        is={null}
+        className="sc-htpNat fRELtR sc-bdVaJa dFRSdp"
     >
         <div
-            className="sc-htpNat jtWIOA sc-bdVaJa gyTSyk"
-            is={null}
+            className="sc-bwzfXH gPNtBz"
         >
             <div
                 className="sc-bdVaJa hioaMl"
-                is={null}
             >
                 <h2
-                    className="sc-kkGfuU gtPXEl"
+                    className="sc-kEYyzF eDnxLe"
                 >
                     Automatically secure
                 </h2>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="sc-iAyFgw jYgHJM"
                 >
                     We provision and renew SSL certificates automatically.
                 </p>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="sc-iAyFgw jYgHJM"
                 >
                     Thanks to
                      
                     <a
-                        className="sc-ifAKCX bzKuxF"
+                        className="sc-bxivhb iTNbqk"
                         href="https://letsencrypt.org/"
                     >
                         Let’s Encrypt
@@ -240,25 +227,24 @@ Array [
             </div>
             <div
                 className="sc-bdVaJa jungCr"
-                is={null}
             >
                 <h2
-                    className="sc-kkGfuU gtPXEl"
+                    className="sc-kEYyzF eDnxLe"
                 >
                     Programming languages
                 </h2>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="sc-iAyFgw jYgHJM"
                 >
                     Supported languages and frameworks include Go, Java, .NET, Node.js, PHP, Python, Ruby, static files and binaries.
                 </p>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="sc-iAyFgw jYgHJM"
                 >
                     Learn about
                      
                     <a
-                        className="sc-ifAKCX bzKuxF"
+                        className="sc-bxivhb iTNbqk"
                         href="https://docs.cloudfoundry.org/buildpacks/"
                     >
                         Cloud Foundry buildpacks
@@ -268,28 +254,27 @@ Array [
             </div>
             <div
                 className="sc-bdVaJa gbvvmj"
-                is={null}
             >
                 <h2
-                    className="sc-kkGfuU gtPXEl"
+                    className="sc-kEYyzF eDnxLe"
                 >
                     Services
                 </h2>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="sc-iAyFgw jYgHJM"
                 >
                     Seamlessly connect your application to backend services.
                 </p>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="sc-iAyFgw jYgHJM"
                 >
                     Available services include Postgres, MySQL, Redis, RabbitMQ and ElasticSearch.
                 </p>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="sc-iAyFgw jYgHJM"
                 >
                     <a
-                        className="sc-ifAKCX bzKuxF"
+                        className="sc-bxivhb iTNbqk"
                         href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au%20-%20interested%20in%20missing%20service&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20home%20page"
                     >
                         Get in contact with us

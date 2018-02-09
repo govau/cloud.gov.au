@@ -14,7 +14,7 @@
     "@types/react-router-dom": "^4.2.3",
     "@types/react-test-renderer": "^16.0.0",
     "date-fns": "^1.29.0",
-    "grid-styled": "^2.0.0-11",
+    "grid-styled": "^3.0.0",
     "jest-styled-components": "^4.10.0",
     "loadable-components": "^0.4.0",
     "lodash-es": "^4.17.5",
