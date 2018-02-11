@@ -31,7 +31,7 @@
     "styled-normalize": "^2.3.0",
     "styled-system": "^1.1.1",
     "tslint": "^5.9.1",
-    "typescript": "^2.6.2",
+    "typescript": "^2.7.1",
     "typescript-styled-plugin": "^0.4.0",
     "whatwg-fetch": "^2.0.3"
   },
