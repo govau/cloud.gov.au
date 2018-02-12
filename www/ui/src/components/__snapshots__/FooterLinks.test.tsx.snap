@@ -24,15 +24,5 @@ exports[`renders without crashing 1`] = `
       Staging console
     </a>
   </li>
-  <li
-    className="sc-bxivhb jfOjzk"
-  >
-    <a
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa jQkSgQ"
-      href="http://status.cloud.gov.au/"
-    >
-      Status
-    </a>
-  </li>
 </ul>
 `;

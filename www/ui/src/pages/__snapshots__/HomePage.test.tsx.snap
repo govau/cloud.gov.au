@@ -283,7 +283,7 @@ Array [
                 <p
                     className="sc-hSdWYo dyhJmT"
                 >
-                    Available services include Postgres, MySQL, Redis, RabbitMQ and ElasticSearch.
+                    Available services include Postgres, MySQL and ElasticSearch.
                 </p>
                 <p
                     className="sc-hSdWYo dyhJmT"

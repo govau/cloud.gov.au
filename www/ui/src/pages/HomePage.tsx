@@ -104,8 +104,7 @@ const HomePage: React.StatelessComponent = () => (
               Seamlessly connect your application to backend services.
             </FeatureP>
             <FeatureP>
-              Available services include Postgres, MySQL, Redis, RabbitMQ and
-              ElasticSearch.
+              Available services include Postgres, MySQL and ElasticSearch.
             </FeatureP>
             <FeatureP>
               <Link
