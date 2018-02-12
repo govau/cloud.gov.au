@@ -5,7 +5,6 @@ set -euxo pipefail
 ROOT_PATH="${PWD}"
 
 echo "Env domain: ${ENV_DOMAIN}"
-echo "Is public domain: ${PUBLIC_DOMAIN}"
 
 export GOPATH="${ROOT_PATH}/go"
 
@@ -28,7 +27,7 @@ cp "${ROOT_PATH}/src/cmd/wwwd/ci/Procfile" "${ROOT_PATH}/build/Procfile"
 
 ROUTE="www.system.${ENV_DOMAIN}"
 
-if [ ! -z "$PUBLIC_DOMAIN" ]; then
+if [ "$ENV_DOMAIN" "b.cld.gov.au" ]; then
   ROUTE="cloud.gov.au"
 fi
 
