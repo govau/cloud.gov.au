@@ -11,5 +11,6 @@ caches:
 - path: pkg/dep/sources
 params:
   ENV_DOMAIN:
+  PUBLIC_DOMAIN:
 run:
   path: src/cmd/wwwd/ci/build-server.sh

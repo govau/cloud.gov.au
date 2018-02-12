@@ -5,6 +5,7 @@ set -euxo pipefail
 ROOT_PATH="${PWD}"
 
 echo "Env domain: ${ENV_DOMAIN}"
+echo "Is public domain: ${PUBLIC_DOMAIN}"
 
 export GOPATH="${ROOT_PATH}/go"
 
@@ -25,4 +26,10 @@ cp "${ROOT_PATH}/src/cmd/wwwd/wwwd" "${ROOT_PATH}/build/wwwd"
 cp -R "${ROOT_PATH}/src/cmd/wwwd/migrations" "${ROOT_PATH}/build/migrations"
 cp "${ROOT_PATH}/src/cmd/wwwd/ci/Procfile" "${ROOT_PATH}/build/Procfile"
 
-printf "\nroutes:\n- route: www.system.${ENV_DOMAIN}\n" | cat "${ROOT_PATH}/src/cmd/wwwd/ci/manifest.yml" - > "${ROOT_PATH}/build/manifest.yml"
+ROUTE="www.system.${ENV_DOMAIN}"
+
+if [ ! -z "$PUBLIC_DOMAIN" ]; then
+  ROUTE="cloud.gov.au"
+fi
+
+printf "\nroutes:\n- route: ${ROUTE}\n" | cat "${ROOT_PATH}/src/cmd/wwwd/ci/manifest.yml" - > "${ROOT_PATH}/build/manifest.yml"

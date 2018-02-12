@@ -11,6 +11,7 @@ jobs:
       output_mapping: {build: build-server}
       params:
         ENV_DOMAIN: d.cld.gov.au
+        PUBLIC_DOMAIN: ''
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
@@ -48,6 +49,7 @@ jobs:
       output_mapping: {build: build-server}
       params:
         ENV_DOMAIN: g.cld.gov.au
+        PUBLIC_DOMAIN: ''
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
@@ -85,6 +87,7 @@ jobs:
       output_mapping: {build: build-server}
       params:
         ENV_DOMAIN: y.cld.gov.au
+        PUBLIC_DOMAIN: ''
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
@@ -122,6 +125,7 @@ jobs:
       output_mapping: {build: build-server}
       params:
         ENV_DOMAIN: b.cld.gov.au
+        PUBLIC_DOMAIN: true
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
