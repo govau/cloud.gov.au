@@ -125,7 +125,7 @@ jobs:
       output_mapping: {build: build-server}
       params:
         ENV_DOMAIN: b.cld.gov.au
-        PUBLIC_DOMAIN: 'true'
+        PUBLIC_DOMAIN: 1
     - task: build-ui
       file: src/cmd/wwwd/ci/build-ui.yml
       output_mapping: {build: build-ui}
