@@ -20,7 +20,7 @@ exports[`renders without crashing 1`] = `
           href="/"
         >
           <img
-            alt=""
+            alt="The Australian Government Coat of Arms"
             className="sc-dnqmqq hIdKhY"
             src={
               Object {

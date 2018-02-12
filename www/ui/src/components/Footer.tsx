@@ -64,7 +64,10 @@ const Footer: React.StatelessComponent<Props> = () => (
         <Box w={[1, 1 / 2, 1 / 3]}>
           <Flex wrap={true} pt={3} pb={2} align="center">
             <Box>
-              <COALogo src={coaLogo} alt="" />
+              <COALogo
+                src={coaLogo}
+                alt="The Australian Government Coat of Arms"
+              />
             </Box>
             <LogoSeparator />
             <Box>
