@@ -899,6 +899,17 @@ chardet@^0.4.0:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.4.2.tgz#b5473b33dc97c424e5d98dc87d55d4d8a29c8bf2"
 
+cheerio@1.0.0-rc.2:
+  version "1.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
+  dependencies:
+    css-select "~1.2.0"
+    dom-serializer "~0.1.0"
+    entities "~1.1.1"
+    htmlparser2 "^3.9.1"
+    lodash "^4.15.0"
+    parse5 "^3.0.1"
+
 chokidar@^1.6.0, chokidar@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
@@ -1241,7 +1252,7 @@ css-loader@0.28.7:
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
-css-select@^1.1.0:
+css-select@^1.1.0, css-select@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
   dependencies:
@@ -1266,9 +1277,9 @@ css-to-react-native@^2.0.3:
     fbjs "^0.8.5"
     postcss-value-parser "^3.3.0"
 
-css-tree@1.0.0-alpha25:
-  version "1.0.0-alpha25"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha25.tgz#1bbfabfbf6eeef4f01d9108ff2edd0be2fe35597"
+css-tree@1.0.0-alpha.27:
+  version "1.0.0-alpha.27"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha.27.tgz#f211526909c7dc940843d83b9376ed98ddb8de47"
   dependencies:
     mdn-data "^1.0.0"
     source-map "^0.5.3"
@@ -1327,18 +1338,18 @@ cssesc@^0.1.0:
     postcss-value-parser "^3.2.3"
     postcss-zindex "^2.0.1"
 
-csso@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/csso/-/csso-3.3.1.tgz#e069a8f52adcf53685a8a7374256ccbc22c6ce3e"
-  dependencies:
-    css-tree "1.0.0-alpha25"
-
 csso@~2.3.1:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/csso/-/csso-2.3.2.tgz#ddd52c587033f49e94b71fc55569f252e8ff5f85"
   dependencies:
     clap "^1.0.9"
     source-map "^0.5.3"
+
+csso@~3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/csso/-/csso-3.5.0.tgz#acdbba5719e2c87bc801eadc032764b2e4b9d4e7"
+  dependencies:
+    css-tree "1.0.0-alpha.27"
 
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   version "0.3.2"
@@ -1595,7 +1606,7 @@ dom-converter@~0.1:
   dependencies:
     utila "~0.3"
 
-dom-serializer@0:
+dom-serializer@0, dom-serializer@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
   dependencies:
@@ -1612,7 +1623,7 @@ domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
 
-domelementtype@1:
+domelementtype@1, domelementtype@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.0.tgz#b17aed82e8ab59e52dd9c19b1756e0fc187204c2"
 
@@ -1626,6 +1637,12 @@ domhandler@2.1:
   dependencies:
     domelementtype "1"
 
+domhandler@^2.3.0:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-2.4.1.tgz#892e47000a99be55bbf3774ffea0561d8879c259"
+  dependencies:
+    domelementtype "1"
+
 domutils@1.1:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.1.6.tgz#bddc3de099b9a2efacc51c623f28f416ecc57485"
@@ -1635,6 +1652,13 @@ domutils@1.1:
 domutils@1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
+  dependencies:
+    dom-serializer "0"
+    domelementtype "1"
+
+domutils@^1.5.1:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -1714,7 +1738,7 @@ enhanced-resolve@^3.0.0, enhanced-resolve@^3.4.0:
     object-assign "^4.0.1"
     tapable "^0.2.7"
 
-entities@~1.1.1:
+entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
@@ -2101,9 +2125,13 @@ fileset@^2.0.2:
     glob "^7.0.3"
     minimatch "^3.0.3"
 
-filesize@3.5.11, filesize@^3.5.10:
+filesize@3.5.11:
   version "3.5.11"
   resolved "https://registry.yarnpkg.com/filesize/-/filesize-3.5.11.tgz#1919326749433bb3cf77368bd158caabcc19e9ee"
+
+filesize@^3.5.11:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/filesize/-/filesize-3.6.0.tgz#22d079615624bb6fd3c04026120628a41b3f4efa"
 
 fill-range@^2.1.0:
   version "2.2.3"
@@ -2618,6 +2646,17 @@ html-webpack-plugin@2.29.0:
     lodash "^4.17.3"
     pretty-error "^2.0.2"
     toposort "^1.0.0"
+
+htmlparser2@^3.9.1:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.9.2.tgz#1bdf87acca0f3f9e53fa4fcceb0f4b4cbb00b338"
+  dependencies:
+    domelementtype "^1.3.0"
+    domhandler "^2.3.0"
+    domutils "^1.5.1"
+    entities "^1.1.1"
+    inherits "^2.0.1"
+    readable-stream "^2.0.2"
 
 htmlparser2@~3.3.0:
   version "3.3.0"
@@ -3588,6 +3627,10 @@ lodash.uniq@^4.5.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
+lodash@^4.15.0:
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
+
 loglevel@^1.4.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.0.tgz#ae0caa561111498c5ba13723d6fb631d24003934"
@@ -3748,15 +3791,16 @@ mimic-fn@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.1.0.tgz#e667783d92e89dbd342818b5230b9d62a672ad18"
 
-minimalcss@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/minimalcss/-/minimalcss-0.3.1.tgz#d893604080a64c8e12122316dbb4e37e925e5d9e"
+minimalcss@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/minimalcss/-/minimalcss-0.6.3.tgz#f1b8f508a9474cb69ae80f8b1e9ecf82749f8cc4"
   dependencies:
-    css-tree "1.0.0-alpha25"
-    csso "3.3.1"
-    filesize "^3.5.10"
+    cheerio "1.0.0-rc.2"
+    css-tree "1.0.0-alpha.27"
+    csso "~3.5.0"
+    filesize "^3.5.11"
     minimist "^1.2.0"
-    puppeteer "^0.10.2"
+    puppeteer "^1.0.0"
 
 minimalistic-assert@^1.0.0:
   version "1.0.0"
@@ -4178,6 +4222,12 @@ parse-passwd@^1.0.0:
 parse5@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-1.5.1.tgz#9b7f3b0de32be78dc2401b17573ccaf0f6f59d94"
+
+parse5@^3.0.1:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-3.0.3.tgz#042f792ffdd36851551cf4e9e066b3874ab45b5c"
+  dependencies:
+    "@types/node" "*"
 
 parseurl@~1.3.2:
   version "1.3.2"
@@ -4690,22 +4740,9 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-puppeteer@^0.10.2:
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-0.10.2.tgz#b4a959a722bf626ca481f2aeba11fdb810f2c98f"
-  dependencies:
-    debug "^2.6.8"
-    extract-zip "^1.6.5"
-    https-proxy-agent "^2.1.0"
-    mime "^1.3.4"
-    progress "^2.0.0"
-    proxy-from-env "^1.0.0"
-    rimraf "^2.6.1"
-    ws "^3.0.0"
-
-puppeteer@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-0.11.0.tgz#0a2b856f3c2745a5884c6dde9fb44f96663988ed"
+puppeteer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-1.0.0.tgz#20f3bb6ad6c6778b4d1fb750e808a29fec0a88a4"
   dependencies:
     debug "^2.6.8"
     extract-zip "^1.6.5"
@@ -4927,18 +4964,18 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-snap@^1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/react-snap/-/react-snap-1.10.0.tgz#d842574e2dc7b55f5bece7b615404dcf72a72d45"
+react-snap@^1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/react-snap/-/react-snap-1.11.3.tgz#30bc8bd9373847eba91387189176ba028dcd297d"
   dependencies:
     clean-css "^4.1.9"
     express "^4.16.1"
     express-history-api-fallback "^2.2.1"
     highland "^2.11.1"
     html-minifier "^3.5.5"
-    minimalcss "^0.3.1"
+    minimalcss "^0.6.3"
     mkdirp "^0.5.1"
-    puppeteer "^0.11.0"
+    puppeteer "^1.0.0"
     serve-static "^1.13.1"
     sourcemapped-stacktrace-node "^2.1.6"
 
