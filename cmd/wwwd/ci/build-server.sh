@@ -27,7 +27,7 @@ cp "${ROOT_PATH}/src/cmd/wwwd/ci/Procfile" "${ROOT_PATH}/build/Procfile"
 
 ROUTE="www.system.${ENV_DOMAIN}"
 
-if [ "$ENV_DOMAIN" "b.cld.gov.au" ]; then
+if [ "$ENV_DOMAIN" == "b.cld.gov.au" ]; then
   ROUTE="cloud.gov.au"
 fi
 
