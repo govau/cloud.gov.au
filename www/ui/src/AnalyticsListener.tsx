@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Location } from "history";
+import Helmet from "react-helmet";
 import { RouteComponentProps, withRouter } from "react-router";
 
 const gaPropertyID = process.env.REACT_APP_GA_PROPERTY_ID;
@@ -8,10 +9,15 @@ export const sendPageview = (location: Location) => {
   if (!gaPropertyID) {
     return;
   }
-  // TODO(jonathaningram): check that the right document title has been sent.
+  // TODO(jonathaningram): delaying this so that the document title has been
+  // updated.
+  // Need to figure out how best to solve the delay that react-helmet applies.
   // Possibly can use `<Helmet defer={false} />`.
-  ga("set", "page", location.pathname);
-  ga("send", "pageview");
+  setTimeout(() => {
+    ga("set", "title", Helmet.peek().title || "cloud.gov.au");
+    ga("set", "page", location.pathname);
+    ga("send", "pageview");
+  }, 500);
 };
 
 interface Props extends RouteComponentProps<{}> {}
