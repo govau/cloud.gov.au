@@ -1,15 +1,21 @@
 import * as React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import createBrowserHistory from "history/createBrowserHistory";
+import { Router } from "react-router";
+import { Switch, Route } from "react-router-dom";
 import Helmet from "react-helmet";
 import styled, { ThemeProvider, css } from "./styled-components";
 
 import { theme } from "./theme";
-import AnalyticsListener from "./AnalyticsListener";
+import AnalyticsListener, { sendPageview } from "./AnalyticsListener";
 import * as Routes from "./Routes";
 import DefaultLayout from "./components/DefaultLayout";
 import Disclaimer from "./components/Disclaimer";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
+const history = createBrowserHistory();
+
+history.listen(sendPageview);
 
 const title = "cloud.gov.au";
 
@@ -25,7 +31,7 @@ const Main = styled.main``;
 interface Props {}
 
 const App: React.StatelessComponent<Props> = () => (
-  <Router>
+  <Router history={history}>
     <React.Fragment>
       <AnalyticsListener />
       <ThemeProvider theme={theme}>

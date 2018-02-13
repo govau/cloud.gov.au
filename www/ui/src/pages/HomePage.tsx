@@ -1,4 +1,5 @@
 import * as React from "react";
+import Helmet from "react-helmet";
 import styled, { css } from "../styled-components";
 import { Flex, Box } from "grid-styled";
 
@@ -44,6 +45,9 @@ const FeatureP = P.extend`
 
 const HomePage: React.StatelessComponent = () => (
   <React.Fragment>
+    <Helmet>
+      <title />
+    </Helmet>
     <Header />
     <Content>
       <Ribbon1>
