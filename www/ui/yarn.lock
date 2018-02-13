@@ -45,6 +45,10 @@
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
+"@types/google.analytics@^0.0.37":
+  version "0.0.37"
+  resolved "https://registry.yarnpkg.com/@types/google.analytics/-/google.analytics-0.0.37.tgz#43f14241ab2d70b528467136f14fbab778cddd25"
+
 "@types/history@*":
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.6.2.tgz#12cfaba693ba20f114ed5765467ff25fdf67ddb0"
@@ -68,9 +72,9 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/react-helmet@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-5.0.3.tgz#614e706cb73120936c7c067404809f8c2f1a840c"
+"@types/react-helmet@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-5.0.4.tgz#e8c8277bf4b0f43ba6ba8d6cd098fc53b518f975"
   dependencies:
     "@types/react" "*"
 
