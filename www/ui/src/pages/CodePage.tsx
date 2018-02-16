@@ -172,7 +172,9 @@ class CodePage extends React.Component<{}, Partial<State>> {
         <Heading>Code by cloud.gov.au</Heading>
         {response.items.length > 0 ? (
           <p>
-            {response.total_count} result{response.items.length > 1 ? "s" : ""}
+            {response.total_count} result{response.items.length === 1
+              ? ""
+              : "s"}
           </p>
         ) : (
           <p>No code at the moment.</p>

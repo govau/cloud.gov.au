@@ -86,7 +86,7 @@ const TotalApps: React.StatelessComponent<Props> = ({
         {isValidVectorNumber(totalPrevWeek) ? (
           <Label>
             <StyledDeltaSign value={delta} />
-            {Math.abs(delta)} app{Math.abs(delta) > 1 ? "s" : ""} since last
+            {Math.abs(delta)} app{Math.abs(delta) === 1 ? "" : "s"} since last
             week ({(Math.abs(delta) / totalPrevWeekNum * 100).toFixed(0)}%)
           </Label>
         ) : null}
