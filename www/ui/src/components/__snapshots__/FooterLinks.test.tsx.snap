@@ -1,24 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
+.c2 {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c1 {
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+}
+
 <ul
-  className="sc-htpNat fXmrlj"
+  className="c0"
 >
   <li
-    className="sc-bxivhb jfOjzk"
+    className="c1"
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa jQkSgQ"
+      className="c2"
       href="https://console.system.b.cld.gov.au/"
     >
       Production console
     </a>
   </li>
   <li
-    className="sc-bxivhb jfOjzk"
+    className="c1"
   >
     <a
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa jQkSgQ"
+      className="c2"
       href="https://console.system.y.cld.gov.au/"
     >
       Staging console

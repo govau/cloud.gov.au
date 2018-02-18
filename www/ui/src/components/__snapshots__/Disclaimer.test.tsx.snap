@@ -1,28 +1,107 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
+.c1 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 16px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c0 {
+  max-width: 1024px;
+}
+
+.c5 {
+  text-decoration: none;
+}
+
+.c6 {
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.c7 {
+  color: #ffffff;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.c9 {
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+@media screen and (min-width:40em) {
+  .c4 {
+    width: auto;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c8 {
+    width: auto;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c8 {
+    margin-top: 0px;
+  }
+}
+
 <div
-  className="sc-htoDjs jAzNNJ"
+  className=""
 >
   <div
-    className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+    className="c0 c1"
     is={null}
   >
     <div
-      className="sc-htpNat jtWIOA sc-bdVaJa ikjdog"
+      className="c2 c3"
       is={null}
     >
       <div
-        className="sc-bdVaJa fOpQaR"
+        className="c4"
         is={null}
       >
         <a
-          className="sc-ifAKCX dwTEKz"
+          className="c5"
           href="/"
         >
           <img
             alt=""
-            className="sc-EHOje gxqRhi"
+            className="c6"
             src={
               Object {
                 "0": "s",
@@ -38,18 +117,18 @@ exports[`renders without crashing 1`] = `
             }
           />
           <span
-            className="sc-bZQynM hNQVjf"
+            className="c7"
           >
             GOV.AU
           </span>
         </a>
       </div>
       <div
-        className="sc-bdVaJa irQXag"
+        className="c8"
         is={null}
       >
         <span
-          className="sc-gzVnrw ieUjli"
+          className="c9"
         >
           Official Australian Government website
         </span>

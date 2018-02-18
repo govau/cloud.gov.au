@@ -2,28 +2,77 @@
 
 exports[`renders without crashing 1`] = `
 Array [
-  <div
-    className="sc-htoDjs jgEvST"
+  .c2 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  padding-bottom: 32px;
+  padding-top: 16px;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  max-width: 1024px;
+}
+
+.c6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.c7 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.c0 {
+  background-color: #115361;
+  color: #ffffff;
+}
+
+<div
+    className="c0"
 >
     <div
-        className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+        className="c1 c2"
         is={null}
     >
         <div
-            className="sc-htpNat jtWIOA sc-bdVaJa eSFxna"
+            className="c3 c4"
             is={null}
         >
             <div
-                className="sc-bdVaJa iHZvIS"
+                className="c5"
                 is={null}
             >
                 <h1
-                    className="sc-bZQynM bwMZIe"
+                    className="c6"
                 >
                     Cloud
                 </h1>
                 <p
-                    className="sc-gzVnrw lgDsWe"
+                    className="c7"
                 >
                     A platform to make delivering and operating digital services easier.
                 </p>
@@ -31,26 +80,342 @@ Array [
         </div>
     </div>
 </div>,
-  <div
-    className="sc-eNQAEJ iGzHyR"
+  .c23 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.c5 {
+  box-sizing: border-box;
+  padding-bottom: 64px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c6 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 8px;
+  padding-right: 0px;
+  padding-top: 8px;
+}
+
+.c11 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 8px;
+  padding-left: 0px;
+  padding-top: 8px;
+}
+
+.c16 {
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.c22 {
+  box-sizing: border-box;
+  padding: 16px;
+  padding-bottom: 32px;
+  padding-top: 0px;
+}
+
+.c31 {
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c32 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 0px;
+}
+
+.c33 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.c34 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c2 {
+  max-width: 1024px;
+}
+
+.c9 {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: solid 1px #00c3ef;
+}
+
+.c9:hover {
+  color: #313131;
+  background-color: #5bcbe3;
+  border-bottom-color: #5bcbe3;
+}
+
+.c13 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.c12 {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 20px 50px 0 rgba(0,0,0,0.3);
+  border: 1px solid #000000;
+  border-radius: 0.3125rem;
+}
+
+.c14 {
+  font-size: 0.875rem;
+}
+
+.c17 {
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 0.25rem;
+  margin-left: 0;
+  background-color: #ff5f56;
+}
+
+.c18 {
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 0.25rem;
+  background-color: #ffbd2e;
+}
+
+.c19 {
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 0.25rem;
+  margin-right: 0;
+  background-color: #27c93f;
+}
+
+.c20 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.c21 {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.c24 {
+  margin: 0;
+  line-height: 1.25rem;
+}
+
+.c26 {
+  font-weight: 600;
+  color: #ff635c;
+}
+
+.c27 {
+  font-weight: 600;
+  color: #00c3ef;
+}
+
+.c28 {
+  font-weight: 600;
+  color: #0cac78;
+}
+
+.c29 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.c25 {
+  color: #cccccc;
+}
+
+.c30 {
+  display: inline-block;
+  width: 0.5rem;
+  height: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #f69900;
+}
+
+.c0 {
+  background-color: #ffffff;
+}
+
+.c1 {
+  background: #fafafa;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #eaeaea;
+}
+
+.c7 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.c10 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.c8 {
+  font-size: 1.5rem;
+  font-size: 1rem;
+  color: #666666;
+}
+
+@media screen and (min-width:40em) {
+  .c5 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c6 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c6 {
+    padding-bottom: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c11 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c11 {
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-top: 32px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c31 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c32 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c32 {
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c33 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c33 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c34 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c34 {
+    padding-left: 32px;
+  }
+}
+
+<div
+    className="c0"
 >
     <section
-        className="sc-kEYyzF eDcRWs"
+        className="c1"
     >
         <div
-            className="sc-bxivhb dyGNMJ sc-bdVaJa dFRSdp"
+            className="c2 c3"
             is={null}
         >
             <div
-                className="sc-htpNat jtWIOA sc-bdVaJa kJYhde"
+                className="c4 c5"
                 is={null}
             >
                 <div
-                    className="sc-bdVaJa fiVwab"
+                    className="c6"
                     is={null}
                 >
                     <h2
-                        className="sc-kkGfuU gtPXEl"
+                        className="c7"
                     >
                         Focus on your 
                         <strong>
@@ -59,12 +424,12 @@ Array [
                         , not your servers
                     </h2>
                     <p
-                        className="sc-hSdWYo dyhJmT"
+                        className="c8"
                     >
                         Install
                          
                         <a
-                            className="sc-ifAKCX bzKuxF"
+                            className="c9"
                             href="https://docs.cloudfoundry.org/cf-cli/"
                         >
                             Cloud Foundry CLI tools
@@ -73,7 +438,7 @@ Array [
                         and deploy with ease
                     </p>
                     <ul
-                        className="sc-iAyFgw dMiDgO"
+                        className="c10"
                     >
                         <li>
                             Write your code in any programming language
@@ -87,55 +452,55 @@ Array [
                     </ul>
                 </div>
                 <div
-                    className="sc-bdVaJa fQvyiw"
+                    className="c11"
                     is={null}
                 >
                     <div
-                        className="sc-iwsKbI cLHqHK"
+                        className="c12"
                     >
                         <div
-                            className="sc-dnqmqq cYeNPO"
+                            className="c13"
                         >
                             <div
-                                className="sc-gZMcBi kDKDKc"
+                                className="c14"
                             >
                                 <div
-                                    className="sc-htpNat gdzXwm sc-bdVaJa iHSytp"
+                                    className="c15 c16"
                                     is={null}
                                 >
                                     <span
-                                        className="sc-VigVT fTBwzp"
+                                        className="c17"
                                     />
                                     <span
-                                        className="sc-jTzLTM hCHedz"
+                                        className="c18"
                                     />
                                     <span
-                                        className="sc-fjdhpX kmITCL"
+                                        className="c19"
                                     />
                                     <div
-                                        className="sc-jzJRlG eAPChS"
+                                        className="c20"
                                     >
                                         bash
                                     </div>
                                 </div>
                             </div>
                             <div
-                                className="sc-cSHVUG bRUATF"
+                                className="c21"
                             >
                                 <div
-                                    className="sc-htpNat jtWIOA sc-bdVaJa jOTPPl"
+                                    className="c4 c22"
                                     is={null}
                                 >
                                     <div
-                                        className="sc-bdVaJa iHZvIS"
+                                        className="c23"
                                         is={null}
                                     >
                                         <pre
-                                            className="sc-kAzzGY eFTTTe"
+                                            className="c24"
                                         >
                                             ▲ 
                                             <span
-                                                className="sc-ckVGcZ eBbooX"
+                                                className="c25"
                                             >
                                                 ~/my-app $
                                             </span>
@@ -143,14 +508,14 @@ Array [
                                             <br />
                                             Procfile main.go manifest.yml 
                                             <span
-                                                className="sc-kgoBCf juQDCD"
+                                                className="c26"
                                             >
                                                 my-app
                                             </span>
                                             <br />
                                             ▲ 
                                             <span
-                                                className="sc-ckVGcZ eBbooX"
+                                                className="c25"
                                             >
                                                 ~/my-app $
                                             </span>
@@ -158,7 +523,7 @@ Array [
                                             <br />
                                             Uploading 
                                             <span
-                                                className="sc-kGXeez lnXDyT"
+                                                className="c27"
                                             >
                                                 my-app
                                             </span>
@@ -169,7 +534,7 @@ Array [
                                             Done uploading
                                             <br />
                                             <span
-                                                className="sc-kpOJdX cVxVAu"
+                                                className="c28"
                                             >
                                                 OK
                                             </span>
@@ -177,20 +542,20 @@ Array [
                                             1 of 1 instances running
                                             <br />
                                             <span
-                                                className="sc-dxgOiQ bBquNN"
+                                                className="c29"
                                             >
                                                 App started
                                             </span>
                                             <br />
                                             ▲ 
                                             <span
-                                                className="sc-ckVGcZ eBbooX"
+                                                className="c25"
                                             >
                                                 ~/my-app
                                             </span>
                                              $ 
                                             <span
-                                                className="sc-jKJlTe cSWoke"
+                                                className="c30"
                                             />
                                         </pre>
                                     </div>
@@ -203,34 +568,34 @@ Array [
         </div>
     </section>
     <div
-        className="sc-bxivhb dyGNMJ sc-bdVaJa dFRSdp"
+        className="c2 c3"
         is={null}
     >
         <div
-            className="sc-htpNat jtWIOA sc-bdVaJa gyTSyk"
+            className="c4 c31"
             is={null}
         >
             <div
-                className="sc-bdVaJa hioaMl"
+                className="c32"
                 is={null}
             >
                 <h2
-                    className="sc-kkGfuU gtPXEl"
+                    className="c7"
                 >
                     Automatically secure
                 </h2>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="c8"
                 >
                     We provision and renew SSL certificates automatically.
                 </p>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="c8"
                 >
                     Thanks to
                      
                     <a
-                        className="sc-ifAKCX bzKuxF"
+                        className="c9"
                         href="https://letsencrypt.org/"
                     >
                         Let’s Encrypt
@@ -239,26 +604,26 @@ Array [
                 </p>
             </div>
             <div
-                className="sc-bdVaJa jungCr"
+                className="c33"
                 is={null}
             >
                 <h2
-                    className="sc-kkGfuU gtPXEl"
+                    className="c7"
                 >
                     Programming languages
                 </h2>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="c8"
                 >
                     Supported languages and frameworks include Go, Java, .NET, Node.js, PHP, Python, Ruby, static files and binaries.
                 </p>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="c8"
                 >
                     Learn about
                      
                     <a
-                        className="sc-ifAKCX bzKuxF"
+                        className="c9"
                         href="https://docs.cloudfoundry.org/buildpacks/"
                     >
                         Cloud Foundry buildpacks
@@ -267,29 +632,29 @@ Array [
                 </p>
             </div>
             <div
-                className="sc-bdVaJa gbvvmj"
+                className="c34"
                 is={null}
             >
                 <h2
-                    className="sc-kkGfuU gtPXEl"
+                    className="c7"
                 >
                     Services
                 </h2>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="c8"
                 >
                     Seamlessly connect your application to backend services.
                 </p>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="c8"
                 >
                     Available services include Postgres, MySQL and ElasticSearch.
                 </p>
                 <p
-                    className="sc-hSdWYo dyhJmT"
+                    className="c8"
                 >
                     <a
-                        className="sc-ifAKCX bzKuxF"
+                        className="c9"
                         href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au%20-%20interested%20in%20missing%20service&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20home%20page"
                     >
                         Get in contact with us

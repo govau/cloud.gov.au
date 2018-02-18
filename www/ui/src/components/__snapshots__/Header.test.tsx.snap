@@ -1,19 +1,130 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
+.c2 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.c5 {
+  box-sizing: border-box;
+  padding-right: 32px;
+}
+
+.c7 {
+  box-sizing: border-box;
+}
+
+.c11 {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 16px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c14 {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+.c9 {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+.c1 {
+  max-width: 1024px;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c13 {
+  display: block;
+  margin: 8px;
+}
+
+.c6 {
+  height: 5rem;
+}
+
+.c8 {
+  display: block;
+  border-bottom: 0;
+}
+
+.c10 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.c0 {
+  color: #ffffff;
+}
+
+@media screen and (min-width:40em) {
+  .c11 {
+    width: auto;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c11 {
+    margin-left: auto;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c13 {
+    display: inline-block;
+  }
+}
+
 <header
-  className="sc-gqjmRU iHXAiL"
+  className="c0"
 >
   <div
-    className="sc-EHOje yHDKW sc-bdVaJa bNqJOV"
+    className="c1 c2"
     is={null}
   >
     <div
-      className="sc-htpNat fzUmoZ sc-bdVaJa NcCKj"
+      className="c3 c4"
       is={null}
     >
       <div
-        className="sc-bdVaJa dnoIVq"
+        className="c5"
         is={null}
       >
         <a
@@ -21,7 +132,7 @@ exports[`renders without crashing 1`] = `
         >
           <img
             alt="The Australian Government Coat of Arms"
-            className="sc-dnqmqq hIdKhY"
+            className="c6"
             src={
               Object {
                 "0": "c",
@@ -38,30 +149,30 @@ exports[`renders without crashing 1`] = `
         </a>
       </div>
       <div
-        className="sc-bdVaJa iHZvIS"
+        className="c7"
         is={null}
       >
         <a
-          className="sc-iwsKbI rfzGG sc-ifAKCX cLeGDS"
+          className="c8 c9"
           href="/"
           onClick={[Function]}
         >
           <div
-            className="sc-gZMcBi ehVgaG"
+            className="c10"
           >
             cloud.gov.au
           </div>
         </a>
       </div>
       <div
-        className="sc-bdVaJa fvqBgo"
+        className="c11"
         is={null}
       >
         <ul
-          className="sc-bZQynM kzNUFp"
+          className="c12"
         >
           <li
-            className="sc-gzVnrw gSTdTM"
+            className="c13"
             display={
               Array [
                 "block",
@@ -75,7 +186,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
+              className="c9"
               href="/insights/"
               onClick={[Function]}
             >
@@ -83,7 +194,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="sc-gzVnrw gSTdTM"
+            className="c13"
             display={
               Array [
                 "block",
@@ -97,7 +208,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="sc-htoDjs bZzhDu sc-ifAKCX cLeGDS"
+              className="c9"
               href="/code/"
               onClick={[Function]}
             >
@@ -105,7 +216,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="sc-gzVnrw gSTdTM"
+            className="c13"
             display={
               Array [
                 "block",
@@ -119,14 +230,14 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="sc-htoDjs bZzhDu sc-bxivhb dIIonV"
+              className="c14"
               href="https://docs.cloud.gov.au/"
             >
               Docs
             </a>
           </li>
           <li
-            className="sc-gzVnrw gSTdTM"
+            className="c13"
             display={
               Array [
                 "block",
@@ -140,7 +251,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="sc-htoDjs bZzhDu sc-bxivhb dIIonV"
+              className="c14"
               href="https://support.cloud.gov.au/"
             >
               Support

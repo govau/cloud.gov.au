@@ -1,19 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
+.c2 {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  max-width: 1024px;
+}
+
+.c0 {
+  min-height: 50vh;
+}
+
 <div
-  className="sc-ifAKCX iePrdK"
+  className="c0"
 >
   <div
-    className="sc-bxivhb dyGNMJ sc-bdVaJa bNqJOV"
+    className="c1 c2"
     is={null}
   >
     <div
-      className="sc-htpNat jtWIOA sc-bdVaJa iHZvIS"
+      className="c3 c4"
       is={null}
     >
       <div
-        className="sc-bdVaJa jFKWis"
+        className="c5"
         is={null}
       >
         content

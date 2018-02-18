@@ -1,8 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
+.c0 {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
 <a
-  className="sc-bwzfXH gRAcqg"
+  className="c0"
   href="/"
   onClick={[Function]}
 >
