@@ -60,9 +60,9 @@ interface Props {}
 const Footer: React.StatelessComponent<Props> = () => (
   <StyledFooter>
     <Container>
-      <Flex wrap={true} pt={3} pb={3} align="center">
+      <Flex flexWrap="wrap" pt={3} pb={3} align="center">
         <Box w={[1, 1 / 2, 1 / 3]}>
-          <Flex wrap={true} pt={3} pb={2} align="center">
+          <Flex flexWrap="wrap" pt={3} pb={2} align="center">
             <Box>
               <COALogo
                 src={coaLogo}

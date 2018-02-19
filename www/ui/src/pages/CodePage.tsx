@@ -196,7 +196,7 @@ class CodePage extends React.Component<{}, Partial<State>> {
                       </Link>
                     </Box>
                     <Box w={[1, 1 / 4]}>
-                      <Flex wrap={true} align="center">
+                      <Flex flexWrap="wrap" align="center">
                         <LangIcon />
                         <Language>{r.language}</Language>
                       </Flex>

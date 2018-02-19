@@ -38,7 +38,7 @@ interface Props {}
 const Disclaimer: React.StatelessComponent<Props> = () => (
   <StyledDisclaimer>
     <Container>
-      <Flex wrap={true} pt={1} pb={1}>
+      <Flex flexWrap="wrap" pt={1} pb={1}>
         <Box w={[1, "auto"]} pr={2}>
           <BrandLink href="/">
             <Star src={star} alt="" />

@@ -39,7 +39,7 @@ interface Props {}
 const Header: React.StatelessComponent<Props> = () => (
   <StyledHeader>
     <Container>
-      <Flex wrap={true} pt={3} pb={3} align="center">
+      <Flex flexWrap="wrap" pt={3} pb={3} align="center">
         <Box pr={3}>
           <a href="/">
             <COALogo

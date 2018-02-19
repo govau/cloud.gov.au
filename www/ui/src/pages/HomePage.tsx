@@ -52,7 +52,7 @@ const HomePage: React.StatelessComponent = () => (
     <Content>
       <Ribbon1>
         <Container px={0}>
-          <Flex wrap={true} px={2} pt={[2, 4]} pb={4}>
+          <Flex flexWrap="wrap" px={2} pt={[2, 4]} pb={4}>
             <Box w={[1, 1 / 2]} pt={[1, 3]} pb={[1, 3]} pr={[0, 3]}>
               <FeatureHeading>
                 Focus on your <strong>services</strong>, not your servers
@@ -77,7 +77,7 @@ const HomePage: React.StatelessComponent = () => (
         </Container>
       </Ribbon1>
       <Container px={0}>
-        <Flex wrap={true} px={2} py={[2, 4]}>
+        <Flex flexWrap="wrap" px={2} py={[2, 4]}>
           <Box w={[1, 1 / 3]} pr={[0, 3]}>
             <FeatureHeading>Automatically secure</FeatureHeading>
             <FeatureP>

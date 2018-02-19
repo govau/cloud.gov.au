@@ -143,7 +143,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
         {helmet}
         <PageHeader>Insights</PageHeader>
         <EnvWrapper>
-          <Flex wrap={true} align="center">
+          <Flex flexWrap="wrap" align="center">
             {total_non_system_cf_apps_staging &&
             total_non_system_cf_apps_prev_week_staging ? (
               <Box width={[1, 1 / 3]}>
@@ -164,7 +164,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
             ) : null}
           </Flex>
           {buildpacks_staging ? (
-            <Flex wrap={true}>
+            <Flex flexWrap="wrap">
               <Box width={1} p={[0, 3]}>
                 <BuildpacksChart label="staging" data={buildpacks_staging} />
               </Box>
@@ -172,7 +172,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
           ) : null}
         </EnvWrapper>
         <EnvWrapper>
-          <Flex wrap={true} align="center">
+          <Flex flexWrap="wrap" align="center">
             {total_non_system_cf_apps_production &&
             total_non_system_cf_apps_prev_week_production ? (
               <Box width={[1, 1 / 3]}>
@@ -193,7 +193,7 @@ class InsightsPage extends React.Component<{}, Partial<State>> {
             ) : null}
           </Flex>
           {buildpacks_production ? (
-            <Flex wrap={true}>
+            <Flex flexWrap="wrap">
               <Box width={1} p={[0, 3]}>
                 <BuildpacksChart
                   label="production"

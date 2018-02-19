@@ -60,7 +60,7 @@ const TitleWrapper = styled.div`
 
 const Header: React.StatelessComponent<{}> = ({ children }) => (
   <HeaderWrapper>
-    <Flex wrap={true} p={2} align="flex-end">
+    <Flex flexWrap="wrap" p={2} align="flex-end">
       <CloseIcon />
       <MinimizeIcon />
       <FullscreenIcon />
@@ -81,7 +81,7 @@ const BodyWrapper = styled.div`
 
 const Body: React.StatelessComponent<{}> = ({ children }) => (
   <BodyWrapper>
-    <Flex wrap={true} p={2} pt={0} pb={3}>
+    <Flex flexWrap="wrap" p={2} pt={0} pb={3}>
       <Box>{children}</Box>
     </Flex>
   </BodyWrapper>

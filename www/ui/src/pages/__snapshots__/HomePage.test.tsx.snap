@@ -6,21 +6,18 @@ Array [
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c4 {
   box-sizing: border-box;
-  padding-bottom: 32px;
-  padding-top: 16px;
-}
-
-.c5 {
-  box-sizing: border-box;
 }
 
 .c3 {
+  box-sizing: border-box;
+  padding-bottom: 16px;
+  padding-top: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -34,14 +31,14 @@ Array [
   max-width: 1024px;
 }
 
-.c6 {
+.c5 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 4rem;
   font-weight: 700;
 }
 
-.c7 {
+.c6 {
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -56,23 +53,21 @@ Array [
 >
     <div
         className="c1 c2"
-        is={null}
     >
         <div
-            className="c3 c4"
-            is={null}
+            className="c3"
+            flexWrap="wrap"
         >
             <div
-                className="c5"
-                is={null}
+                className="c4"
             >
                 <h1
-                    className="c6"
+                    className="c5"
                 >
                     Cloud
                 </h1>
                 <p
-                    className="c7"
+                    className="c6"
                 >
                     A platform to make delivering and operating Government digital services easier.
                 </p>
@@ -80,7 +75,7 @@ Array [
         </div>
     </div>
 </div>,
-  .c23 {
+  .c21 {
   box-sizing: border-box;
 }
 
@@ -94,68 +89,45 @@ Array [
 
 .c5 {
   box-sizing: border-box;
-  padding-bottom: 64px;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c6 {
-  box-sizing: border-box;
   width: 100%;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
   padding-right: 0px;
-  padding-top: 8px;
+  padding-top: 4px;
 }
 
-.c11 {
+.c10 {
   box-sizing: border-box;
   width: 100%;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
   padding-left: 0px;
-  padding-top: 8px;
+  padding-top: 4px;
 }
 
-.c16 {
+.c30 {
   box-sizing: border-box;
-  padding: 16px;
-}
-
-.c22 {
-  box-sizing: border-box;
-  padding: 16px;
-  padding-bottom: 32px;
-  padding-top: 0px;
+  width: 100%;
+  padding-right: 0px;
 }
 
 .c31 {
   box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.c32 {
-  box-sizing: border-box;
-  width: 100%;
-  padding-right: 0px;
-}
-
-.c33 {
-  box-sizing: border-box;
   width: 100%;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.c34 {
+.c32 {
   box-sizing: border-box;
   width: 100%;
   padding-left: 0px;
 }
 
 .c4 {
+  box-sizing: border-box;
+  padding-bottom: 32px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -165,7 +137,9 @@ Array [
   flex-wrap: wrap;
 }
 
-.c15 {
+.c14 {
+  box-sizing: border-box;
+  padding: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -179,11 +153,40 @@ Array [
   align-items: flex-end;
 }
 
+.c20 {
+  box-sizing: border-box;
+  padding: 8px;
+  padding-bottom: 16px;
+  padding-top: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c29 {
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .c2 {
   max-width: 1024px;
 }
 
-.c9 {
+.c8 {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   text-decoration: none;
@@ -191,19 +194,19 @@ Array [
   border-bottom: solid 1px #00c3ef;
 }
 
-.c9:hover {
+.c8:hover {
   color: #313131;
   background-color: #5bcbe3;
   border-bottom-color: #5bcbe3;
 }
 
-.c13 {
+.c12 {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.c12 {
+.c11 {
   background-color: #000000;
   color: #ffffff;
   box-shadow: 0 20px 50px 0 rgba(0,0,0,0.3);
@@ -211,11 +214,11 @@ Array [
   border-radius: 0.3125rem;
 }
 
-.c14 {
+.c13 {
   font-size: 0.875rem;
 }
 
-.c17 {
+.c15 {
   border-radius: 50%;
   width: 0.75rem;
   height: 0.75rem;
@@ -224,7 +227,7 @@ Array [
   background-color: #ff5f56;
 }
 
-.c18 {
+.c16 {
   border-radius: 50%;
   width: 0.75rem;
   height: 0.75rem;
@@ -232,7 +235,7 @@ Array [
   background-color: #ffbd2e;
 }
 
-.c19 {
+.c17 {
   border-radius: 50%;
   width: 0.75rem;
   height: 0.75rem;
@@ -241,49 +244,49 @@ Array [
   background-color: #27c93f;
 }
 
-.c20 {
+.c18 {
   position: absolute;
   left: 0;
   right: 0;
   text-align: center;
 }
 
-.c21 {
+.c19 {
   width: 100%;
   height: 100%;
   overflow: auto;
 }
 
-.c24 {
+.c22 {
   margin: 0;
   line-height: 1.25rem;
 }
 
-.c26 {
+.c24 {
   font-weight: 600;
   color: #ff635c;
 }
 
-.c27 {
+.c25 {
   font-weight: 600;
   color: #00c3ef;
 }
 
-.c28 {
+.c26 {
   font-weight: 600;
   color: #0cac78;
 }
 
-.c29 {
+.c27 {
   font-weight: 600;
   color: #ffffff;
 }
 
-.c25 {
+.c23 {
   color: #cccccc;
 }
 
-.c30 {
+.c28 {
   display: inline-block;
   width: 0.5rem;
   height: 1rem;
@@ -302,17 +305,17 @@ Array [
   border-color: #eaeaea;
 }
 
-.c7 {
+.c6 {
   font-weight: 400;
   font-size: 1.5rem;
 }
 
-.c10 {
+.c9 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-.c8 {
+.c7 {
   font-size: 1.5rem;
   font-size: 1rem;
   color: #666666;
@@ -320,42 +323,54 @@ Array [
 
 @media screen and (min-width:40em) {
   .c5 {
-    padding-top: 64px;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c6 {
     width: 50%;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c6 {
-    padding-bottom: 32px;
-    padding-right: 32px;
-    padding-top: 32px;
+  .c5 {
+    padding-bottom: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c11 {
+  .c10 {
     width: 50%;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c11 {
-    padding-bottom: 32px;
-    padding-left: 32px;
-    padding-top: 32px;
+  .c10 {
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c30 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c30 {
+    padding-right: 16px;
   }
 }
 
 @media screen and (min-width:40em) {
   .c31 {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c31 {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -367,32 +382,20 @@ Array [
 
 @media screen and (min-width:40em) {
   .c32 {
-    padding-right: 32px;
+    padding-left: 16px;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c33 {
-    width: 33.33333333333333%;
+  .c4 {
+    padding-top: 32px;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c33 {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c34 {
-    width: 33.33333333333333%;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c34 {
-    padding-left: 32px;
+  .c29 {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -404,18 +407,16 @@ Array [
     >
         <div
             className="c2 c3"
-            is={null}
         >
             <div
-                className="c4 c5"
-                is={null}
+                className="c4"
+                flexWrap="wrap"
             >
                 <div
-                    className="c6"
-                    is={null}
+                    className="c5"
                 >
                     <h2
-                        className="c7"
+                        className="c6"
                     >
                         Focus on your 
                         <strong>
@@ -424,12 +425,12 @@ Array [
                         , not your servers
                     </h2>
                     <p
-                        className="c8"
+                        className="c7"
                     >
                         Install
                          
                         <a
-                            className="c9"
+                            className="c8"
                             href="https://docs.cloudfoundry.org/cf-cli/"
                         >
                             Cloud Foundry CLI tools
@@ -438,7 +439,7 @@ Array [
                         and deploy with ease
                     </p>
                     <ul
-                        className="c10"
+                        className="c9"
                     >
                         <li>
                             Write your code in any programming language
@@ -452,55 +453,53 @@ Array [
                     </ul>
                 </div>
                 <div
-                    className="c11"
-                    is={null}
+                    className="c10"
                 >
                     <div
-                        className="c12"
+                        className="c11"
                     >
                         <div
-                            className="c13"
+                            className="c12"
                         >
                             <div
-                                className="c14"
+                                className="c13"
                             >
                                 <div
-                                    className="c15 c16"
-                                    is={null}
+                                    className="c14"
+                                    flexWrap="wrap"
                                 >
+                                    <span
+                                        className="c15"
+                                    />
+                                    <span
+                                        className="c16"
+                                    />
                                     <span
                                         className="c17"
                                     />
-                                    <span
-                                        className="c18"
-                                    />
-                                    <span
-                                        className="c19"
-                                    />
                                     <div
-                                        className="c20"
+                                        className="c18"
                                     >
                                         bash
                                     </div>
                                 </div>
                             </div>
                             <div
-                                className="c21"
+                                className="c19"
                             >
                                 <div
-                                    className="c4 c22"
-                                    is={null}
+                                    className="c20"
+                                    flexWrap="wrap"
                                 >
                                     <div
-                                        className="c23"
-                                        is={null}
+                                        className="c21"
                                     >
                                         <pre
-                                            className="c24"
+                                            className="c22"
                                         >
                                             ▲ 
                                             <span
-                                                className="c25"
+                                                className="c23"
                                             >
                                                 ~/my-app $
                                             </span>
@@ -508,14 +507,14 @@ Array [
                                             <br />
                                             Procfile main.go manifest.yml 
                                             <span
-                                                className="c26"
+                                                className="c24"
                                             >
                                                 my-app
                                             </span>
                                             <br />
                                             ▲ 
                                             <span
-                                                className="c25"
+                                                className="c23"
                                             >
                                                 ~/my-app $
                                             </span>
@@ -523,7 +522,7 @@ Array [
                                             <br />
                                             Uploading 
                                             <span
-                                                className="c27"
+                                                className="c25"
                                             >
                                                 my-app
                                             </span>
@@ -534,7 +533,7 @@ Array [
                                             Done uploading
                                             <br />
                                             <span
-                                                className="c28"
+                                                className="c26"
                                             >
                                                 OK
                                             </span>
@@ -542,20 +541,20 @@ Array [
                                             1 of 1 instances running
                                             <br />
                                             <span
-                                                className="c29"
+                                                className="c27"
                                             >
                                                 App started
                                             </span>
                                             <br />
                                             ▲ 
                                             <span
-                                                className="c25"
+                                                className="c23"
                                             >
                                                 ~/my-app
                                             </span>
                                              $ 
                                             <span
-                                                className="c30"
+                                                className="c28"
                                             />
                                         </pre>
                                     </div>
@@ -569,33 +568,31 @@ Array [
     </section>
     <div
         className="c2 c3"
-        is={null}
     >
         <div
-            className="c4 c31"
-            is={null}
+            className="c29"
+            flexWrap="wrap"
         >
             <div
-                className="c32"
-                is={null}
+                className="c30"
             >
                 <h2
-                    className="c7"
+                    className="c6"
                 >
                     Automatically secure
                 </h2>
                 <p
-                    className="c8"
+                    className="c7"
                 >
                     We provision and renew SSL certificates automatically.
                 </p>
                 <p
-                    className="c8"
+                    className="c7"
                 >
                     Thanks to
                      
                     <a
-                        className="c9"
+                        className="c8"
                         href="https://letsencrypt.org/"
                     >
                         Let’s Encrypt
@@ -604,26 +601,25 @@ Array [
                 </p>
             </div>
             <div
-                className="c33"
-                is={null}
+                className="c31"
             >
                 <h2
-                    className="c7"
+                    className="c6"
                 >
                     Programming languages
                 </h2>
                 <p
-                    className="c8"
+                    className="c7"
                 >
                     Supported languages and frameworks include Go, Java, .NET, Node.js, PHP, Python, Ruby, static files and binaries.
                 </p>
                 <p
-                    className="c8"
+                    className="c7"
                 >
                     Learn about
                      
                     <a
-                        className="c9"
+                        className="c8"
                         href="https://docs.cloudfoundry.org/buildpacks/"
                     >
                         Cloud Foundry buildpacks
@@ -632,29 +628,28 @@ Array [
                 </p>
             </div>
             <div
-                className="c34"
-                is={null}
+                className="c32"
             >
                 <h2
-                    className="c7"
+                    className="c6"
                 >
                     Services
                 </h2>
                 <p
-                    className="c8"
+                    className="c7"
                 >
                     Seamlessly connect your application to backend services.
                 </p>
                 <p
-                    className="c8"
+                    className="c7"
                 >
                     Available services include Postgres, MySQL and ElasticSearch.
                 </p>
                 <p
-                    className="c8"
+                    className="c7"
                 >
                     <a
-                        className="c9"
+                        className="c8"
                         href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au%20-%20interested%20in%20missing%20service&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20home%20page"
                     >
                         Get in contact with us

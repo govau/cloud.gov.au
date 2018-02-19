@@ -5,22 +5,19 @@ exports[`renders without crashing 1`] = `
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c4 {
   box-sizing: border-box;
-}
-
-.c5 {
-  box-sizing: border-box;
   width: 100%;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .c3 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,15 +40,13 @@ exports[`renders without crashing 1`] = `
 >
   <div
     className="c1 c2"
-    is={null}
   >
     <div
-      className="c3 c4"
-      is={null}
+      className="c3"
+      flexWrap="wrap"
     >
       <div
-        className="c5"
-        is={null}
+        className="c4"
       >
         content
       </div>

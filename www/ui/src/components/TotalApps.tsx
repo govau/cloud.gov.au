@@ -73,7 +73,7 @@ const TotalApps: React.StatelessComponent<Props> = ({
   const NA = <span title="Data not available">N/A</span>;
 
   return (
-    <Flex py={[1, 2]} wrap={true}>
+    <Flex py={[1, 2]} flexWrap="wrap">
       <div>
         <Total>{isValidVectorNumber(total) ? vectorToNumber(total) : NA}</Total>
         <Label>

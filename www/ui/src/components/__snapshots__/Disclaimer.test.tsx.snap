@@ -5,29 +5,26 @@ exports[`renders without crashing 1`] = `
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c3 {
   box-sizing: border-box;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  width: 100%;
+  padding-right: 8px;
 }
 
-.c4 {
+.c7 {
   box-sizing: border-box;
   width: 100%;
-  padding-right: 16px;
-}
-
-.c8 {
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .c2 {
+  box-sizing: border-box;
+  padding-bottom: 4px;
+  padding-top: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -41,41 +38,41 @@ exports[`renders without crashing 1`] = `
   max-width: 1024px;
 }
 
-.c5 {
+.c4 {
   text-decoration: none;
 }
 
-.c6 {
+.c5 {
   height: 1.25rem;
   margin-right: 0.5rem;
   vertical-align: middle;
 }
 
-.c7 {
+.c6 {
   color: #ffffff;
   font-weight: 500;
   vertical-align: middle;
 }
 
-.c9 {
+.c8 {
   color: #ffffff;
   vertical-align: middle;
 }
 
 @media screen and (min-width:40em) {
-  .c4 {
+  .c3 {
     width: auto;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c8 {
+  .c7 {
     width: auto;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c8 {
+  .c7 {
     margin-top: 0px;
   }
 }
@@ -85,23 +82,21 @@ exports[`renders without crashing 1`] = `
 >
   <div
     className="c0 c1"
-    is={null}
   >
     <div
-      className="c2 c3"
-      is={null}
+      className="c2"
+      flexWrap="wrap"
     >
       <div
-        className="c4"
-        is={null}
+        className="c3"
       >
         <a
-          className="c5"
+          className="c4"
           href="/"
         >
           <img
             alt=""
-            className="c6"
+            className="c5"
             src={
               Object {
                 "0": "s",
@@ -117,18 +112,17 @@ exports[`renders without crashing 1`] = `
             }
           />
           <span
-            className="c7"
+            className="c6"
           >
             GOV.AU
           </span>
         </a>
       </div>
       <div
-        className="c8"
-        is={null}
+        className="c7"
       >
         <span
-          className="c9"
+          className="c8"
         >
           Official Australian Government website
         </span>

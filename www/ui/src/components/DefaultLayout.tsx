@@ -17,7 +17,7 @@ interface Props {}
 const DefaultLayout: React.StatelessComponent<Props> = ({ children }) => (
   <Wrapper>
     <Container>
-      <Flex wrap={true}>
+      <Flex flexWrap="wrap">
         <Box w={1} pt={3} pb={3}>
           {children}
         </Box>
