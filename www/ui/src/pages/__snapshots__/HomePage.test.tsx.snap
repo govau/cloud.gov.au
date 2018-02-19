@@ -417,7 +417,7 @@ Array [
                     <h2
                         className="c7"
                     >
-                        Focus on your
+                        Focus on your 
                         <strong>
                             services
                         </strong>
@@ -427,14 +427,14 @@ Array [
                         className="c8"
                     >
                         Install
-
+                         
                         <a
                             className="c9"
                             href="https://docs.cloudfoundry.org/cf-cli/"
                         >
                             Cloud Foundry CLI tools
                         </a>
-
+                         
                         and deploy with ease
                     </p>
                     <ul
@@ -498,7 +498,7 @@ Array [
                                         <pre
                                             className="c24"
                                         >
-                                            ▲
+                                            ▲ 
                                             <span
                                                 className="c25"
                                             >
@@ -506,14 +506,14 @@ Array [
                                             </span>
                                              ls
                                             <br />
-                                            Procfile main.go manifest.yml
+                                            Procfile main.go manifest.yml 
                                             <span
                                                 className="c26"
                                             >
                                                 my-app
                                             </span>
                                             <br />
-                                            ▲
+                                            ▲ 
                                             <span
                                                 className="c25"
                                             >
@@ -521,7 +521,7 @@ Array [
                                             </span>
                                              cf push
                                             <br />
-                                            Uploading
+                                            Uploading 
                                             <span
                                                 className="c27"
                                             >
@@ -547,13 +547,13 @@ Array [
                                                 App started
                                             </span>
                                             <br />
-                                            ▲
+                                            ▲ 
                                             <span
                                                 className="c25"
                                             >
                                                 ~/my-app
                                             </span>
-                                             $
+                                             $ 
                                             <span
                                                 className="c30"
                                             />
@@ -593,7 +593,7 @@ Array [
                     className="c8"
                 >
                     Thanks to
-
+                     
                     <a
                         className="c9"
                         href="https://letsencrypt.org/"
@@ -621,7 +621,7 @@ Array [
                     className="c8"
                 >
                     Learn about
-
+                     
                     <a
                         className="c9"
                         href="https://docs.cloudfoundry.org/buildpacks/"
@@ -659,7 +659,7 @@ Array [
                     >
                         Get in contact with us
                     </a>
-
+                     
                     if we’re missing a service that you need.
                 </p>
             </div>
