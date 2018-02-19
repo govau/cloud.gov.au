@@ -33,7 +33,8 @@ const Header: React.StatelessComponent<Props> = () => (
         <Box>
           <Heading>Cloud</Heading>
           <Subheading>
-            A platform to make delivering and operating digital services easier.
+            A platform to make delivering and operating Government digital
+            services easier.
           </Subheading>
         </Box>
       </Flex>
