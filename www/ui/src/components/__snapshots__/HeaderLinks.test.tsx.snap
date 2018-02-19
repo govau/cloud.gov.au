@@ -22,14 +22,7 @@ exports[`renders without crashing 1`] = `
 }
 
 .c1 {
-  display: block;
-  margin: 8px;
-}
-
-@media screen and (min-width:40em) {
-  .c1 {
-    display: inline-block;
-  }
+  margin: 4px;
 }
 
 <ul
