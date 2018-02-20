@@ -41,7 +41,34 @@ const (
 	defaultPollFrequency           = 360 * time.Second
 	defaultUIDir                   = "./build"
 	defaultNotFoundFile            = "404.html"
+
+	maxDBPingAttempts = 10
 )
+
+// ping attempts to ping the provided DB a number of times.
+// The provided name is just a label used for logging.
+func ping(name string, db *sql.DB, maxAttempts int) error {
+	log.Printf("Pinging %s database connection...", name)
+	var err error
+	for attempts := 1; attempts <= maxAttempts; attempts++ {
+		err = db.Ping()
+		if err == nil {
+			break
+		}
+		log.Println(err)
+		time.Sleep(time.Duration(attempts) * time.Second)
+	}
+	if err == nil {
+		log.Println("OK")
+	}
+	return err
+}
+
+func mustPing(name string, db *sql.DB, maxAttempts int) {
+	if err := ping(name, db, maxAttempts); err != nil {
+		log.Fatalf("Could not ping database: %v", err)
+	}
+}
 
 func loop(
 	ctx context.Context,
@@ -91,7 +118,7 @@ func main() {
 	uiDir := defaultUIDir
 	notFoundFile := defaultNotFoundFile
 
-	if err := migrateDB(postgresConnStr); err != nil {
+	if err := migrateDB(postgresConnStr, maxDBPingAttempts); err != nil {
 		log.Fatalf("Could not migrate: %v", err)
 	}
 	db, err := sql.Open("postgres", postgresConnStr)
@@ -99,10 +126,7 @@ func main() {
 		log.Fatalf("Could not open main database connection: %v", err)
 	}
 	defer db.Close()
-	log.Println("Pinging main database connection...")
-	if err := db.Ping(); err != nil {
-		log.Fatalf("Could not ping database: %v", err)
-	}
+	mustPing("main", db, maxDBPingAttempts)
 
 	sigCh := make(chan os.Signal, 1)
 	signal.Notify(sigCh, os.Interrupt)

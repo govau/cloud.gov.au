@@ -11,7 +11,7 @@ import (
 	_ "github.com/mattes/migrate/source/file"
 )
 
-func migrateDB(connStr string) error {
+func migrateDB(connStr string, maxDBPingAttempts int) error {
 	// A separate DB connection is used so that the migrate code can close the
 	// connection after it's finished with it.
 	// See https://github.com/mattes/migrate/issues/297#issuecomment-339646656
@@ -20,8 +20,7 @@ func migrateDB(connStr string) error {
 		return fmt.Errorf("could not open database connection: %v", err)
 	}
 	defer db.Close()
-	log.Println("Pinging migrate database connection...")
-	if err := db.Ping(); err != nil {
+	if err := ping("migrate", db, maxDBPingAttempts); err != nil {
 		return fmt.Errorf("could not ping database: %v", err)
 	}
 
