@@ -41,6 +41,12 @@ const (
 	defaultPollFrequency           = 360 * time.Second
 	defaultUIDir                   = "./build"
 	defaultNotFoundFile            = "404.html"
+	defaultNotFoundContent         = `<!doctype html>
+<html lang="en">
+<body>
+	404 not found
+</body>
+</html>`
 
 	maxDBPingAttempts = 10
 )
@@ -210,6 +216,14 @@ func main() {
 	)
 
 	notFoundContent, err := ioutil.ReadFile(filepath.Join(uiDir, notFoundFile))
+	if os.IsNotExist(err) {
+		log.Println("Creating missing not found / 404 file", filepath.Join(uiDir, notFoundFile))
+		if err := os.MkdirAll(uiDir, 0755); err != nil {
+			log.Fatal(err)
+		}
+		notFoundContent = []byte(defaultNotFoundContent)
+		err = ioutil.WriteFile(filepath.Join(uiDir, notFoundFile), notFoundContent, 0755)
+	}
 	if err != nil {
 		log.Fatal(err)
 	}
