@@ -52,6 +52,7 @@ func collectDeployments(c *cfv2.Client, days int) (model.Vector, error) {
 				fmt.Sprintf("timestamp<%s", upper.Format(timeLayout)),
 			)
 		}
+		log.Println("Calling ListEventsByQuery...")
 		events, err := c.ListEventsByQuery(url.Values{"q": q})
 		if err != nil {
 			return nil, err
