@@ -35,10 +35,14 @@ const (
 	cfAPIEndpointProductionEnv  = "CF_API_ENDPOINT_PRODUCTION"
 	cfClientIDProductionEnv     = "CF_CLIENT_ID_PRODUCTION"
 	cfClientSecretProductionEnv = "CF_CLIENT_SECRET_PRODUCTION"
+	// cfPollFrequencyEnv is the CF poll frequency env name (as a duration,
+	// e.g. 1h, 5m).
+	cfPollFrequencyEnv = "CF_POLL_FREQUENCY"
 
 	defaultPort                    = "8080"
 	defaultPrometheusQueryLifetime = 360 * time.Second
-	defaultPollFrequency           = 3600 * time.Second
+	defaultPrometheusPollFrequency = 3600 * time.Second
+	defaultCFPollFrequency         = 6 * 3600 * time.Second
 	defaultUIDir                   = "./build"
 	defaultNotFoundFile            = "404.html"
 	defaultNotFoundContent         = `<!doctype html>
@@ -78,15 +82,19 @@ func mustPing(name string, db *sql.DB, maxAttempts int) {
 
 func loop(
 	ctx context.Context,
-	pollFrequency time.Duration,
+	promPollFrequency time.Duration,
+	cfPollFrequency time.Duration,
 	prom *www.CachingPrometheus,
 	prometheusQueries map[string]string,
 	cfcs *www.CFClients,
 	cfms *www.CFMetricStore,
 ) {
-	go prometheusLoop(ctx, pollFrequency, prom, prometheusQueries)
-	go cfEventsLoop(ctx, pollFrequency, cfcs.NewStaging, cfms.Staging)
-	go cfEventsLoop(ctx, pollFrequency, cfcs.NewProduction, cfms.Production)
+	log.Printf("Polling prometheus every %s", promPollFrequency)
+	go prometheusLoop(ctx, promPollFrequency, prom, prometheusQueries)
+	log.Printf("Polling CF staging every %s", cfPollFrequency)
+	go cfEventsLoop(ctx, cfPollFrequency, cfcs.NewStaging, cfms.Staging)
+	log.Printf("Polling CF production every %s", cfPollFrequency)
+	go cfEventsLoop(ctx, cfPollFrequency, cfcs.NewProduction, cfms.Production)
 }
 
 func main() {
@@ -103,6 +111,7 @@ func main() {
 	cfAPIEndpointProductionStr := os.Getenv(cfAPIEndpointProductionEnv)
 	cfClientIDProduction := os.Getenv(cfClientIDProductionEnv)
 	cfClientSecretProduction := os.Getenv(cfClientSecretProductionEnv)
+	cfPollFrequencyStr := os.Getenv(cfPollFrequencyEnv)
 
 	if port == "" {
 		port = defaultPort
@@ -119,8 +128,17 @@ func main() {
 		fmt.Printf("%s must be provided\n", cfAPIEndpointProductionEnv)
 		os.Exit(1)
 	}
+	cfPollFrequency := defaultCFPollFrequency
+	if cfPollFrequencyStr != "" {
+		var err error
+		cfPollFrequency, err = time.ParseDuration(cfPollFrequencyStr)
+		if err != nil {
+			fmt.Printf("%s must be a duration: %v\n", cfPollFrequencyEnv, err)
+			os.Exit(1)
+		}
+	}
 	prometheusQueryLifetime := defaultPrometheusQueryLifetime
-	pollFrequency := defaultPollFrequency
+	promPollFrequency := defaultPrometheusPollFrequency
 	uiDir := defaultUIDir
 	notFoundFile := defaultNotFoundFile
 
@@ -208,7 +226,8 @@ func main() {
 	log.Println("Starting poll loop...")
 	go loop(
 		context.Background(),
-		pollFrequency,
+		promPollFrequency,
+		cfPollFrequency,
 		cachingPrometheus,
 		prometheusQueries,
 		cfcs,
