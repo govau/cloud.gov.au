@@ -65,6 +65,13 @@ exports[`renders without crashing 1`] = `
   border-bottom: solid 1px;
 }
 
+.c16 {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
 .c13 {
   margin: 0;
   padding: 0;
@@ -217,6 +224,17 @@ exports[`renders without crashing 1`] = `
               href="https://console.system.y.cld.gov.au/"
             >
               Staging console
+            </a>
+          </li>
+          <li
+            className="c14"
+          >
+            <a
+              className="c16"
+              href="/terms-of-service/"
+              onClick={[Function]}
+            >
+              Terms of service
             </a>
           </li>
         </ul>
