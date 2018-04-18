@@ -93,14 +93,11 @@ class CodePage extends React.Component<{}, Partial<State>> {
     this.setState(() => ({ isFetching: true, error: null }));
 
     try {
-      const resp = await fetch(
-        `/api/github-repos`,
-        {
-          headers: {
-            Accept: "application/vnd.github.v3+json"
-          }
+      const resp = await fetch(`/api/github-repos`, {
+        headers: {
+          Accept: "application/vnd.github.v3+json"
         }
-      );
+      });
       const body = await resp.json();
       this.setState(() => ({
         response: body
