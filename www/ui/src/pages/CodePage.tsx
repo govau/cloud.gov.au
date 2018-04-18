@@ -92,21 +92,9 @@ class CodePage extends React.Component<{}, Partial<State>> {
   async load() {
     this.setState(() => ({ isFetching: true, error: null }));
 
-    const q: { [key: string]: string } = {
-      org: "govau",
-      topic: "govau-author-cga",
-      fork: "true"
-    };
-
-    const qs = Object.keys(q)
-      .map(k => `${k}:${q[k]}`)
-      .join(" ");
-
     try {
       const resp = await fetch(
-        `https://api.github.com/search/repositories?q=${encodeURIComponent(
-          qs
-        )}`,
+        `/api/github-repos`,
         {
           headers: {
             Accept: "application/vnd.github.v3+json"
