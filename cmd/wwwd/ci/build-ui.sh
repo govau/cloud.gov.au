@@ -27,9 +27,6 @@ yarn add puppeteer
 
 yarn install
 
-yarn format
-yarn format-check
-
 CI=true yarn test
 
 . "${ROOT_PATH}/src/cmd/wwwd/ci/build-ui-env-vars-${ENV_DOMAIN}.sh"
