@@ -7,6 +7,7 @@ cd "$(dirname "$0")/.."
 
 yarn install
 
+yarn format
 yarn format-check
 
 yarn test

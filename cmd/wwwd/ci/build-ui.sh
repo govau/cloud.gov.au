@@ -27,6 +27,7 @@ yarn add puppeteer
 
 yarn install
 
+yarn format
 yarn format-check
 
 CI=true yarn test
