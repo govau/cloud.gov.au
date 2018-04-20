@@ -41,18 +41,16 @@ func modelValueFromBytes(vtbs, vbs []byte) (model.Value, error) {
 	if err := json.Unmarshal(vtbs, &vt); err != nil {
 		return nil, err
 	}
-	var v model.Value
 	switch vt {
 	case model.ValVector:
-		v2 := model.Vector{}
-		if err := json.Unmarshal(vbs, &v2); err != nil {
+		v := model.Vector{}
+		if err := json.Unmarshal(vbs, &v); err != nil {
 			return nil, err
 		}
-		v = v2
+		return v, nil
 	default:
 		return nil, fmt.Errorf("could not decode value type %s", vt)
 	}
-	return v, nil
 }
 
 // Query implements prometheus.API.
