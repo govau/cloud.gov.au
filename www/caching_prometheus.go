@@ -6,6 +6,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+	"log"
 	"time"
 
 	prometheus "github.com/prometheus/client_golang/api/prometheus/v1"
@@ -33,52 +34,71 @@ func NewCachingPrometheus(
 	}
 }
 
+// modelValueFromBytes takes the database model value (which is in bytes) and
+// converts it to a model.Value type (probably a model.Vector).
+func modelValueFromBytes(vtbs, vbs []byte) (model.Value, error) {
+	var vt model.ValueType
+	if err := json.Unmarshal(vtbs, &vt); err != nil {
+		return nil, err
+	}
+	var v model.Value
+	switch vt {
+	case model.ValVector:
+		v2 := model.Vector{}
+		if err := json.Unmarshal(vbs, &v2); err != nil {
+			return nil, err
+		}
+		v = v2
+	default:
+		return nil, fmt.Errorf("could not decode value type %s", vt)
+	}
+	return v, nil
+}
+
 // Query implements prometheus.API.
 func (c *CachingPrometheus) Query(ctx context.Context, q string, ts time.Time) (model.Value, error) {
 	row := c.db.QueryRowContext(ctx, `SELECT value_type, value, updated FROM prometheus_query WHERE query = $1`, q)
 	var (
-		vtbs     []byte
-		vbs      []byte
-		updateds string
+		vtbs      []byte
+		vbs       []byte
+		updateds  string
+		noResults bool
+		updated   time.Time
+		expired   bool
 	)
 	switch err := row.Scan(&vtbs, &vbs, &updateds); err {
 	case sql.ErrNoRows:
 		// Fall out and query prometheus.
+		noResults = true
 	case nil:
+		var err error
 		// Check for expiry before considering this record.
-		updated, err := time.Parse(time.RFC3339Nano, updateds)
+		updated, err = time.Parse(time.RFC3339Nano, updateds)
 		if err != nil {
 			return nil, err
 		}
 		expiry := updated.Add(c.lifetime)
 		if time.Now().After(expiry) {
+			expired = true
 			break
 		}
-		var vt model.ValueType
-		if err := json.Unmarshal(vtbs, &vt); err != nil {
-			return nil, err
-		}
-		var v model.Value
-		switch vt {
-		case model.ValVector:
-			v2 := model.Vector{}
-			if err := json.Unmarshal(vbs, &v2); err != nil {
-				return nil, err
-			}
-			v = v2
-		default:
-			return nil, fmt.Errorf("could not decode value type %s", vt)
-		}
-		return v, nil
+		return modelValueFromBytes(vtbs, vbs)
 	default:
 		return nil, err
 	}
-	// TODO(jonathaningram): if this query fails because of connection issues,
-	// and we had an expired query above, it's probably worth returning that and
-	// just logging the error. The data will be stale but that's better than
-	// failing here (and also part of the point of this wrapper).
 	v, err := c.api.Query(ctx, q, ts)
 	if err != nil {
+		// If there were never any results from cache, we can't return anything
+		// so we have no choice but to error.
+		if noResults {
+			log.Printf("Prometheus query failed. Unfortunately there was no cached record to return. The error from prometheus was: %v", err)
+			return nil, err
+		}
+		// If we had an expired record, return that instead of failing.
+		if expired {
+			log.Printf("Prometheus query failed. Returning expired record which was last updated %s. The error from prometheus was: %v", updated, err)
+			return modelValueFromBytes(vtbs, vbs)
+		}
 		return nil, err
 	}
 	vtb := &bytes.Buffer{}
