@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     `};
 `;
 
-const Main = styled.main``;
+const Main = styled.div``;
 
 interface Props {}
 
@@ -43,7 +43,7 @@ const App: React.StatelessComponent<Props> = () => (
           </Helmet>
           <Disclaimer />
           <Header />
-          <Main>
+          <Main role="main">
             <Switch>
               <Route exact path="/" component={() => <Routes.HomePage />} />
               <Route
