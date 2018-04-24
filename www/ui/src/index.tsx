@@ -1,3 +1,4 @@
+import "core-js/fn/string/ends-with";
 import "core-js/fn/array/includes";
 import "whatwg-fetch";
 import * as React from "react";
