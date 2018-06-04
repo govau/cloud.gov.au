@@ -24,12 +24,12 @@ const TermsPage: React.StatelessComponent<Props> = () => (
       associated applications, api endpoints, and services (such as databases)
       that we provide, including:
     </p>
-    <ol>
+    <ul>
       <li>api.system.*.cld.gov.au</li>
       <li>console.system.*.cld.gov.au</li>
       <li>grafana.system.*.cld.gov.au</li>
       <li>logs.*.cld.gov.au</li>
-    </ol>
+    </ul>
     <p>
       <strong>Applications you deploy</strong> means application code you run on
       cloud.gov.au, such as code deployed with the `cf push` command.
