@@ -56,7 +56,7 @@ const TermsPage: React.StatelessComponent<Props> = () => (
     </p>
     <p>
       You must comply with the AWS Acceptable Usage Policy at{" "}
-      <a href="https://aws.amazon.com/aup">aws.amazon.com/aup</a>.
+      <a href="https://aws.amazon.com/aup">aws.amazon.com/aup</a>
     </p>
     <p>
       You must comply with the APS{" "}
@@ -100,11 +100,7 @@ const TermsPage: React.StatelessComponent<Props> = () => (
       performance of your applications deployed to cloud.gov.au.
     </p>
     <h2>Disclaimer</h2>
-    <p>Your use of cloud.gov.au does not:</p>
-    <ul>
-      <li>affect or reduce any obligation owed to you by any Agency; or</li>
-      <li>reduce any obligation you owe to any Agency.</li>
-    </ul>
+    <p>Your use of cloud.gov.au does not affect or reduce any obligation owed to you by any Agency, or reduce any obligation you owe to any Agency.</p>
     <p>
       The documentation on cloud.gov.au is not a substitute for independent
       professional advice and you should obtain any appropriate professional
