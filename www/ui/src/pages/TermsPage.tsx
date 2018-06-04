@@ -150,7 +150,7 @@ const TermsPage: React.StatelessComponent<Props> = () => (
       <li>is required or authorised by law</li>
       <li>
         will prevent or lessen a serious and imminent threat to somebody's
-        health.
+        health
       </li>
     </ul>
     <p>
