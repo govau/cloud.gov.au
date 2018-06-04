@@ -65,6 +65,15 @@ const App: React.StatelessComponent<Props> = () => (
                 )}
               />
               <Route
+                exact
+                path="/terms-of-service/"
+                component={() => (
+                  <DefaultLayout>
+                    <Routes.TermsPage />
+                  </DefaultLayout>
+                )}
+              />
+              <Route
                 path="*"
                 component={() => (
                   <DefaultLayout>
