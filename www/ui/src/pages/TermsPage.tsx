@@ -55,8 +55,10 @@ const TermsPage: React.StatelessComponent<Props> = () => (
       your use of any other government service.
     </p>
     <p>
-      You must comply with the AWS Acceptable Usage Policy at{" "}
-      <a href="https://aws.amazon.com/aup">aws.amazon.com/aup</a>.
+      You must comply with the AWS{" "}
+      <a href="https://aws.amazon.com/aup">
+        Acceptable Usage Policy
+      </a>.
     </p>
     <p>
       You must comply with the APS{" "}
