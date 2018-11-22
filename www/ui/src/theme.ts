@@ -13,9 +13,10 @@ export default interface Theme {
   borderColor: string;
   disclaimerColor: string;
   headerColor: string;
+  coaDividerColor: string;
+  headerDividerColor: string;
   footerColor: string;
   footerTextColor: string;
-  footerLogoDividerColor: string;
   deltaSignPositiveColor: string;
   deltaSignNegativeColor: string;
   console: {
@@ -45,16 +46,17 @@ export const theme: Theme = {
   linkHoverBgColor: "#5bcbe3",
   bgColor: "#313131",
   contentBgColor: "#ffffff",
-  heroColor: "#115361",
+  heroColor: "#313131",
   primaryColor: "#1B7991",
   secondaryColor: "#313131",
   backgroundColor: "#f0f3f5",
   borderColor: "#dddddd",
-  disclaimerColor: "#313131",
-  headerColor: "#115361",
+  disclaimerColor: "#121212",
+  headerColor: "#313131",
+  coaDividerColor: "#a9a9a9",
+  headerDividerColor: "#45c2f0",
   footerColor: "#313131",
   footerTextColor: "#bdbdbd",
-  footerLogoDividerColor: "#616161",
   deltaSignPositiveColor: "#0cac78",
   deltaSignNegativeColor: "#ff635c",
   console: {

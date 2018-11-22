@@ -13,6 +13,7 @@ const body = "\n\n---\nSource: cloud.gov.au home page";
 const Content = styled.div`
   ${({ theme }) =>
     css`
+      border-top: 6px solid ${theme.headerDividerColor};
       background-color: ${theme.contentBgColor};
     `};
 `;

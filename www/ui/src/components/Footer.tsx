@@ -2,8 +2,7 @@ import * as React from "react";
 import styled, { css } from "../styled-components";
 import { Flex, Box } from "grid-styled";
 
-import * as coaLogo from "./coa.svg";
-import * as dtaLogo from "./dta.svg";
+import * as dtaWorkmark from "./dta-wordmark-white.svg";
 import Container from "./Container";
 import Link from "./Link";
 import FooterLinks from "./FooterLinks";
@@ -11,33 +10,8 @@ import FooterLinks from "./FooterLinks";
 const subject = "Enquiry about cloud.gov.au";
 const body = "\n\n---\nSource: cloud.gov.au footer";
 
-const COALogo = styled.img`
-  height: 5rem;
-`;
-
-const DTALogo = styled.img`
+const DTAWordmark = styled.img`
   height: 3rem;
-`;
-
-interface LogoSeparatorProps {
-  className?: string;
-}
-
-const UnstyledLogoSeparator: React.StatelessComponent<LogoSeparatorProps> = ({
-  className
-}) => (
-  <React.Fragment>
-    <Box width={[1 / 16]} className={className} />
-    <Box width={[1 / 16]} />
-  </React.Fragment>
-);
-
-const LogoSeparator = styled(UnstyledLogoSeparator)`
-  height: 3rem;
-  ${({ theme }) =>
-    css`
-      border-right: 2px solid ${theme.footerLogoDividerColor};
-    `};
 `;
 
 const Copyright = styled.p`
@@ -64,15 +38,8 @@ const Footer: React.StatelessComponent<Props> = () => (
         <Box w={[1, 1 / 2, 1 / 3]}>
           <Flex wrap={true} pt={3} pb={2} align="center">
             <Box>
-              <COALogo
-                src={coaLogo}
-                alt="The Australian Government Coat of Arms"
-              />
-            </Box>
-            <LogoSeparator />
-            <Box>
               <a href="https://www.dta.gov.au/">
-                <DTALogo src={dtaLogo} alt="DTA" />
+                <DTAWordmark src={dtaWorkmark} alt="DTA" />
               </a>
             </Box>
           </Flex>

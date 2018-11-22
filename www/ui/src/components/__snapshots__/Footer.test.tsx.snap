@@ -30,12 +30,7 @@ exports[`renders without crashing 1`] = `
   box-sizing: border-box;
 }
 
-.c10 {
-  box-sizing: border-box;
-  width: 6.25%;
-}
-
-.c12 {
+.c9 {
   box-sizing: border-box;
   width: 100%;
 }
@@ -58,14 +53,7 @@ exports[`renders without crashing 1`] = `
   max-width: 1024px;
 }
 
-.c15 {
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  text-decoration: none;
-  border-bottom: solid 1px;
-}
-
-.c16 {
+.c12 {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   text-decoration: none;
@@ -73,27 +61,25 @@ exports[`renders without crashing 1`] = `
 }
 
 .c13 {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+.c10 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   margin: 1rem 1rem 0 0;
 }
 
 .c8 {
-  height: 5rem;
-}
-
-.c11 {
   height: 3rem;
-}
-
-.c9 {
-  height: 3rem;
-  border-right: 2px solid;
 }
 
 .c0 {
@@ -113,13 +99,13 @@ exports[`renders without crashing 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c12 {
+  .c9 {
     width: 50%;
   }
 }
 
 @media screen and (min-width:52em) {
-  .c12 {
+  .c9 {
     width: 66.66666666666666%;
   }
 }
@@ -147,51 +133,37 @@ exports[`renders without crashing 1`] = `
             className="c7"
             is={null}
           >
-            <img
-              alt="The Australian Government Coat of Arms"
-              className="c8"
-              src={
-                Object {
-                  "0": "c",
-                  "1": "o",
-                  "2": "a",
-                  "3": ".",
-                  "4": "s",
-                  "5": "v",
-                  "6": "g",
-                  "default": "coa.svg",
-                }
-              }
-            />
-          </div>
-          <div
-            className="c9 c10"
-            is={null}
-          />
-          <div
-            className="c10"
-            is={null}
-          />
-          <div
-            className="c7"
-            is={null}
-          >
             <a
               href="https://www.dta.gov.au/"
             >
               <img
                 alt="DTA"
-                className="c11"
+                className="c8"
                 src={
                   Object {
                     "0": "d",
                     "1": "t",
+                    "10": "r",
+                    "11": "k",
+                    "12": "-",
+                    "13": "w",
+                    "14": "h",
+                    "15": "i",
+                    "16": "t",
+                    "17": "e",
+                    "18": ".",
+                    "19": "s",
                     "2": "a",
-                    "3": ".",
-                    "4": "s",
-                    "5": "v",
-                    "6": "g",
-                    "default": "dta.svg",
+                    "20": "v",
+                    "21": "g",
+                    "3": "-",
+                    "4": "w",
+                    "5": "o",
+                    "6": "r",
+                    "7": "d",
+                    "8": "m",
+                    "9": "a",
+                    "default": "dta-wordmark-white.svg",
                   }
                 }
               />
@@ -200,37 +172,37 @@ exports[`renders without crashing 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c9"
         is={null}
       >
         <ul
-          className="c13"
+          className="c10"
         >
           <li
-            className="c14"
+            className="c11"
           >
             <a
-              className="c15"
+              className="c12"
               href="https://console.system.b.cld.gov.au/"
             >
               Production console
             </a>
           </li>
           <li
-            className="c14"
+            className="c11"
           >
             <a
-              className="c15"
+              className="c12"
               href="https://console.system.y.cld.gov.au/"
             >
               Staging console
             </a>
           </li>
           <li
-            className="c14"
+            className="c11"
           >
             <a
-              className="c16"
+              className="c13"
               href="/terms-of-service/"
               onClick={[Function]}
             >
@@ -240,7 +212,7 @@ exports[`renders without crashing 1`] = `
         </ul>
         <p>
           <a
-            className="c15"
+            className="c12"
             href="https://github.com/govau/cloud.gov.au"
           >
             cloud.gov.au on GitHub
@@ -250,7 +222,7 @@ exports[`renders without crashing 1`] = `
           Have a question about cloud.gov.au? Contact DTA:
            
           <a
-            className="c15"
+            className="c12"
             href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20footer"
           >
             support@cloud.gov.au
