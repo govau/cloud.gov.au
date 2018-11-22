@@ -1,14 +1,28 @@
 import * as React from "react";
 import styled, { css } from "../styled-components";
 import { Flex, Box } from "grid-styled";
+import { responsiveStyle } from "styled-system";
 
 import * as coaLogo from "./coa.svg";
 import BaseLink, { LinkProps, RouterLinkProps } from "./Link";
 import Container from "./Container";
 import HeaderLinks from "./HeaderLinks";
 
+const mediaDisplay = responsiveStyle({
+  cssProperty: "display"
+});
+
+const COABox = styled(Box)`
+  ${mediaDisplay};
+`;
+
 const COALogo = styled.img`
   height: 5rem;
+  padding-right: 1rem;
+  ${({ theme }) =>
+    css`
+      border-right: 1px solid ${theme.coaDividerColor};
+    `};
 `;
 
 const UnstyledBrandLink: React.StatelessComponent<
@@ -40,14 +54,14 @@ const Header: React.StatelessComponent<Props> = () => (
   <StyledHeader>
     <Container>
       <Flex wrap={true} pt={3} pb={3} align="center">
-        <Box pr={3}>
+        <COABox pr={2} display={["none", "block"]}>
           <a href="/">
             <COALogo
               src={coaLogo}
               alt="The Australian Government Coat of Arms"
             />
           </a>
-        </Box>
+        </COABox>
         <Box>
           <BrandLink to="/">
             <Brand>cloud.gov.au</Brand>

@@ -47,7 +47,7 @@ Array [
 }
 
 .c0 {
-  background-color: #115361;
+  background-color: #313131;
   color: #ffffff;
 }
 
@@ -292,6 +292,7 @@ Array [
 }
 
 .c0 {
+  border-top: 6px solid #45c2f0;
   background-color: #ffffff;
 }
 

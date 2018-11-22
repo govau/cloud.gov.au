@@ -15,16 +15,16 @@ exports[`renders without crashing 1`] = `
   padding-top: 32px;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
-  padding-right: 32px;
+  padding-right: 16px;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   width: 100%;
   margin-left: 0px;
@@ -45,14 +45,14 @@ exports[`renders without crashing 1`] = `
   align-items: center;
 }
 
-.c14 {
+.c15 {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   text-decoration: none;
   border-bottom: solid 1px;
 }
 
-.c9 {
+.c10 {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   text-decoration: none;
@@ -63,27 +63,33 @@ exports[`renders without crashing 1`] = `
   max-width: 1024px;
 }
 
-.c12 {
+.c13 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c13 {
+.c14 {
   display: block;
   margin: 8px;
 }
 
-.c6 {
-  height: 5rem;
+.c5 {
+  display: none;
 }
 
-.c8 {
+.c7 {
+  height: 5rem;
+  padding-right: 1rem;
+  border-right: 1px solid;
+}
+
+.c9 {
   display: block;
   border-bottom: 0;
 }
 
-.c10 {
+.c11 {
   margin: 0;
   font-weight: 500;
   font-size: 1.5rem;
@@ -94,21 +100,27 @@ exports[`renders without crashing 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c11 {
+  .c12 {
     width: auto;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c11 {
+  .c12 {
     margin-left: auto;
     margin-top: 0px;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c13 {
+  .c14 {
     display: inline-block;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c5 {
+    display: block;
   }
 }
 
@@ -124,7 +136,13 @@ exports[`renders without crashing 1`] = `
       is={null}
     >
       <div
-        className="c5"
+        className="c5 c6"
+        display={
+          Array [
+            "none",
+            "block",
+          ]
+        }
         is={null}
       >
         <a
@@ -132,7 +150,7 @@ exports[`renders without crashing 1`] = `
         >
           <img
             alt="The Australian Government Coat of Arms"
-            className="c6"
+            className="c7"
             src={
               Object {
                 "0": "c",
@@ -149,30 +167,30 @@ exports[`renders without crashing 1`] = `
         </a>
       </div>
       <div
-        className="c7"
+        className="c8"
         is={null}
       >
         <a
-          className="c8 c9"
+          className="c9 c10"
           href="/"
           onClick={[Function]}
         >
           <div
-            className="c10"
+            className="c11"
           >
             cloud.gov.au
           </div>
         </a>
       </div>
       <div
-        className="c11"
+        className="c12"
         is={null}
       >
         <ul
-          className="c12"
+          className="c13"
         >
           <li
-            className="c13"
+            className="c14"
             display={
               Array [
                 "block",
@@ -186,7 +204,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c9"
+              className="c10"
               href="/insights/"
               onClick={[Function]}
             >
@@ -194,7 +212,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="c13"
+            className="c14"
             display={
               Array [
                 "block",
@@ -208,7 +226,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c9"
+              className="c10"
               href="/code/"
               onClick={[Function]}
             >
@@ -216,7 +234,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="c13"
+            className="c14"
             display={
               Array [
                 "block",
@@ -230,14 +248,14 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c14"
+              className="c15"
               href="https://docs.cloud.gov.au/"
             >
               Docs
             </a>
           </li>
           <li
-            className="c13"
+            className="c14"
             display={
               Array [
                 "block",
@@ -251,7 +269,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c14"
+              className="c15"
               href="https://support.cloud.gov.au/"
             >
               Support

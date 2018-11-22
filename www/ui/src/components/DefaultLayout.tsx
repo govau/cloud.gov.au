@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   min-height: 50vh;
   ${({ theme }) =>
     css`
+      border-top: 6px solid ${theme.headerDividerColor};
       background-color: ${theme.contentBgColor};
     `};
 `;
