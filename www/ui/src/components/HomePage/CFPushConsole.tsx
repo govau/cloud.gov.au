@@ -61,8 +61,7 @@ const CFPushConsole: React.StatelessComponent = () => (
       ▲ <Prompt>~/my-app $</Prompt> ls
       <br />
       Procfile main.go manifest.yml <BinaryLabel>my-app</BinaryLabel>
-      <br />
-      ▲ <Prompt>~/my-app $</Prompt> cf push
+      <br />▲ <Prompt>~/my-app $</Prompt> cf push
       <br />
       Uploading <CFAppLabel>my-app</CFAppLabel>...
       <br />
@@ -75,8 +74,7 @@ const CFPushConsole: React.StatelessComponent = () => (
       1 of 1 instances running
       <br />
       <CFAppStartedLabel>App started</CFAppStartedLabel>
-      <br />
-      ▲ <Prompt>~/my-app</Prompt> $ <Caret />
+      <br />▲ <Prompt>~/my-app</Prompt> $ <Caret />
     </Console.Body>
   </Console.Window>
 );

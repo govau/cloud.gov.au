@@ -100,7 +100,8 @@ const HomePage: React.StatelessComponent = () => (
               Learn about{" "}
               <Link href="https://docs.cloudfoundry.org/buildpacks/">
                 Cloud Foundry buildpacks
-              </Link>.
+              </Link>
+              .
             </FeatureP>
           </Box>
           <Box w={[1, 1 / 3]} pl={[0, 3]}>
