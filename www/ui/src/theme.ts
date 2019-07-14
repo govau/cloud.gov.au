@@ -36,7 +36,7 @@ export default interface Theme {
       jsColor: string;
     };
   };
-};
+}
 
 export const theme: Theme = {
   textColor: "#313131",

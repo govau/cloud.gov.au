@@ -56,15 +56,14 @@ const TermsPage: React.StatelessComponent<Props> = () => (
     </p>
     <p>
       You must comply with the AWS{" "}
-      <a href="https://aws.amazon.com/aup">
-        Acceptable Usage Policy
-      </a>.
+      <a href="https://aws.amazon.com/aup">Acceptable Usage Policy</a>.
     </p>
     <p>
       You must comply with the APS{" "}
       <a href="https://www.apsc.gov.au/working-in-the-aps/your-rights-and-responsibilities-as-an-aps-employee/code-of-conduct">
         Code of Conduct
-      </a>.
+      </a>
+      .
     </p>
     <p>
       We reserve the right to terminate applications, and revoke access if these
@@ -102,7 +101,10 @@ const TermsPage: React.StatelessComponent<Props> = () => (
       performance of your applications deployed to cloud.gov.au.
     </p>
     <h2>Disclaimer</h2>
-    <p>Your use of cloud.gov.au does not affect or reduce any obligation owed to you by any Agency, or reduce any obligation you owe to any Agency.</p>
+    <p>
+      Your use of cloud.gov.au does not affect or reduce any obligation owed to
+      you by any Agency, or reduce any obligation you owe to any Agency.
+    </p>
     <p>
       The documentation on cloud.gov.au is not a substitute for independent
       professional advice and you should obtain any appropriate professional
@@ -118,8 +120,9 @@ const TermsPage: React.StatelessComponent<Props> = () => (
       DTA’s{" "}
       <a href="https://www.dta.gov.au/what-we-do/policies-and-programs/secure-cloud/">
         Secure Cloud Strategy
-      </a>, we recommend you take a risk-based approach to ensure the security
-      of your applications deployed on cloud.gov.au.
+      </a>
+      , we recommend you take a risk-based approach to ensure the security of
+      your applications deployed on cloud.gov.au.
     </p>
     <p>
       We recommend that you keep your developer workstations up-to-date with

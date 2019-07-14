@@ -12,8 +12,8 @@ yarn install
 
 ## Requirements
 
-* Node.js 9+ (use something like [`n` to manage node versions](https://github.com/tj/n) locally)
-* Yarn
+- Node.js 9+ (use something like [`n` to manage node versions](https://github.com/tj/n) locally)
+- Yarn
 
 ## Development
 
@@ -24,7 +24,7 @@ REACT_APP_API_ENDPOINT="" \
 yarn start
 ```
 
-* Set `REACT_APP_API_ENDPOINT` to the URL of the www API server. During development this would usually be a local server but for a faster frontend set up it can also be a running live service such as `https://www.system.d.cld.gov.au`
+- Set `REACT_APP_API_ENDPOINT` to the URL of the www API server. During development this would usually be a local server but for a faster frontend set up it can also be a running live service such as `https://www.system.d.cld.gov.au`
 
 ## Testing
 
