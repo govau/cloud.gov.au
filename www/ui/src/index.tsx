@@ -1,5 +1,5 @@
-import "core-js/fn/string/ends-with";
-import "core-js/fn/array/includes";
+import "core-js/features/string/ends-with";
+import "core-js/features/array/includes";
 import "whatwg-fetch";
 import * as React from "react";
 import { hydrate, render } from "react-dom";
