@@ -8,14 +8,14 @@ This repository is designed for other cloud.gov.au subdomains like "docs" and "c
 
 ### cloud.gov.au website
 
-* [www server](cmd/wwwd/README.md)
-* [www UI](www/ui/README.md)
+- [www server](cmd/wwwd/README.md)
+- [www UI](www/ui/README.md)
 
 Note: the use of "www" does not imply that this website should be hosted on www.cloud.gov.au - it's simply that "www" is generally used on the root or entry point website for a domain. The idea is that the "www" website sits alongside "docs" and "console".
 
 ## docs.cloud.gov.au website
 
-The docs source code can be found [here](https://github.com/ausdto/cga_docs). In the future, it sit in this repository alongside `www`. This will allow docs.cloud.gov.au to easily share styles and code.
+The docs source code can be found [here](https://github.com/ausdto/cga_docs). In the future, it could sit in this repository alongside `www`. This will allow docs.cloud.gov.au to easily share styles and code.
 
 ## cloud.gov.au Cloud Foundry console website
 
@@ -23,9 +23,9 @@ The console source code can be found [here](https://github.com/govau/cg-dashboar
 
 ## Requirements
 
-* Go
-* Node.js
-* Yarn
+- Go
+- Node.js
+- Yarn
 
 ## Installation
 
