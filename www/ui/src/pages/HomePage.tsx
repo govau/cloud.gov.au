@@ -39,7 +39,7 @@ const FeatureList = styled.ul`
   line-height: 1.5rem;
 `;
 
-const FeatureP = P.extend`
+const FeatureP = styled(P)`
   font-size: 1rem;
   color: #666666;
 `;

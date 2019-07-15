@@ -1,10 +1,11 @@
-import { injectGlobal } from "styled-components";
+import { css, createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 
-import { theme } from "./theme";
+import { theme } from "../theme";
 
-export default () => injectGlobal`
-  ${styledNormalize}
+// Necessary for prettier formatting to work.
+const globalStyle = css`
+  ${styledNormalize};
 
   body {
     padding: 0;
@@ -16,3 +17,9 @@ export default () => injectGlobal`
     -moz-osx-font-smoothing: grayscale;
   }
 `;
+
+const GlobalStyle = createGlobalStyle`
+    ${globalStyle};
+`;
+
+export default GlobalStyle;

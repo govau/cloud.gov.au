@@ -33,13 +33,13 @@ const LanguageIcon = styled.span`
 `;
 
 const languageIcons: { [key: string]: any } = {
-  Go: LanguageIcon.extend`
+  Go: styled(LanguageIcon)`
     ${({ theme }) =>
       css`
         background-color: ${theme.code.language.goColor};
       `};
   `,
-  JavaScript: LanguageIcon.extend`
+  JavaScript: styled(LanguageIcon)`
     ${({ theme }) =>
       css`
         background-color: ${theme.code.language.jsColor};

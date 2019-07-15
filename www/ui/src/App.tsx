@@ -8,6 +8,7 @@ import styled, { ThemeProvider, css } from "./styled-components";
 import { theme } from "./theme";
 import AnalyticsListener, { sendPageview } from "./AnalyticsListener";
 import * as Routes from "./Routes";
+import GlobalStyle from "./components/GlobalStyle";
 import DefaultLayout from "./components/DefaultLayout";
 import Disclaimer from "./components/Disclaimer";
 import Header from "./components/Header";
@@ -35,56 +36,62 @@ const App: React.StatelessComponent<Props> = () => (
     <React.Fragment>
       <AnalyticsListener />
       <ThemeProvider theme={theme}>
-        <Wrapper>
-          <Helmet titleTemplate={`%s - ${title}`}>
-            {process.env.REACT_APP_META_ROBOTS && (
-              <meta name="robots" content={process.env.REACT_APP_META_ROBOTS} />
-            )}
-          </Helmet>
-          <Disclaimer />
-          <Header />
-          <Main role="main">
-            <Switch>
-              <Route exact path="/" component={() => <Routes.HomePage />} />
-              <Route
-                exact
-                path="/code/"
-                component={() => (
-                  <DefaultLayout>
-                    <Routes.CodePage />
-                  </DefaultLayout>
-                )}
-              />
-              <Route
-                exact
-                path="/insights/"
-                component={() => (
-                  <DefaultLayout>
-                    <Routes.InsightsPage />
-                  </DefaultLayout>
-                )}
-              />
-              <Route
-                exact
-                path="/terms-of-service/"
-                component={() => (
-                  <DefaultLayout>
-                    <Routes.TermsPage />
-                  </DefaultLayout>
-                )}
-              />
-              <Route
-                path="*"
-                component={() => (
-                  <DefaultLayout>
-                    <Routes.NotFoundPage />
-                  </DefaultLayout>
-                )}
-              />
-            </Switch>
-          </Main>
-          <Footer />
-        </Wrapper>
+        <React.Fragment>
+          <GlobalStyle />
+          <Wrapper>
+            <Helmet titleTemplate={`%s - ${title}`}>
+              {process.env.REACT_APP_META_ROBOTS && (
+                <meta
+                  name="robots"
+                  content={process.env.REACT_APP_META_ROBOTS}
+                />
+              )}
+            </Helmet>
+            <Disclaimer />
+            <Header />
+            <Main role="main">
+              <Switch>
+                <Route exact path="/" component={() => <Routes.HomePage />} />
+                <Route
+                  exact
+                  path="/code/"
+                  component={() => (
+                    <DefaultLayout>
+                      <Routes.CodePage />
+                    </DefaultLayout>
+                  )}
+                />
+                <Route
+                  exact
+                  path="/insights/"
+                  component={() => (
+                    <DefaultLayout>
+                      <Routes.InsightsPage />
+                    </DefaultLayout>
+                  )}
+                />
+                <Route
+                  exact
+                  path="/terms-of-service/"
+                  component={() => (
+                    <DefaultLayout>
+                      <Routes.TermsPage />
+                    </DefaultLayout>
+                  )}
+                />
+                <Route
+                  path="*"
+                  component={() => (
+                    <DefaultLayout>
+                      <Routes.NotFoundPage />
+                    </DefaultLayout>
+                  )}
+                />
+              </Switch>
+            </Main>
+            <Footer />
+          </Wrapper>
+        </React.Fragment>
       </ThemeProvider>
     </React.Fragment>
   </Router>
