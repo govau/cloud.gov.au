@@ -1,84 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-.c2 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c4 {
-  box-sizing: border-box;
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
-
-.c5 {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.c6 {
-  box-sizing: border-box;
-  padding-bottom: 16px;
-  padding-top: 32px;
-}
-
-.c7 {
-  box-sizing: border-box;
-}
-
-.c9 {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   max-width: 1024px;
 }
 
-.c12 {
+.c5 {
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: solid 1px;
 }
 
-.c13 {
+.c6 {
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: solid 1px;
 }
 
-.c10 {
+.c3 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c11 {
+.c4 {
   display: inline-block;
   margin: 1rem 1rem 0 0;
 }
 
-.c8 {
+.c2 {
   height: 3rem;
 }
 
@@ -86,51 +40,27 @@ exports[`renders without crashing 1`] = `
   color: #ffffff;
 }
 
-@media screen and (min-width:40em) {
-  .c5 {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width:52em) {
-  .c5 {
-    width: 33.33333333333333%;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c9 {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width:52em) {
-  .c9 {
-    width: 66.66666666666666%;
-  }
-}
-
 <footer
   className="c0"
 >
   <div
-    className="c1 c2"
+    className="c1 sc-bdVaJa bNqJOV"
     is={null}
   >
     <div
-      className="c3 c4"
+      className="fzUmoZ NcCKj"
       is={null}
     >
       <div
-        className="c5"
+        className="dbOKEe"
         is={null}
       >
         <div
-          className="c3 c6"
+          className="fzUmoZ kQtcea"
           is={null}
         >
           <div
-            className="c7"
+            className="iHZvIS"
             is={null}
           >
             <a
@@ -138,7 +68,7 @@ exports[`renders without crashing 1`] = `
             >
               <img
                 alt="DTA"
-                className="c8"
+                className="c2"
                 src={
                   Object {
                     "0": "d",
@@ -172,37 +102,37 @@ exports[`renders without crashing 1`] = `
         </div>
       </div>
       <div
-        className="c9"
+        className="clWLZM"
         is={null}
       >
         <ul
-          className="c10"
+          className="c3"
         >
           <li
-            className="c11"
+            className="c4"
           >
             <a
-              className="c12"
+              className="c5"
               href="https://console.system.b.cld.gov.au/"
             >
               Production console
             </a>
           </li>
           <li
-            className="c11"
+            className="c4"
           >
             <a
-              className="c12"
+              className="c5"
               href="https://console.system.y.cld.gov.au/"
             >
               Staging console
             </a>
           </li>
           <li
-            className="c11"
+            className="c4"
           >
             <a
-              className="c13"
+              className="c6"
               href="/terms-of-service/"
               onClick={[Function]}
             >
@@ -212,7 +142,7 @@ exports[`renders without crashing 1`] = `
         </ul>
         <p>
           <a
-            className="c12"
+            className="c5"
             href="https://github.com/govau/cloud.gov.au"
           >
             cloud.gov.au on GitHub
@@ -222,7 +152,7 @@ exports[`renders without crashing 1`] = `
           Have a question about cloud.gov.au? Contact DTA:
            
           <a
-            className="c12"
+            className="c5"
             href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20footer"
           >
             support@cloud.gov.au

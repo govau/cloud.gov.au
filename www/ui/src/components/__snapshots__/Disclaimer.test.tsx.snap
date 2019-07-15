@@ -1,107 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-.c1 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-
-.c4 {
-  box-sizing: border-box;
-  width: 100%;
-  padding-right: 16px;
-}
-
-.c8 {
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 8px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
 .c0 {
   max-width: 1024px;
 }
 
-.c5 {
+.c1 {
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c6 {
+.c2 {
   height: 1.25rem;
   margin-right: 0.5rem;
   vertical-align: middle;
 }
 
-.c7 {
+.c3 {
   color: #ffffff;
   font-weight: 500;
   vertical-align: middle;
 }
 
-.c9 {
+.c4 {
   color: #ffffff;
   vertical-align: middle;
-}
-
-@media screen and (min-width:40em) {
-  .c4 {
-    width: auto;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c8 {
-    width: auto;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c8 {
-    margin-top: 0px;
-  }
 }
 
 <div
   className=""
 >
   <div
-    className="c0 c1"
+    className="c0 sc-bdVaJa bNqJOV"
     is={null}
   >
     <div
-      className="c2 c3"
+      className="jtWIOA ikjdog"
       is={null}
     >
       <div
-        className="c4"
+        className="fOpQaR"
         is={null}
       >
         <a
-          className="c5"
+          className="c1"
           href="/"
         >
           <img
             alt=""
-            className="c6"
+            className="c2"
             src={
               Object {
                 "0": "s",
@@ -117,18 +64,18 @@ exports[`renders without crashing 1`] = `
             }
           />
           <span
-            className="c7"
+            className="c3"
           >
             GOV.AU
           </span>
         </a>
       </div>
       <div
-        className="c8"
+        className="irQXag"
         is={null}
       >
         <span
-          className="c9"
+          className="c4"
         >
           Official Australian Government website
         </span>

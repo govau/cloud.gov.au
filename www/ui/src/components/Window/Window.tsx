@@ -37,16 +37,16 @@ const Icon = styled.span`
   margin: 0 0.25rem;
 `;
 
-const CloseIcon = Icon.extend`
+const CloseIcon = styled(Icon)`
   margin-left: 0;
   background-color: #ff5f56;
 `;
 
-const MinimizeIcon = Icon.extend`
+const MinimizeIcon = styled(Icon)`
   background-color: #ffbd2e;
 `;
 
-const FullscreenIcon = Icon.extend`
+const FullscreenIcon = styled(Icon)`
   margin-right: 0;
   background-color: #27c93f;
 `;

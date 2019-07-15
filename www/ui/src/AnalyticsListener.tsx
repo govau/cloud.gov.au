@@ -34,4 +34,4 @@ class AnalyticsListener extends React.Component<Props> {
   }
 }
 
-export default withRouter<Props>(AnalyticsListener);
+export default withRouter(AnalyticsListener);

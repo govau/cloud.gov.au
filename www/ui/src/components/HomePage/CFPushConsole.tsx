@@ -7,28 +7,28 @@ const Label = styled.span`
   font-weight: 600;
 `;
 
-const BinaryLabel = Label.extend`
+const BinaryLabel = styled(Label)`
   ${({ theme }) =>
     css`
       color: ${theme.console.labels.binaryColor};
     `};
 `;
 
-const CFAppLabel = Label.extend`
+const CFAppLabel = styled(Label)`
   ${({ theme }) =>
     css`
       color: ${theme.console.labels.cfAppColor};
     `};
 `;
 
-const OKLabel = Label.extend`
+const OKLabel = styled(Label)`
   ${({ theme }) =>
     css`
       color: ${theme.console.labels.okColor};
     `};
 `;
 
-const CFAppStartedLabel = Label.extend`
+const CFAppStartedLabel = styled(Label)`
   ${({ theme }) =>
     css`
       color: ${theme.console.labels.cfAppStartedColor};

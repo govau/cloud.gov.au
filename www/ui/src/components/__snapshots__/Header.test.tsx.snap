@@ -1,60 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-.c2 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c4 {
-  box-sizing: border-box;
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
-
-.c6 {
-  box-sizing: border-box;
-  padding-right: 16px;
-}
-
-.c8 {
-  box-sizing: border-box;
-}
-
-.c12 {
-  box-sizing: border-box;
-  width: 100%;
-  margin-left: 0px;
-  margin-top: 16px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c15 {
+.c9 {
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: solid 1px;
 }
 
-.c10 {
+.c5 {
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: solid 1px;
 }
@@ -63,33 +21,35 @@ exports[`renders without crashing 1`] = `
   max-width: 1024px;
 }
 
-.c13 {
+.c7 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c14 {
+.c8 {
   display: block;
   margin: 8px;
 }
 
-.c5 {
+.c2 {
+  box-sizing: border-box;
+  padding-right: 16px;
   display: none;
 }
 
-.c7 {
+.c3 {
   height: 5rem;
   padding-right: 1rem;
   border-right: 1px solid;
 }
 
-.c9 {
+.c4 {
   display: block;
   border-bottom: 0;
 }
 
-.c11 {
+.c6 {
   margin: 0;
   font-weight: 500;
   font-size: 1.5rem;
@@ -100,26 +60,13 @@ exports[`renders without crashing 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c12 {
-    width: auto;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c12 {
-    margin-left: auto;
-    margin-top: 0px;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c14 {
+  .c8 {
     display: inline-block;
   }
 }
 
 @media screen and (min-width:40em) {
-  .c5 {
+  .c2 {
     display: block;
   }
 }
@@ -128,15 +75,15 @@ exports[`renders without crashing 1`] = `
   className="c0"
 >
   <div
-    className="c1 c2"
+    className="c1 bNqJOV"
     is={null}
   >
     <div
-      className="c3 c4"
+      className="fzUmoZ NcCKj"
       is={null}
     >
       <div
-        className="c5 c6"
+        className="c2"
         display={
           Array [
             "none",
@@ -150,7 +97,7 @@ exports[`renders without crashing 1`] = `
         >
           <img
             alt="The Australian Government Coat of Arms"
-            className="c7"
+            className="c3"
             src={
               Object {
                 "0": "c",
@@ -167,30 +114,30 @@ exports[`renders without crashing 1`] = `
         </a>
       </div>
       <div
-        className="c8"
+        className="iHZvIS"
         is={null}
       >
         <a
-          className="c9 c10"
+          className="c4 c5"
           href="/"
           onClick={[Function]}
         >
           <div
-            className="c11"
+            className="c6"
           >
             cloud.gov.au
           </div>
         </a>
       </div>
       <div
-        className="c12"
+        className="fvqBgo"
         is={null}
       >
         <ul
-          className="c13"
+          className="c7"
         >
           <li
-            className="c14"
+            className="c8"
             display={
               Array [
                 "block",
@@ -204,7 +151,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c10"
+              className="c5"
               href="/insights/"
               onClick={[Function]}
             >
@@ -212,7 +159,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="c14"
+            className="c8"
             display={
               Array [
                 "block",
@@ -226,7 +173,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c10"
+              className="c5"
               href="/code/"
               onClick={[Function]}
             >
@@ -234,7 +181,7 @@ exports[`renders without crashing 1`] = `
             </a>
           </li>
           <li
-            className="c14"
+            className="c8"
             display={
               Array [
                 "block",
@@ -248,14 +195,14 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c15"
+              className="c9"
               href="https://docs.cloud.gov.au/"
             >
               Docs
             </a>
           </li>
           <li
-            className="c14"
+            className="c8"
             display={
               Array [
                 "block",
@@ -269,7 +216,7 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c15"
+              className="c9"
               href="https://support.cloud.gov.au/"
             >
               Support
