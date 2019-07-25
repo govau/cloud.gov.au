@@ -1,9 +1,0 @@
----
-buildpack: binary_buildpack
-memory: 256M
-services:
-- postgres
-- prometheus
-- cf
-applications:
-- name: www

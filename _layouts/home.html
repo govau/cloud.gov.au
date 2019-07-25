@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+{% include head.html %}
+<body class="home au-grid">
+<nav class="au-skip-link">
+    <a class="au-skip-link__link" href="#content">Skip to main content</a>
+    {% comment %}<a class="au-skip-link__link" href="#mainmenu">Skip to main navigation</a>{% endcomment %}
+</nav>
+
+<header class="au-header au-header--dark" role="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="au-header__brand" href="#">
+                    <img class="au-header__brand-image" alt="Australian Government Coat of Arms" src="{% asset australian-government-stacked-white.png @path %}">
+                    <div class="au-header__text">
+                        <h1 class="au-header__heading">{{ site.title }}</h1>
+                        <div class="au-header__subline">{{ site.description | escape }}</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% include main-navigation.html %}
+</header>
+
+<main class="main" id="content" aria-label="Content">
+    <section class="au-body">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        {{ content }}
+                    </div>
+                    <div class="col-sm-6">
+                        {% asset example-go.png alt="Example of running a Golang application on cloud.gov.au" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <ul class="au-card-list au-card-list--matchheight">
+                {% for feature in site.data.features %}
+                <li class="col-sm-4 col-xs-12">
+                    <div class="au-card au-card--shadow">
+                        <div class="au-card__inner">
+                            <h2 class="au-card__title">{{ feature.name | textuaize }}</h2>
+                            {{ feature.desc | markdownify}}
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% include footer.html %}
+</body>
+</html>

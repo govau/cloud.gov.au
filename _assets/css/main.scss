@@ -1,0 +1,108 @@
+//= require designsystem.min.css
+
+$AU-color-background: #313131;
+$primary-color: #45C2F0;
+$gray: #808080;
+
+body {
+    margin: 0;
+}
+.au-body {
+    h2 {
+        font-weight: 300;
+    }
+}
+
+.au-header.au-header--dark,
+.au-footer.au-footer--dark {
+    background-color: $AU-color-background;
+    border: none;
+}
+.au-header.au-header--dark {
+    box-shadow: 0 0 5px 0 #7F7F7F;
+    position: relative;
+}
+.au-footer.au-footer--dark {
+    margin-top: 2em;
+}
+
+.au-main-nav.au-main-nav--dark {
+    &, .au-main-nav__menu, a:hover {
+        background-color: unset;
+    }
+
+    .active {
+        a {
+            &, &:hover {
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.jumbotron {
+    background: #fafafa;
+    border-bottom: 1px solid #eaeaea;
+    padding: 5em 0 3em;
+}
+
+.au-footer--dark .au-footer__end {
+    border-top-color: $gray;
+}
+.au-header--dark .au-header__brand .au-header__brand-image+.au-header__text {
+    border: none;
+}
+
+#dta-initiative {
+    img {
+        max-width: 72px;
+    }
+}
+
+.text-centered {
+    text-align: center;
+}
+.pull-right {
+    float: right !important;
+}
+.mt-2 {
+    margin-top: 2em;
+}
+.mt-4 {
+    margin-top: 4em;
+}
+.mt-5 {
+    margin-top: 5em;
+}
+.mb-2 {
+    margin-bottom: 2em;
+}
+.mb-4 {
+    margin-bottom: 4em;
+}
+.mb-5 {
+    margin-bottom: 5em;
+}
+
+/* sm */
+@media (min-width: 768px) {
+    .au-header {
+        padding-bottom: 0;
+    }
+    .au-header__brand .au-header__brand-image {
+        max-width: 200px;
+        border-right: 1px solid $gray;
+        padding-right: 1em;
+    }
+    .au-header__brand .au-header__brand-image+.au-header__text {
+        margin-left: 220px;
+        margin-top: 0.5em;
+        float: none;
+    }
+}
+
+/* md */
+@media (min-width: 992px) {}
+
+/* lg */
+@media (min-width: 1200px) {}

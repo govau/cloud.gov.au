@@ -1,0 +1,19 @@
+- name: Automatically secure
+  desc: |
+    We provision and renew SSL certificates automatically.
+    
+    Thanks to [Let's Encrypt](https://letsencrypt.org/), you get security at zero cost, for as many domains as you want.
+
+- name: Programming languages
+  desc: |
+    Supported languages and frameworks include Go, Java, .NET, Node.js, PHP, Python, Ruby, static files and binaries.
+    
+    Learn about [Cloud Foundry buildpacks](https://docs.cloudfoundry.org/buildpacks/).
+    
+- name: Services
+  desc: |
+    Seamlessly connect your application to backend services.
+    
+    Available services include Postgres, MySQL and ElasticSearch.
+    
+    [Get in contact with us](mailto:support@cloud.gov.au) if we're missing a service that you need.
