@@ -15,23 +15,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 markdown: kramdown
 
 # Sass settings
-#sass:
-#  add_charset: true
-#  sass_dir: _sass
-#  style: :compressed
-
-assets:
-  source_maps: true
-  destination: "/assets"
-  compression: true
-  sources:
-    - _assets/css
-    - _assets/js
-    - _assets/images
-    - _assets/scripts
-  plugins:
-    css: { autoprefixer: {}}
-    img: { optim: {}}
+sass:
+  style: compressed
 
 # Build settings
 exclude:
@@ -45,6 +30,6 @@ exclude:
   - manifest-*.yml
 
 # Plugin settings
-plugins:
-  - jekyll-assets
+#plugins:
+#  - jekyll-assets  # not compat with jekyll 4.0: https://github.com/envygeeks/jekyll-assets/issues/613
 
