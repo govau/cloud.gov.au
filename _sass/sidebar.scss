@@ -1,0 +1,17 @@
+ul#markdown-toc {
+    margin: 0;
+
+    li {
+        border: none;
+
+        a {
+            padding: 0.75em;
+            border-left: 2px solid transparent;
+        }
+        &.active {
+            a {
+                border-left-color: $primary-color;
+            }
+        }
+    }
+}

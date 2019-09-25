@@ -32,17 +32,17 @@
                     <h1>{{ page.title }}</h1>
                     {{ content }}
                 </div>
-                <div class="col-md-3" id="sidebar">
+                <div class="col-md-3 mt-5" id="sidebar">
                     <aside class="au-side-nav au-accordion" aria-label="side navigation">
                         <button 
                             class="au-side-nav__toggle au-accordion__title au-accordion--closed" 
-                            aria-controls="nav-default"
+                            aria-controls="sidebar-nav"
                             aria-expanded="false"  
                             onclick="return AU.accordion.Toggle( this )"
                         >
                             In this section
                         </button>
-                        <div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body">
+                        <div id="sidebar-nav" class="au-side-nav__content au-accordion--closed au-accordion__body">
                         </div>
                     </aside>
                 </div>

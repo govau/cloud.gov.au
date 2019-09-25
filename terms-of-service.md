@@ -3,8 +3,6 @@ layout: page
 title: Terms of Service
 ---
 
-## On this page
-{:.no_toc}
 * toc
 {:toc}
 

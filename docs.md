@@ -9,8 +9,6 @@ cloud.gov.au is a place to run web apps, freeing up teams to focus on writing co
 
 Combined, **this makes it easy for government to release, monitor and grow user-facing digital services.**
 
-## On this page
-{:.no_toc}
 * toc
 {:toc}
 
