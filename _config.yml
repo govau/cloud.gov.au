@@ -11,10 +11,8 @@ description: > # this means to ignore newlines until "baseurl:"
   A platform to make delivering and operating Government digital services easier
 baseurl: "" # the subpath of your site, e.g. /blog
 
-# Markdown settings
 markdown: kramdown
 
-# Sass settings
 sass:
   style: compressed
 

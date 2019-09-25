@@ -9,6 +9,11 @@ cloud.gov.au is a place to run web apps, freeing up teams to focus on writing co
 
 Combined, **this makes it easy for government to release, monitor and grow user-facing digital services.**
 
+## On this page
+{:.no_toc}
+* toc
+{:toc}
+
 ## Industry standard technology, best-practice approach
 
 cloud.gov.au is built with the industry leading Platform as a Service (PaaS) technology [Cloud Foundry](http://cloudfoundry.org/), running on top of [Amazon Web Services](http://aws.amazon.com/) in the Sydney region.

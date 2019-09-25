@@ -27,10 +27,24 @@
 <main class="main" id="content" aria-label="Content">
     <section class="au-body">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 mt-2">
+            <div class="row mt-2">
+                <div class="col-md-9">
                     <h1>{{ page.title }}</h1>
                     {{ content }}
+                </div>
+                <div class="col-md-3" id="sidebar">
+                    <aside class="au-side-nav au-accordion" aria-label="side navigation">
+                        <button 
+                            class="au-side-nav__toggle au-accordion__title au-accordion--closed" 
+                            aria-controls="nav-default"
+                            aria-expanded="false"  
+                            onclick="return AU.accordion.Toggle( this )"
+                        >
+                            In this section
+                        </button>
+                        <div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body">
+                        </div>
+                    </aside>
                 </div>
             </div>
         </div>
