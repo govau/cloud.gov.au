@@ -1,0 +1,28 @@
+version: 2
+jobs:
+  deploy-staging:
+    docker:
+      - image: circleci/ruby:2.6.4-stretch
+
+    steps:
+      - checkout
+      - run: sudo bundle install
+      - run: sudo JEKYLL_ENV=production bundle exec jekyll build
+      - run: sudo apt-get install apt-transport-https
+      - run: wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+      - run: echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+      - run: sudo apt-get update
+      - run: sudo apt-get install cf-cli
+      - run: cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
+      - run: cf login -a api.system.y.cld.gov.au -o $CF_ORG_STAGING -s $CF_SPACE_STAGING -u $CF_USER_STAGING -p $CF_PASSWORD_STAGING
+      - run: cf zero-downtime-push content-guide -f manifest-staging.yml
+
+workflows:
+  version: 2
+  deploying:
+    jobs:
+      - deploy-staging
+        filters:
+          branches:
+            only:
+              - develop
