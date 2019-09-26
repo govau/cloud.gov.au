@@ -14,8 +14,8 @@ jobs:
       - run: sudo apt-get update
       - run: sudo apt-get install cf-cli
       - run: cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
-      - run: cf login -a api.system.y.cld.gov.au -o $CF_ORG_STAGING -s $CF_SPACE_STAGING -u $CF_USER_STAGING -p $CF_PASSWORD_STAGING
-      - run: cf zero-downtime-push content-guide -f manifest-staging.yml
+      - run: cf login -a ${CF_API_STAGING} -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
+      - run: cf zero-downtime-push cga -f manifest-staging.yml
 
 workflows:
   version: 2
