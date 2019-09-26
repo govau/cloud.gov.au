@@ -1,0 +1,15 @@
+docs:
+  - title: Documentation
+    url: /docs.html
+    subitems:
+      - title: Getting started
+        url: /docs/getting-started.html
+
+      - title: Deployment and configuration
+        url: /docs/deployment-and-configuration.html
+
+      - title: Services
+        url: /docs/services.html
+
+      - title: Support
+        url: /docs/support.html

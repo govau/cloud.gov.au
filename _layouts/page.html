@@ -28,11 +28,21 @@
     <section class="au-body">
         <div class="container">
             <div class="row mt-2">
-                <div class="col-md-9">
+                <div id="sidebar" class="col-md-3">
+                    {% for item in site.data.sub-navigation[page.sidebar] %}
+                        <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+                        <ul class="au-link-list">
+                            {% for subitem in item.subitems %}
+                            <li{% if subitem.url == page.url %} class="active"{% endif %}><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endfor %}
+                </div>
+                <div class="col-md-7">
                     <h1>{{ page.title }}</h1>
                     {{ content }}
                 </div>
-                <div class="col-md-3 mt-5" id="sidebar">
+                <div class="col-md-2 mt-5">
                     <aside class="au-side-nav au-accordion" aria-label="side navigation">
                         <button 
                             class="au-side-nav__toggle au-accordion__title au-accordion--closed" 
@@ -42,7 +52,7 @@
                         >
                             In this section
                         </button>
-                        <div id="sidebar-nav" class="au-side-nav__content au-accordion--closed au-accordion__body">
+                        <div id="toc-container" class="au-side-nav__content au-accordion--closed au-accordion__body">
                             {% include toc.html class="au-link-list" html=content %}
                         </div>
                     </aside>

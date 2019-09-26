@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Documentation
+sidebar: docs
 ---
 
 ## The platform for building the future
@@ -33,4 +34,4 @@ The cloud.gov.au team follow [AWS best practices for DDoS resilency](https://d0.
 
 ## Start on cloud.gov.au today
 
-Check out [how to request access](/getting_started/request_access/).
+Check out [how to request access](/docs/getting-started.html#join-an-existing-project-or-start-a-new-one).
