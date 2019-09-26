@@ -6,13 +6,13 @@ jobs:
     steps:
       - checkout
       - run: 
-        name: Build site
-        command: |
+          name: Build site
+          command: |
             sudo bundle install
             sudo JEKYLL_ENV=production bundle exec jekyll build
       - run:
-        name: Deploy to staging
-        command: |
+          name: Deploy to staging
+          command: |
             sudo apt-get install apt-transport-https
             wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
             echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
