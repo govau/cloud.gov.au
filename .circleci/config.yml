@@ -8,19 +8,19 @@ jobs:
       - run: 
         name: Build site
         command: |
-          sudo bundle install
-          sudo JEKYLL_ENV=production bundle exec jekyll build
+            sudo bundle install
+            sudo JEKYLL_ENV=production bundle exec jekyll build
       - run:
         name: Deploy to staging
         command: |
-          sudo apt-get install apt-transport-https
-          wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
-          echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
-          sudo apt-get update
-          sudo apt-get install cf-cli
-          cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
-          cf login -a ${CF_API_STAGING} -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
-          cf zero-downtime-push cga -f manifest-staging.yml
+            sudo apt-get install apt-transport-https
+            wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+            echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+            sudo apt-get update
+            sudo apt-get install cf-cli
+            cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
+            cf login -a ${CF_API_STAGING} -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
+            cf zero-downtime-push cga -f manifest-staging.yml
 
 workflows:
   version: 2
