@@ -7,7 +7,7 @@ buildpack: staticfile_buildpack
 stack: cflinuxfs3
 
 routes:
-- route: cloud.gov.au
+#- route: cloud.gov.au
 
 applications:
 - name: cga
