@@ -27,7 +27,7 @@ workflows:
   deploying:
     jobs:
       - deploy-staging:
-        filters:
-          branches:
-            only:
-              - develop
+          filters:
+            branches:
+              only:
+                - develop
