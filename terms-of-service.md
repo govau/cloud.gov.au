@@ -3,9 +3,6 @@ layout: page
 title: Terms of Service
 ---
 
-* toc
-{:toc}
-
 ## Definitions
 *You* and *Your* means any user deploying applications on cloud.gov.au.
 

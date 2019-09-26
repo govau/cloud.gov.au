@@ -1,5 +1,5 @@
 $( document ).ready( function() {
-    if ( $('ul#markdown-toc').length > 0 ) {
+    if ( $('#sidebar-nav > ul').length > 0 ) {
         $('#sidebar-nav').append(
             '<h2 class="au-sidenav__title hidden">On this page</h2>',
             $('ul#markdown-toc').addClass('au-link-list')
