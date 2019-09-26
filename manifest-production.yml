@@ -1,0 +1,13 @@
+---
+path: _site/
+instances: 3
+memory: 64M
+disk_quota: 256M
+buildpack: staticfile_buildpack
+stack: cflinuxfs3
+
+routes:
+- route: cloud.gov.au
+
+applications:
+- name: cga
