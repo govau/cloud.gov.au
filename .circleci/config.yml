@@ -26,7 +26,7 @@ workflows:
   version: 2
   deploying:
     jobs:
-      - deploy-staging
+      - deploy-staging:
         filters:
           branches:
             only:
