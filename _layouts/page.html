@@ -37,12 +37,7 @@
                             {% endfor %}
                         </ul>
                     {% endfor %}
-                </div>
-                <div class="col-md-7">
-                    <h1>{{ page.title }}</h1>
-                    {{ content }}
-                </div>
-                <div class="col-md-2 mt-5">
+
                     <aside class="au-side-nav au-accordion" aria-label="side navigation">
                         <button 
                             class="au-side-nav__toggle au-accordion__title au-accordion--closed" 
@@ -56,6 +51,10 @@
                             {% include toc.html class="au-link-list" html=content %}
                         </div>
                     </aside>
+                </div>
+                <div class="col-md-9">
+                    <h1>{{ page.title }}</h1>
+                    {{ content }}
                 </div>
             </div>
         </div>

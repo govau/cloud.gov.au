@@ -12,12 +12,26 @@
     }
     > ul {
         margin-left: -14px;
+        > li {
+            > a {
+                font-size: 1.2em;
+            }
+        }
     }
     ul {
+        list-style-type: none;
+
+        ul {
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+            margin-left: 1em;
+            border-left: 1px solid #ddd;
+        }
+
         li {
             a {
                 display: block;
-                font-size: 1.2em;
                 text-decoration: none;
                 border-left: 2px solid transparent;
                 padding: 5px 5px 5px 10px;
@@ -30,7 +44,7 @@
             &.active {
                 > a {
                     border-left: 4px solid $primary-color;
-                    background: #f6f6f6;
+                    
                 }
             }
         }
