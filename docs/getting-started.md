@@ -8,7 +8,8 @@ sidebar: docs
 
 How to get a cloud.gov.au account and join or create a project.
 
-<p class="callout">Accounts are available for Digital Transformation Agency (DTA) staff, as well as staff from government agencies that have an agreement with the DTA to use cloud.gov.au. If your agency is interested in using cloud.gov.au, please [email us](mailto:support@cloud.gov.au) so we can discuss your needs.</p>
+Accounts are available for Digital Transformation Agency (DTA) staff, as well as staff from government agencies that have an agreement with the DTA to use cloud.gov.au. If your agency is interested in using cloud.gov.au, please [email us](mailto:support@cloud.gov.au) so we can discuss your needs.
+{: .au-callout}
 
 ### Join an existing project
 
@@ -117,7 +118,7 @@ cf -v
 
 ## Login to CloudFoundry
 
-<div class="callout">
+<div class="au-callout">
 <p>Before you can login you will need to:</p>
 <ul>
 <li><a href="/getting_started/install_cli/">install CloudFoundry command line tools</a></li>
@@ -146,7 +147,7 @@ cf login -a https://api.system.y.cld.gov.au -u <email> -o <org> -s <space>
 cf login -a https://api.system.y.cld.gov.au --sso
 ```
 
-<div class="callout">
+<div class="au-callout">
 <p>Please note: DTA users must login with their digital.gov.au account using single sign-on.</p>
 <pre><code>cf login -a https://api.system.y.cld.gov.au --sso</code></pre>
 </div>
