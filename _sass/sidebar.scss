@@ -1,7 +1,8 @@
+aside.au-side-nav {
+    margin-bottom: 1.5em;
+}
 #sidebar-nav-container {
     h3.au-sidenav__title {
-        margin-bottom: 0.5em;
-
         a {
             font-size: 1.1em;
             text-decoration: none;
@@ -85,6 +86,16 @@
             > a {
                 border-left-color: $primary-color;
             }
+        }
+    }
+}
+
+
+/* sm */
+@media (min-width: 768px) {
+    #sidebar-nav-container {
+        h3.au-sidenav__title {
+            margin-bottom: 0.5em;
         }
     }
 }

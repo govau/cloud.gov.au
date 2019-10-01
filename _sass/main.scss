@@ -5,8 +5,14 @@ body {
     h2 {
         font-weight: 300;
     }
+    pre {
+        white-space: pre-wrap;
+    }
 }
 
+.au-header {
+    padding-bottom: 0;
+}
 .au-header.au-header--dark,
 .au-footer.au-footer--dark {
     background-color: $AU-color-background;
@@ -37,7 +43,7 @@ body {
 .jumbotron {
     background: #fafafa;
     border-bottom: 1px solid #eaeaea;
-    padding: 5em 0 3em;
+    padding: 1em 0;
 }
 
 .au-footer--dark .au-footer__end {
@@ -45,6 +51,12 @@ body {
 }
 .au-header--dark .au-header__brand .au-header__brand-image+.au-header__text {
     border: none;
+}
+.au-header__brand {
+    text-align: center;
+}
+.au-header__brand-image {
+    margin: 0 auto;
 }
 
 #dta-initiative {
@@ -77,8 +89,8 @@ body {
 
 /* sm */
 @media (min-width: 768px) {
-    .au-header {
-        padding-bottom: 0;
+    .au-header__brand {
+        text-align: left;
     }
     .au-header__brand .au-header__brand-image {
         max-width: 200px;
@@ -89,6 +101,16 @@ body {
         margin-left: 220px;
         margin-top: 0.5em;
         float: none;
+    }
+    .au-main-nav {
+        margin-top: 1em;
+    }
+    .jumbotron {
+        padding: 5em 0 3em;
+    }
+    .right-aligned {
+        /* similar to .pull-right but for main menu items */
+        float: right !important;
     }
 }
 

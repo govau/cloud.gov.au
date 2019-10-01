@@ -1,4 +1,4 @@
-<nav class="au-main-nav au-main-nav--dark mt-2" aria-label="main">
+<nav class="au-main-nav au-main-nav--dark" aria-label="main">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -26,7 +26,7 @@
                                         {% assign css_class = "active" | append: css_class %}
                                     {% endif %}
                                     {% if item.right %}
-                                        {% assign css_class = "pull-right " | append: css_class %}
+                                        {% assign css_class = "right-aligned " | append: css_class %}
                                     {% endif %}
                                 <li class="{{ css_class }}"><a href="{{ item.url }}">{{ item.title }}</a></li>
                                 {% endfor %}
