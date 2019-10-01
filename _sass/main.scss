@@ -94,6 +94,11 @@ header.au-header {
 
 /* sm */
 @media (min-width: 768px) {
+    header.au-header {
+        div.col-md-12 {
+            text-align: left;
+        }
+    }
     .au-header__brand {
         text-align: left;
     }
@@ -117,8 +122,10 @@ header.au-header {
         /* similar to .pull-right but for main menu items */
         float: right !important;
     }
-    footer.au-footer {
-        margin-top: 5em;
+    body:not(.home) {
+        footer.au-footer {
+            margin-top: 5em;
+        }
     }
 }
 
