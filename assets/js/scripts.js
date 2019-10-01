@@ -1,4 +1,6 @@
 $( document ).ready( function() {
+    $('html').removeClass('no-js').addClass('js');
+    
     if ( $('#toc-container > ul').length > 0 ) {
         $('#sidebar > aside.au-side-nav > ul.au-link-list > li.active').append( $('div#toc-container > ul.au-link-list') );
 
