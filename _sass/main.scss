@@ -22,7 +22,7 @@ body {
     box-shadow: 0 0 5px 0 #7F7F7F;
     position: relative;
 }
-.au-footer.au-footer--dark {
+footer.au-footer {
     margin-top: 2em;
 }
 
@@ -116,6 +116,9 @@ header.au-header {
     .right-aligned {
         /* similar to .pull-right but for main menu items */
         float: right !important;
+    }
+    footer.au-footer {
+        margin-top: 5em;
     }
 }
 
