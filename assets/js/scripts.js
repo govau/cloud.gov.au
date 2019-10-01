@@ -1,8 +1,8 @@
 $( document ).ready( function() {
     $('html').removeClass('no-js').addClass('js');
-    
+
     if ( $('#toc-container > ul').length > 0 ) {
-        $('#sidebar > aside.au-side-nav > ul.au-link-list > li.active').append( $('div#toc-container > ul.au-link-list') );
+        $('#sidebar-nav-container > ul.au-link-list > li.active').append( $('div#toc-container > ul.au-link-list') );
 
         $('#back-to-top a').on( 'click', function() {
             $('html, body').animate({

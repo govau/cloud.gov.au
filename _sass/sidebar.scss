@@ -1,9 +1,10 @@
 #sidebar {
-    h3 {
+    h3.au-sidenav__title {
         margin-bottom: 0.5em;
 
         a {
             text-decoration: none;
+            border: none;
 
             &:hover {
                 text-decoration: underline;
@@ -38,6 +39,10 @@
 
                 &:hover {
                     text-decoration: underline;
+                }
+
+                &:before {
+                    background: none;
                 }
             }
 
