@@ -1,6 +1,6 @@
 $( document ).ready( function() {
     if ( $('#toc-container > ul').length > 0 ) {
-        $('#sidebar > ul.au-link-list > li.active').append( $('div#toc-container > ul.au-link-list') );
+        $('#sidebar > aside.au-side-nav > ul.au-link-list > li.active').append( $('div#toc-container > ul.au-link-list') );
 
         $('#back-to-top a').on( 'click', function() {
             $('html, body').animate({
