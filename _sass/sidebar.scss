@@ -1,8 +1,9 @@
-#sidebar {
+#sidebar-nav-container {
     h3.au-sidenav__title {
         margin-bottom: 0.5em;
 
         a {
+            font-size: 1.1em;
             text-decoration: none;
             border: none;
 
@@ -12,26 +13,29 @@
         }
     }
     > ul {
-        margin-left: -14px;
         > li {
-            > a {
-                font-size: 1.2em;
-            }
+            border-bottom: none;
         }
     }
     ul {
         list-style-type: none;
 
         ul {
-            font-size: 1em;
             margin: 0;
             padding: 0;
             margin-left: 1em;
             border-left: 1px solid #ddd;
+
+            li {
+                a {
+                    font-size: 0.9em;
+                }
+            }
         }
 
         li {
             a {
+                font-size: 1.1em;
                 display: block;
                 text-decoration: none;
                 border-left: 2px solid transparent;
