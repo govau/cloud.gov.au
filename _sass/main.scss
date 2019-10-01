@@ -52,8 +52,13 @@ body {
 .au-header--dark .au-header__brand .au-header__brand-image+.au-header__text {
     border: none;
 }
-.au-header__brand {
-    text-align: center;
+header.au-header {
+    div.col-md-12 {
+        text-align: center;
+    }
+    nav.au-main-nav div.col-md-12 {
+        text-align: left;
+    }
 }
 .au-header__brand-image {
     margin: 0 auto;
