@@ -1,0 +1,17 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:incidents@cloud.gov.au
+Encryption: https://www.cloud.gov.au/.well-known/pgp-key.txt
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFLBAEBCAA1FiEED8iLFVeGuw8rAhk5n5rUZMPiE8AFAl6ugAsXHGluY2lkZW50
+c0BjbG91ZC5nb3YuYXUACgkQn5rUZMPiE8Dwrwf/Y751DGcHBWKqE6O5CzK2WqAr
+8YhJBFWNruj//WXT+nipQYEB6SGe7DILxbfIwAUEA/993dotdSIxmlShzLqm2N4B
+06dJX4vuK1xgt21C3e3Kki4fSaQMUAbawVb7pWD1vC0H7iF58FuUmnq6C6cz9WDE
+BG9SBWQAVNvhdQVQwWpF/B8W5PbTu8temD9givWy2CP7NjGXykqDfc1e1xClIhJD
+EgBxt0k6sdVIRXXZuqAcohOA2i5M5JE2WbgKAaapmioc4gxJw7rBt2BDp+niXuEW
+rmnSPP715IFMK+rhBqwqLc1VAEjkigVOjVQqRZajrWgMmr0i+PAHlnjFr2xO6Q==
+=BPxT
+-----END PGP SIGNATURE-----
