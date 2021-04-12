@@ -7,6 +7,7 @@ import Container from "../components/Container";
 import Link from "../components/Link";
 import Header from "../components/HomePage/Header";
 import CFPushConsole from "../components/HomePage/CFPushConsole";
+import DevEnvironment from "../components/DevEnvironment"
 
 const body = "\n\n---\nSource: cloud.gov.au home page";
 
@@ -77,6 +78,7 @@ const HomePage: React.StatelessComponent = () => (
           </Flex>
         </Container>
       </Ribbon1>
+      <DevEnvironment/>
       <Container px={0}>
         <Flex wrap={true} px={2} py={[2, 4]}>
           <Box w={[1, 1 / 3]} pr={[0, 3]}>
