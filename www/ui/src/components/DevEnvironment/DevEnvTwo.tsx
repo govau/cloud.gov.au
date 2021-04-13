@@ -8,15 +8,20 @@ interface Props { }
 const DevEnvTwo: React.StatelessComponent<Props> = () => (
   <div className="denv-bg-lightcyan">
 
-    <h1>
-      Two h1
-   </h1>
-    <h2>
+    <div className="denv-content">
+      <h1 className="au-display-xxxl">Supercharge your software developers</h1>
+      <p>The Cloud Development Environment gives your development team the tools they need to harness cloud computing within government.</p>
+      <p>Reduce time wasted creating and maintaining development environments with access to the Cloud Development Environment.</p>
+      <p></p>
+    </div>
 
-      This is h2
-   </h2>
+    <div className="denv-button-section">
+      <button className="denv-button" type="button" onClick={(e) => {e.preventDefault(); window.location.href = 'https://lp.apps.y.cld.gov.au/';}}>
+        Find out more
+      </button>
+    </div>
 
-
+    
 
   </div>
 );

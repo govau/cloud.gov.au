@@ -79,8 +79,9 @@ const HomePage: React.StatelessComponent = () => (
           </Flex>
         </Container>
       </Ribbon1>
+
       <Container px={0}>
-        <Flex wrap={true} px={2} pt={[2, 4]} pb={4}>
+        <Flex wrap={true} px={0} pt={[2, 4]} pb={4}>
           <Box w={[1, 1 / 2]} pt={[1, 3]} pb={[1, 3]} pr={[0, 3]}>
             <DevEnvOne />
           </Box>
