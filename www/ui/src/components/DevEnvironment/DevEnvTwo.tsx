@@ -9,9 +9,8 @@ const DevEnvTwo: React.StatelessComponent<Props> = () => (
   <div className="denv-bg-lightcyan">
 
     <div className="denv-content">
-      <h1 className="au-display-xxxl">Supercharge your software developers</h1>
-      <p>The Cloud Development Environment gives your development team the tools they need to harness cloud computing within government.</p>
-      <p>Reduce time wasted creating and maintaining development environments with access to the Cloud Development Environment.</p>
+      <h2 className="au-display-xxl">Cloud Development Environment</h2>
+      <p>A new feature to cloud.gov.au that gives developers the tools to run code anywhere in the world.</p>
       <p></p>
     </div>
 
