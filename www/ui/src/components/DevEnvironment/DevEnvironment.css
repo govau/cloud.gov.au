@@ -6,6 +6,10 @@
     background-color: lightcyan;
 }
 
+.denv-bg-white{
+    background-color: #ffffff;
+}
+
 .denv-button {
     background-color: #00698f;
     border: none;
