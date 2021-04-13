@@ -6,7 +6,7 @@ import './DevEnvironment.css';
 interface Props { }
 
 const DevEnvOne: React.StatelessComponent<Props> = () => (
-  <div className="denv-bg-teal">
+  <div className="denv-bg-white">
 
        <img className="denv-image" width="100%" src={require('./Coding.png')} />
 
