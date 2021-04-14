@@ -6,7 +6,7 @@ import './DevEnvironment.css';
 interface Props { }
 
 const DevEnvTwo: React.StatelessComponent<Props> = () => (
-  <div className="denv-bg-lightcyan">
+  <div className="denv-wrapper">
 
     <div className="denv-content">
       <h2 className="au-display-xxl">Cloud Development Environment</h2>

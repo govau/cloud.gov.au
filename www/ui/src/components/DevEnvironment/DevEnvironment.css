@@ -19,6 +19,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .denv-button:hover {
@@ -29,4 +30,12 @@
 .denv-image{
     box-shadow: 0 20px 50px 0 rgb(0 0 0 / 30%);
     border-radius: 4px;
+}
+
+.denv-content{
+    padding-top: 1rem;
+}
+
+.denv-wrapper{
+    padding-left: 4.5rem;
 }
