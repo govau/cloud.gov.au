@@ -15,7 +15,7 @@ const DevEnvTwo: React.StatelessComponent<Props> = () => (
     </div>
 
     <div className="denv-button-section">
-      <button className="denv-button" type="button" onClick={(e) => {e.preventDefault(); window.location.href = 'https://lp.apps.y.cld.gov.au/';}}>
+      <button className="denv-button" type="button" onClick={(e) => {e.preventDefault(); window.location.href = 'https://cde.apps.y.cld.gov.au/';}}>
         Find out more
       </button>
     </div>
