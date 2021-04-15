@@ -8,6 +8,9 @@ echo "Env domain: ${ENV_DOMAIN}"
 
 export GOPATH="${ROOT_PATH}/go"
 
+# turn off gomodules, successor to dep https://github.com/golang/dep/issues/2055
+go env -w GO111MODULE=off
+
 go get -u github.com/golang/dep/cmd/dep
 
 mkdir -p "${GOPATH}/src/github.com/govau"
