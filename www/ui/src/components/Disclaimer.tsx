@@ -41,6 +41,16 @@ const Disclaimer: React.StatelessComponent<Props> = () => (
       <Flex wrap={true} pt={1} pb={1}>
         <Box w={[1, "auto"]} pr={2}>
           <BrandLink href="/">
+            <Brand>GOV.AU</Brand>
+          </BrandLink>
+        </Box>
+        <Box w={[1, "auto"]} mt={[1, 0]}>
+          <Official>Official Australian Government website</Official>
+        </Box>
+      </Flex>
+      <Flex wrap={true} pt={1} pb={1}>
+        <Box w={[1, "auto"]} pr={2}>
+          <BrandLink href="/">
             <Star src={star} alt="" />
             <Brand>GOV.AU</Brand>
           </BrandLink>
