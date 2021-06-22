@@ -13,11 +13,6 @@ Array [
   font-weight: 700;
 }
 
-.c3 {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
 .c0 {
   background-color: #313131;
   color: #ffffff;
@@ -43,11 +38,6 @@ Array [
                 >
                     Cloud
                 </h1>
-                <p
-                    className="c3"
-                >
-                    A platform to make delivering and operating Government digital services easier.
-                </p>
             </div>
         </div>
     </div>
@@ -71,100 +61,6 @@ Array [
   border-bottom-color: #5bcbe3;
 }
 
-.c8 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.c7 {
-  background-color: #000000;
-  color: #ffffff;
-  box-shadow: 0 20px 50px 0 rgba(0,0,0,0.3);
-  border: 1px solid #000000;
-  border-radius: 0.3125rem;
-}
-
-.c9 {
-  font-size: 0.875rem;
-}
-
-.c10 {
-  border-radius: 50%;
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0.25rem;
-  margin-left: 0;
-  background-color: #ff5f56;
-}
-
-.c11 {
-  border-radius: 50%;
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0.25rem;
-  background-color: #ffbd2e;
-}
-
-.c12 {
-  border-radius: 50%;
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0.25rem;
-  margin-right: 0;
-  background-color: #27c93f;
-}
-
-.c13 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-.c14 {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.c15 {
-  margin: 0;
-  line-height: 1.25rem;
-}
-
-.c17 {
-  font-weight: 600;
-  color: #ff635c;
-}
-
-.c18 {
-  font-weight: 600;
-  color: #00c3ef;
-}
-
-.c19 {
-  font-weight: 600;
-  color: #0cac78;
-}
-
-.c20 {
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.c16 {
-  color: #cccccc;
-}
-
-.c21 {
-  display: inline-block;
-  width: 0.5rem;
-  height: 1rem;
-  vertical-align: middle;
-  border-bottom: 1px solid #f69900;
-}
-
 .c0 {
   border-top: 6px solid #45c2f0;
   background-color: #ffffff;
@@ -180,11 +76,6 @@ Array [
 .c3 {
   font-weight: 400;
   font-size: 1.5rem;
-}
-
-.c6 {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .c4 {
@@ -204,264 +95,64 @@ Array [
             is={null}
         >
             <div
-                className="jtWIOA kJYhde"
+                className="jtWIOA BcURz"
                 is={null}
             >
                 <div
-                    className="fiVwab"
+                    className="gKIqmm"
                     is={null}
                 >
                     <h2
                         className="c3"
                     >
-                        Focus on your 
-                        <strong>
-                            services
-                        </strong>
-                        , not your servers
+                        Cloud.gov.au will be decommissioned
                     </h2>
+                </div>
+            </div>
+            <div
+                className="jtWIOA glmugy"
+                is={null}
+            >
+                <div
+                    className="bEJPeE"
+                    is={null}
+                >
                     <p
                         className="c4"
                     >
-                        Install
-                         
-                        <a
-                            className="c5"
-                            href="https://docs.cloudfoundry.org/cf-cli/"
-                        >
-                            Cloud Foundry CLI tools
-                        </a>
-                         
-                        and deploy with ease
+                        As the Digital Transformation Agency (DTA) transitions to new priorities, the cloud.gov.au  platform will be decommissioned and will no longer provide whole-of-government hosting services.
                     </p>
-                    <ul
-                        className="c6"
+                    <p
+                        className="c4"
                     >
-                        <li>
-                            Write your code in any programming language
-                        </li>
-                        <li>
-                            Automatic HTTPS / certificates
-                        </li>
-                        <li>
-                            Deploy instantly, deploy often
-                        </li>
-                    </ul>
+                        We appreciate your support of the cloud.gov.au  platform. Your feedback has contributed to the development of this program.
+                    </p>
                 </div>
                 <div
-                    className="fQvyiw"
+                    className="bEJPeE"
                     is={null}
                 >
-                    <div
-                        className="c7"
+                    <p
+                        className="c4"
                     >
-                        <div
-                            className="c8"
+                        For any further details or if you need assistance transitioning to other cloud options, please contact our support team at 
+                        <a
+                            className="c5"
+                            href="mailto:support@cloud.gov.au"
                         >
-                            <div
-                                className="c9"
-                            >
-                                <div
-                                    className="gdzXwm iHSytp"
-                                    is={null}
-                                >
-                                    <span
-                                        className="c10"
-                                    />
-                                    <span
-                                        className="c11"
-                                    />
-                                    <span
-                                        className="c12"
-                                    />
-                                    <div
-                                        className="c13"
-                                    >
-                                        bash
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="c14"
-                            >
-                                <div
-                                    className="jtWIOA jOTPPl"
-                                    is={null}
-                                >
-                                    <div
-                                        className="iHZvIS"
-                                        is={null}
-                                    >
-                                        <pre
-                                            className="c15"
-                                        >
-                                            ▲ 
-                                            <span
-                                                className="c16"
-                                            >
-                                                ~/my-app $
-                                            </span>
-                                             ls
-                                            <br />
-                                            Procfile main.go manifest.yml 
-                                            <span
-                                                className="c17"
-                                            >
-                                                my-app
-                                            </span>
-                                            <br />
-                                            ▲ 
-                                            <span
-                                                className="c16"
-                                            >
-                                                ~/my-app $
-                                            </span>
-                                             cf push
-                                            <br />
-                                            Uploading 
-                                            <span
-                                                className="c18"
-                                            >
-                                                my-app
-                                            </span>
-                                            ...
-                                            <br />
-                                            Uploading 2.1M, 3 files
-                                            <br />
-                                            Done uploading
-                                            <br />
-                                            <span
-                                                className="c19"
-                                            >
-                                                OK
-                                            </span>
-                                            <br />
-                                            1 of 1 instances running
-                                            <br />
-                                            <span
-                                                className="c20"
-                                            >
-                                                App started
-                                            </span>
-                                            <br />
-                                            ▲ 
-                                            <span
-                                                className="c16"
-                                            >
-                                                ~/my-app
-                                            </span>
-                                             $ 
-                                            <span
-                                                className="c21"
-                                            />
-                                        </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            support@cloud.gov.au
+                        </a>
+                        .
+                    </p>
+                    <p
+                        className="c4"
+                    >
+                        Thank you for your support of Cloud.gov.au.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <div
-        className="c2 sc-bdVaJa dFRSdp"
-        is={null}
-    >
-        <div
-            className="jtWIOA gyTSyk"
-            is={null}
-        >
-            <div
-                className="hioaMl"
-                is={null}
-            >
-                <h2
-                    className="c3"
-                >
-                    Automatically secure
-                </h2>
-                <p
-                    className="c4"
-                >
-                    We provision and renew SSL certificates automatically.
-                </p>
-                <p
-                    className="c4"
-                >
-                    Thanks to
-                     
-                    <a
-                        className="c5"
-                        href="https://letsencrypt.org/"
-                    >
-                        Let’s Encrypt
-                    </a>
-                    , you get security at zero cost, for as many domains as you want.
-                </p>
-            </div>
-            <div
-                className="jungCr"
-                is={null}
-            >
-                <h2
-                    className="c3"
-                >
-                    Programming languages
-                </h2>
-                <p
-                    className="c4"
-                >
-                    Supported languages and frameworks include Go, Java, .NET, Node.js, PHP, Python, Ruby, static files and binaries.
-                </p>
-                <p
-                    className="c4"
-                >
-                    Learn about
-                     
-                    <a
-                        className="c5"
-                        href="https://docs.cloudfoundry.org/buildpacks/"
-                    >
-                        Cloud Foundry buildpacks
-                    </a>
-                    .
-                </p>
-            </div>
-            <div
-                className="gbvvmj"
-                is={null}
-            >
-                <h2
-                    className="c3"
-                >
-                    Services
-                </h2>
-                <p
-                    className="c4"
-                >
-                    Seamlessly connect your application to backend services.
-                </p>
-                <p
-                    className="c4"
-                >
-                    Available services include Postgres, MySQL and ElasticSearch.
-                </p>
-                <p
-                    className="c4"
-                >
-                    <a
-                        className="c5"
-                        href="mailto:support@cloud.gov.au?subject=Enquiry%20about%20cloud.gov.au%20-%20interested%20in%20missing%20service&body=%0A%0A---%0ASource%3A%20cloud.gov.au%20home%20page"
-                    >
-                        Get in contact with us
-                    </a>
-                     
-                    if we’re missing a service that you need.
-                </p>
-            </div>
-        </div>
-    </div>
 </div>,
 ]
 `;

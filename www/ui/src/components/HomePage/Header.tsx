@@ -11,11 +11,6 @@ const Heading = styled.h1`
   font-weight: 700;
 `;
 
-const Subheading = styled.p`
-  font-size: 1.5rem;
-  font-weight: 300;
-`;
-
 const StyledHeader = styled.div`
   ${({ theme }) =>
     css`
@@ -32,10 +27,6 @@ const Header: React.StatelessComponent<Props> = () => (
       <Flex wrap={true} pt={2} pb={3}>
         <Box>
           <Heading>Cloud</Heading>
-          <Subheading>
-            A platform to make delivering and operating Government digital
-            services easy.
-          </Subheading>
         </Box>
       </Flex>
     </Container>

@@ -1,7 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
+Array [
+  .c1 {
+  max-width: 1024px;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4 {
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+.c3 {
+  background-color: #000;
+  color: #ffffff;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 3px;
+}
+
 .c0 {
+  background-color: #45c2f0;
+}
+
+<div
+    className="c0"
+>
+    <div
+        className="c1 sc-bdVaJa bNqJOV"
+        is={null}
+    >
+        <div
+            className="jtWIOA ikjdog"
+            is={null}
+        >
+            <div
+                className="fOpQaR"
+                is={null}
+            >
+                <a
+                    className="c2"
+                    href="/"
+                >
+                    <span
+                        className="c3"
+                    >
+                        Important
+                    </span>
+                </a>
+            </div>
+            <div
+                className="irQXag"
+                is={null}
+            >
+                <span
+                    className="c4"
+                >
+                    Cloud.gov.au will be decommissioned by September 2021. Contact our support team for any questions.
+                </span>
+            </div>
+        </div>
+    </div>
+</div>,
+  .c0 {
   max-width: 1024px;
 }
 
@@ -28,59 +94,60 @@ exports[`renders without crashing 1`] = `
 }
 
 <div
-  className=""
+    className=""
 >
-  <div
-    className="c0 sc-bdVaJa bNqJOV"
-    is={null}
-  >
     <div
-      className="jtWIOA ikjdog"
-      is={null}
+        className="c0 sc-bdVaJa bNqJOV"
+        is={null}
     >
-      <div
-        className="fOpQaR"
-        is={null}
-      >
-        <a
-          className="c1"
-          href="/"
+        <div
+            className="jtWIOA ikjdog"
+            is={null}
         >
-          <img
-            alt=""
-            className="c2"
-            src={
-              Object {
-                "0": "s",
-                "1": "t",
-                "2": "a",
-                "3": "r",
-                "4": ".",
-                "5": "s",
-                "6": "v",
-                "7": "g",
-                "default": "star.svg",
-              }
-            }
-          />
-          <span
-            className="c3"
-          >
-            GOV.AU
-          </span>
-        </a>
-      </div>
-      <div
-        className="irQXag"
-        is={null}
-      >
-        <span
-          className="c4"
-        >
-          Official Australian Government website
-        </span>
-      </div>
+            <div
+                className="fOpQaR"
+                is={null}
+            >
+                <a
+                    className="c1"
+                    href="/"
+                >
+                    <img
+                        alt=""
+                        className="c2"
+                        src={
+                            Object {
+                                "0": "s",
+                                "1": "t",
+                                "2": "a",
+                                "3": "r",
+                                "4": ".",
+                                "5": "s",
+                                "6": "v",
+                                "7": "g",
+                                "default": "star.svg",
+                              }
+                        }
+                    />
+                    <span
+                        className="c3"
+                    >
+                        GOV.AU
+                    </span>
+                </a>
+            </div>
+            <div
+                className="irQXag"
+                is={null}
+            >
+                <span
+                    className="c4"
+                >
+                    Official Australian Government website
+                </span>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+</div>,
+]
 `;

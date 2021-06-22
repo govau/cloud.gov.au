@@ -33,24 +33,58 @@ const StyledDisclaimer = styled.div`
     `};
 `;
 
+const RetiringTag = styled.span`
+  ${({ theme }) =>
+  css`
+    background-color: #000;
+    color: #ffffff;
+    font-weight: bold;
+    vertical-align: middle;
+    padding:3px;
+  `};
+`;
+
+const StyledRetiring = styled.div`
+  ${({ theme }) =>
+    css`
+      background-color: #45c2f0;
+    `};
+`;
+
 interface Props {}
 
 const Disclaimer: React.StatelessComponent<Props> = () => (
-  <StyledDisclaimer>
-    <Container>
-      <Flex wrap={true} pt={1} pb={1}>
-        <Box w={[1, "auto"]} pr={2}>
-          <BrandLink href="/">
-            <Star src={star} alt="" />
-            <Brand>GOV.AU</Brand>
-          </BrandLink>
-        </Box>
-        <Box w={[1, "auto"]} mt={[1, 0]}>
-          <Official>Official Australian Government website</Official>
-        </Box>
-      </Flex>
-    </Container>
-  </StyledDisclaimer>
+  <>
+    <StyledRetiring>
+      <Container>
+        <Flex wrap={true} pt={1} pb={1}>
+          <Box w={[1, "auto"]} pr={2}>
+            <BrandLink href="/">
+              <RetiringTag>Important</RetiringTag>
+            </BrandLink>
+          </Box>
+          <Box w={[1, "auto"]} mt={[1, 0]}>
+            <Official>Cloud.gov.au will be decommissioned by September 2021. Contact our support team for any questions.</Official>
+          </Box>
+        </Flex>
+      </Container>
+    </StyledRetiring>
+    <StyledDisclaimer>
+      <Container>
+        <Flex wrap={true} pt={1} pb={1}>
+          <Box w={[1, "auto"]} pr={2}>
+            <BrandLink href="/">
+              <Star src={star} alt="" />
+              <Brand>GOV.AU</Brand>
+            </BrandLink>
+          </Box>
+          <Box w={[1, "auto"]} mt={[1, 0]}>
+            <Official>Official Australian Government website</Official>
+          </Box>
+        </Flex>
+      </Container>
+    </StyledDisclaimer>
+  </>
 );
 
 export default Disclaimer;

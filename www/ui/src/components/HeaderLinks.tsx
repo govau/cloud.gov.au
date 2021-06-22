@@ -45,9 +45,6 @@ interface Props {}
 const HeaderLinks: React.StatelessComponent<Props> = () => (
   <Ul>
     <Li>
-      <Link to="/insights/">Insights</Link>
-    </Li>
-    <Li>
       <Link to="/code/">Code</Link>
     </Li>
     <Li>
