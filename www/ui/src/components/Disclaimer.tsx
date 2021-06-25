@@ -64,7 +64,7 @@ const Disclaimer: React.StatelessComponent<Props> = () => (
             </BrandLink>
           </Box>
           <Box w={[1, "auto"]} mt={[1, 0]}>
-            <Official>Cloud.gov.au will be decommissioned by September 2021. Contact our support team for any questions.</Official>
+            <Official>Cloud.gov.au will be decommissioned by September 2021. Contact our <a href="mailto:support@cloud.gov.au">support</a> team for any questions.</Official>
           </Box>
         </Flex>
       </Container>

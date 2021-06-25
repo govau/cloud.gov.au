@@ -61,7 +61,13 @@ Array [
                 <span
                     className="c4"
                 >
-                    Cloud.gov.au will be decommissioned by September 2021. Contact our support team for any questions.
+                    Cloud.gov.au will be decommissioned by September 2021. Contact our 
+                    <a
+                        href="mailto:support@cloud.gov.au"
+                    >
+                        support
+                    </a>
+                     team for any questions.
                 </span>
             </div>
         </div>
