@@ -45,13 +45,7 @@ interface Props {}
 const HeaderLinks: React.StatelessComponent<Props> = () => (
   <Ul>
     <Li>
-      <Link to="/code/">Code</Link>
-    </Li>
-    <Li>
       <Link href="https://docs.cloud.gov.au/">Docs</Link>
-    </Li>
-    <Li>
-      <Link href="https://support.cloud.gov.au/">Support</Link>
     </Li>
   </Ul>
 );
