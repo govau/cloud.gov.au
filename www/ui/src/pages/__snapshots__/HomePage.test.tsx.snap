@@ -105,7 +105,7 @@ Array [
                     <h2
                         className="c3"
                     >
-                        Cloud.gov.au will be decommissioned
+                        Cloud.gov.au has been decommissioned
                     </h2>
                 </div>
             </div>
@@ -113,55 +113,47 @@ Array [
                 className="jtWIOA glmugy"
                 is={null}
             >
-                <div
-                    className="bEJPeE"
-                    is={null}
+                <p
+                    className="c4"
                 >
-                    <p
-                        className="c4"
-                    >
-                        The cloud.gov.au platform is being decommissioned by the DTA and will no longer provide whole-of-government hosting services.
-                    </p>
-                    <p
-                        className="c4"
-                    >
-                        We appreciate your support of the cloud.gov.au platform. The DTA will contact current users of the platform and provide more information.
-                    </p>
-                </div>
-                <div
-                    className="bEJPeE"
-                    is={null}
+                    The cloud.gov.au platform closed on 30 September 2021 and no longer provides whole-of-government hosting services.
+                </p>
+                <p
+                    className="c4"
                 >
-                    <p
-                        className="c4"
+                    All materials created while the service was in operation can be found in our 
+                    <a
+                        className="c5"
+                        href="https://github.com/govau"
                     >
-                        For further details or if you have any questions, please contact our support team at 
-                        <a
-                            className="c5"
-                            href="mailto:support@cloud.gov.au"
-                        >
-                            support@cloud.gov.au
-                        </a>
-                        .
-                    </p>
-                    <p
-                        className="c4"
+                        GitHub open-source code
+                    </a>
+                     repository.
+                </p>
+                <p
+                    className="c4"
+                >
+                    Information about cloud.gov.au can be found on the 
+                    <a
+                        className="c5"
+                        href="https://www.dta.gov.au/our-projects/about-cloudgovau"
                     >
-                        To source a Cloud platform and cloud services for government, please 
-                        <a
-                            className="c5"
-                            href="https://www.buyict.gov.au/sp?id=buyer&kb=KB0010616"
-                        >
-                            visit the Cloud Marketplace
-                        </a>
-                        .
-                    </p>
-                    <p
-                        className="c4"
+                        Digital Transformation Agency website
+                    </a>
+                    .
+                </p>
+                <p
+                    className="c4"
+                >
+                    To source cloud services for government, please visit the 
+                    <a
+                        className="c5"
+                        href="https://www.buyict.gov.au/sp?id=buyer&kb=KB0010616"
                     >
-                        Thank you for your support of Cloud.gov.au.
-                    </p>
-                </div>
+                        Cloud Marketplace
+                    </a>
+                    .
+                </p>
             </div>
         </div>
     </section>
