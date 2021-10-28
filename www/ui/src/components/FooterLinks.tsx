@@ -32,9 +32,6 @@ const FooterLinks: React.StatelessComponent<Props> = () => (
     <Li>
       <Link href="https://console.system.y.cld.gov.au/">Staging console</Link>
     </Li>
-    <Li>
-      <Link to="/terms-of-service/">Terms of service</Link>
-    </Li>
   </Ul>
 );
 
