@@ -121,19 +121,22 @@ Array [
                 <p
                     className="c4"
                 >
-                    All materials created while the service was in operation can be found in our 
+                    All materials created while the service was in operation can be found in our
+                     
                     <a
                         className="c5"
                         href="https://github.com/govau"
                     >
                         GitHub open-source code
                     </a>
-                     repository.
+                     
+                    repository.
                 </p>
                 <p
                     className="c4"
                 >
-                    Information about cloud.gov.au can be found on the 
+                    Information about cloud.gov.au can be found on the
+                     
                     <a
                         className="c5"
                         href="https://www.dta.gov.au/our-projects/about-cloudgovau"
@@ -145,7 +148,8 @@ Array [
                 <p
                     className="c4"
                 >
-                    To source cloud services for government, please visit the 
+                    To source cloud services for government, please visit the
+                     
                     <a
                         className="c5"
                         href="https://www.buyict.gov.au/sp?id=buyer&kb=KB0010616"
