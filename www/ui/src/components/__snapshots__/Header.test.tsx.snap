@@ -151,53 +151,10 @@ exports[`renders without crashing 1`] = `
             }
           >
             <a
-              className="c5"
-              href="/code/"
-              onClick={[Function]}
-            >
-              Code
-            </a>
-          </li>
-          <li
-            className="c8"
-            display={
-              Array [
-                "block",
-                "inline-block",
-              ]
-            }
-            m={
-              Array [
-                1,
-              ]
-            }
-          >
-            <a
               className="c9"
               href="https://docs.cloud.gov.au/"
             >
               Docs
-            </a>
-          </li>
-          <li
-            className="c8"
-            display={
-              Array [
-                "block",
-                "inline-block",
-              ]
-            }
-            m={
-              Array [
-                1,
-              ]
-            }
-          >
-            <a
-              className="c9"
-              href="https://support.cloud.gov.au/"
-            >
-              Support
             </a>
           </li>
         </ul>

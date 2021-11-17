@@ -7,7 +7,6 @@ import Container from "../components/Container";
 import Link from "../components/Link";
 import Header from "../components/HomePage/Header";
 
-
 const Content = styled.div`
   ${({ theme }) =>
     css`
@@ -48,30 +47,37 @@ const HomePage: React.StatelessComponent = () => (
           <Flex wrap={true} px={2} pt={3} pb={0}>
             <Box w={[1, 1]} pt={[1, 1]} pr={[0, 1]}>
               <FeatureHeading>
-                Cloud.gov.au will be decommissioned
+                Cloud.gov.au has been decommissioned
               </FeatureHeading>
             </Box>
           </Flex>
           <Flex wrap={true} px={2} pt={0} pb={4}>
-            <Box w={[1, 1 / 2]} pt={[1, 1]} pb={[1, 3]} pr={[0, 3]}>
-              <FeatureP>
-                The cloud.gov.au platform is being decommissioned by the DTA and will no longer provide whole-of-government hosting services. 
-              </FeatureP>
-              <FeatureP>
-                We appreciate your support of the cloud.gov.au platform. The DTA will contact current users of the platform and provide more information.
-              </FeatureP>
-            </Box>
-            <Box w={[1, 1 / 2]} pt={[1, 1]} pb={[1, 3]} pr={[0, 3]}>
-              <FeatureP>
-                For further details or if you have any questions, please contact our support team at <Link href="mailto:support@cloud.gov.au">support@cloud.gov.au</Link>.
-              </FeatureP>
-              <FeatureP>
-                To source a Cloud platform and cloud services for government, please <Link href="https://www.buyict.gov.au/sp?id=buyer&kb=KB0010616">visit the Cloud Marketplace</Link>.
-              </FeatureP>
-              <FeatureP>
-                Thank you for your support of Cloud.gov.au.
-              </FeatureP>
-            </Box>
+            <FeatureP>
+              The cloud.gov.au platform closed on 30 September 2021 and no
+              longer provides whole-of-government hosting services.
+            </FeatureP>
+            <FeatureP>
+              All materials created while the service was in operation can be
+              found in our{" "}
+              <Link href="https://github.com/govau">
+                GitHub open-source code
+              </Link>{" "}
+              repository.
+            </FeatureP>
+            <FeatureP>
+              Information about cloud.gov.au can be found on the{" "}
+              <Link href="https://www.dta.gov.au/our-projects/about-cloudgovau">
+                Digital Transformation Agency website
+              </Link>
+              .
+            </FeatureP>
+            <FeatureP>
+              To source cloud services for government, please visit the{" "}
+              <Link href="https://www.buyict.gov.au/sp?id=buyer&kb=KB0010616">
+                Cloud Marketplace
+              </Link>
+              .
+            </FeatureP>
           </Flex>
         </Container>
       </Ribbon1>
